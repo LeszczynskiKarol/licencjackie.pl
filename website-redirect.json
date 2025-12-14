@@ -1,6 +1,0 @@
-{
-  "RedirectAllRequestsTo": {
-    "HostName": "www.licencjackie.pl",
-    "Protocol": "https"
-  }
-}
