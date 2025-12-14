@@ -15,11 +15,36 @@ interface Props {
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-  const categories: BlogCategory[] = [
-    ...new Set(posts.map((post) => post.data.category)),
+
+  // WSZYSTKIE KATEGORIE - musi być WEWNĄTRZ getStaticPaths
+  const ALL_CATEGORIES = [
+    "Poradniki",
+    "Struktura pracy",
+    "Metodologia",
+    "Tematy prac licencjackich",
+    "Tematy prac magisterskich",
+    "Obrona pracy",
+    "Pisanie prac z pedagogiki",
+    "Pisanie prac z psychologii",
+    "Pisanie prac z prawa",
+    "Pisanie prac z administracji",
+    "Pisanie prac z historii",
+    "Pisanie prac z pielęgniarstwa",
+    "Pisanie prac z zarządzania",
+    "Pisanie prac z marketingu",
+    "Pisanie prac z logistyki",
+    "Pisanie prac z socjologii",
+    "Pisanie prac z kryminologii",
+    "Pisanie prac z turystyki",
+    "Pisanie prac z kosmetologii",
+    "Pisanie prac z dietetyki",
+    "Pisanie prac z ratownictwa medycznego",
+    "Pisanie prac z politologii",
+    "Pisanie prac z geografii",
+    "Pisanie prac z bezpieczeństwa wewnętrznego",
   ];
 
-  return categories.map((category) => ({
+  return ALL_CATEGORIES.map((category) => ({
     params: { category: category.toLowerCase().replace(/\s+/g, "-") },
     props: {
       categoryName: category,
@@ -137,12 +162,18 @@ const categoryDescriptions: Record<string, string> = {
       {
         posts.length === 0 ? (
           <div class="text-center py-16 bg-gray-50 rounded-2xl">
-            <p class="text-gray-500">Brak artykułów w tej kategorii.</p>
+            <div class="text-6xl mb-4">📚</div>
+            <p class="text-gray-600 text-lg mb-2">
+              Artykuły z tej kategorii są w przygotowaniu.
+            </p>
+            <p class="text-gray-500 mb-6">
+              Wkrótce dodamy treści dotyczące: {categoryName}
+            </p>
             <a
               href="/blog"
-              class="text-primary-600 hover:underline mt-2 inline-block"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-colors"
             >
-              ← Wróć do wszystkich artykułów
+              ← Zobacz dostępne artykuły
             </a>
           </div>
         ) : (
