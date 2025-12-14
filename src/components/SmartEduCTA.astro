@@ -1,0 +1,215 @@
+---
+// src/components/SmartEduCTA.astro
+interface Props {
+  variant?: "inline" | "full" | "sidebar";
+  class?: string;
+}
+
+const { variant = "full", class: className = "" } = Astro.props;
+---
+
+{
+  variant === "inline" && (
+    <div
+      class={`p-6 bg-gradient-to-r from-primary-50 to-accent/10 border border-primary-200 rounded-xl ${className}`}
+    >
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg
+              class="w-5 h-5 text-primary-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900">
+              Potrzebujesz pomocy z pracą?
+            </h3>
+            <p class="text-sm text-gray-600">
+              AI pomoże Ci napisać profesjonalną pracę dyplomową
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://smart-edu.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-primary-600 to-accent text-white text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity whitespace-nowrap"
+        >
+          Wypróbuj Smart-Edu.ai
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  )
+}
+
+{
+  variant === "full" && (
+    <div
+      class={`p-8 sm:p-10 bg-gradient-to-br from-primary-600 to-accent rounded-2xl text-white ${className}`}
+    >
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="w-16 h-16 mx-auto mb-6 bg-white/20 rounded-2xl flex items-center justify-center">
+          <svg
+            class="w-8 h-8 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+            />
+          </svg>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4">
+          Napisz pracę dyplomową z pomocą AI
+        </h2>
+
+        <p class="text-lg text-white/90 mb-8">
+          Smart-Edu.ai to inteligentny asystent, który pomoże Ci napisać
+          profesjonalną pracę licencjacką lub magisterską. Wygeneruj strukturę,
+          rozdziały, bibliografię i więcej.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <div class="flex items-center gap-2 text-sm text-white/80">
+            <svg
+              class="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            Generowanie rozdziałów
+          </div>
+          <div class="flex items-center gap-2 text-sm text-white/80">
+            <svg
+              class="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            Bibliografia naukowa
+          </div>
+          <div class="flex items-center gap-2 text-sm text-white/80">
+            <svg
+              class="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            Antyplagiat
+          </div>
+        </div>
+
+        <a
+          href="https://smart-edu.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-700 font-bold rounded-xl hover:bg-gray-100 transition-colors"
+        >
+          Rozpocznij za darmo
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+
+        <p class="mt-4 text-sm text-white/70">
+          Bez karty kredytowej • Pierwsze generowanie gratis
+        </p>
+      </div>
+    </div>
+  )
+}
+
+{
+  variant === "sidebar" && (
+    <div
+      class={`p-5 bg-primary-50 border border-primary-200 rounded-xl ${className}`}
+    >
+      <div class="flex items-center gap-2 mb-3">
+        <svg
+          class="w-5 h-5 text-primary-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+        <span class="font-semibold text-gray-900">Smart-Edu.ai</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-4">
+        Wygeneruj profesjonalną pracę dyplomową z pomocą sztucznej inteligencji.
+      </p>
+      <a
+        href="https://smart-edu.ai"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block w-full px-4 py-2.5 bg-gradient-to-r from-primary-600 to-accent text-white text-sm font-semibold rounded-lg text-center hover:opacity-90 transition-opacity"
+      >
+        Wypróbuj za darmo →
+      </a>
+    </div>
+  )
+}

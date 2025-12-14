@@ -1,0 +1,157 @@
+---
+// src/components/Footer.astro
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  poradniki: [
+    { href: "/blog/kategoria/struktura-pracy", label: "Struktura pracy" },
+    { href: "/blog/kategoria/metodologia", label: "Metodologia badań" },
+    { href: "/blog/kategoria/obrona-pracy", label: "Obrona pracy" },
+    { href: "/blog/kategoria/poradniki", label: "Wszystkie poradniki" },
+  ],
+  kierunki: [
+    { href: "/blog/kategoria/pisanie-prac-z-pedagogiki", label: "Pedagogika" },
+    {
+      href: "/blog/kategoria/pisanie-prac-z-psychologii",
+      label: "Psychologia",
+    },
+    { href: "/blog/kategoria/pisanie-prac-z-prawa", label: "Prawo" },
+    {
+      href: "/blog/kategoria/pisanie-prac-z-zarzadzania",
+      label: "Zarządzanie",
+    },
+  ],
+  informacje: [
+    { href: "/o-nas", label: "O nas" },
+    { href: "/kontakt", label: "Kontakt" },
+    { href: "/polityka-prywatnosci", label: "Polityka prywatności" },
+    { href: "/regulamin", label: "Regulamin" },
+  ],
+};
+---
+
+<footer class="bg-gray-900 text-gray-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+      <!-- Logo & Description -->
+      <div class="lg:col-span-2">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <div
+            class="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent rounded-lg flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-lg">L</span>
+          </div>
+          <span class="text-xl font-bold text-white">
+            Licencjackie<span class="text-primary-400">.pl</span>
+          </span>
+        </a>
+        <p class="text-gray-400 mb-6 max-w-sm">
+          Wszystko o pisaniu prac dyplomowych. Poradniki, tematy prac,
+          metodologia badań i profesjonalna pomoc w pisaniu prac licencjackich i
+          magisterskich.
+        </p>
+
+        <!-- Smart-Edu promo -->
+        <div class="p-4 bg-gray-800 rounded-xl border border-gray-700">
+          <p class="text-sm text-gray-300 mb-3">
+            🚀 Potrzebujesz pomocy z pracą dyplomową?
+          </p>
+          <a
+            href="https://smart-edu.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-600 to-accent text-white text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Wypróbuj Smart-Edu.ai
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Poradniki -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Poradniki</h3>
+        <ul class="space-y-2">
+          {
+            footerLinks.poradniki.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Kierunki -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Kierunki studiów</h3>
+        <ul class="space-y-2">
+          {
+            footerLinks.kierunki.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Informacje -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Informacje</h3>
+        <ul class="space-y-2">
+          {
+            footerLinks.informacje.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div
+      class="pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4"
+    >
+      <p class="text-sm text-gray-500">
+        © {currentYear} Licencjackie.pl. Wszelkie prawa zastrzeżone.
+      </p>
+      <p class="text-sm text-gray-500">
+        Projekt i realizacja: <a
+          href="https://torweb.pl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-400 hover:text-white transition-colors">TorWeb.pl</a
+        >
+      </p>
+    </div>
+  </div>
+</footer>
