@@ -1,0 +1,369 @@
+---
+// src/pages/polityka-prywatnosci.astro
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+const lastUpdated = "14 grudnia 2025";
+---
+
+<Layout
+  title="Polityka Prywatności | Licencjackie.pl"
+  description="Polityka prywatności i cookies serwisu Licencjackie.pl. Dowiedz się, jak przetwarzamy Twoje dane osobowe i jakich plików cookies używamy."
+>
+  <Navbar />
+
+  <main class="pt-32 pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <header class="mb-12">
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          Polityka <span class="text-gradient">Prywatności</span>
+        </h1>
+        <p class="text-gray-600">
+          Ostatnia aktualizacja: {lastUpdated}
+        </p>
+      </header>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-12">
+          <h2>1. Informacje ogólne</h2>
+          <p>
+            Niniejsza polityka prywatności określa zasady przetwarzania danych
+            osobowych oraz wykorzystywania plików cookies w serwisie <strong
+              >Licencjackie.pl</strong
+            >.
+          </p>
+          <p>
+            Administratorem serwisu jest właściciel domeny licencjackie.pl.
+            Dokładamy wszelkich starań, aby chronić prywatność użytkowników
+            naszego serwisu i przetwarzać dane osobowe zgodnie z obowiązującymi
+            przepisami, w szczególności z Rozporządzeniem Parlamentu
+            Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
+            (RODO).
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2>2. Zakres zbieranych danych</h2>
+          <p>W ramach korzystania z serwisu możemy zbierać następujące dane:</p>
+
+          <h3>2.1. Dane zbierane automatycznie</h3>
+          <ul>
+            <li>Adres IP (anonimizowany)</li>
+            <li>Typ przeglądarki internetowej</li>
+            <li>System operacyjny</li>
+            <li>Rozdzielczość ekranu</li>
+            <li>Przybliżona lokalizacja (kraj, region)</li>
+            <li>Źródło odwiedzin (skąd trafiłeś na stronę)</li>
+            <li>Czas spędzony na stronie</li>
+            <li>Odwiedzane podstrony</li>
+          </ul>
+
+          <h3>2.2. Dane podawane dobrowolnie</h3>
+          <p>Poprzez formularz kontaktowy możesz przekazać nam:</p>
+          <ul>
+            <li>Imię i nazwisko</li>
+            <li>Adres e-mail</li>
+            <li>Treść wiadomości</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2>3. Cele przetwarzania danych</h2>
+          <p>Twoje dane przetwarzamy w następujących celach:</p>
+          <ul>
+            <li>
+              <strong>Kontakt</strong> - odpowiedź na Twoje zapytania przesłane przez
+              formularz kontaktowy (podstawa: art. 6 ust. 1 lit. f RODO - prawnie
+              uzasadniony interes)
+            </li>
+            <li>
+              <strong>Analityka</strong> - analiza ruchu na stronie w celu jej ulepszania
+              (podstawa: art. 6 ust. 1 lit. a RODO - zgoda)
+            </li>
+            <li>
+              <strong>Marketing</strong> - wyświetlanie spersonalizowanych reklam
+              (podstawa: art. 6 ust. 1 lit. a RODO - zgoda)
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2>4. Pliki cookies</h2>
+          <p>
+            Serwis wykorzystuje pliki cookies (ciasteczka), czyli małe pliki
+            tekstowe zapisywane na Twoim urządzeniu. Pliki cookies dzielimy na
+            trzy kategorie:
+          </p>
+
+          <h3>4.1. Niezbędne cookies (zawsze aktywne)</h3>
+          <p>Są konieczne do prawidłowego funkcjonowania strony. Obejmują:</p>
+          <ul>
+            <li>Zapamiętanie Twoich preferencji cookies</li>
+            <li>Obsługę sesji użytkownika</li>
+            <li>Podstawowe funkcje bezpieczeństwa</li>
+          </ul>
+
+          <h3>4.2. Analityczne cookies (wymagają zgody)</h3>
+          <p>
+            Pozwalają nam zrozumieć, jak użytkownicy korzystają z serwisu.
+            Wykorzystujemy:
+          </p>
+          <ul>
+            <li>
+              <strong>Google Analytics 4</strong> (GA4) - do analizy ruchu na stronie
+            </li>
+            <li>
+              <strong>Google Tag Manager</strong> (GTM) - do zarządzania tagami analitycznymi
+            </li>
+          </ul>
+          <p>
+            Dane są anonimizowane (m.in. anonimizacja IP) i nie pozwalają na
+            bezpośrednią identyfikację użytkownika.
+          </p>
+
+          <h3>4.3. Marketingowe cookies (wymagają zgody)</h3>
+          <p>
+            Umożliwiają wyświetlanie spersonalizowanych reklam. Mogą być
+            wykorzystywane przez:
+          </p>
+          <ul>
+            <li>Google Ads</li>
+            <li>Facebook Pixel</li>
+            <li>Inne platformy reklamowe</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2>5. Zarządzanie zgodami cookies</h2>
+          <p>
+            Przy pierwszej wizycie na stronie wyświetlamy baner z prośbą o
+            wyrażenie zgody na wykorzystanie cookies. Możesz:
+          </p>
+          <ul>
+            <li>
+              <strong>Zaakceptować wszystkie</strong> - zgadzasz się na wszystkie
+              kategorie cookies
+            </li>
+            <li>
+              <strong>Dostosować preferencje</strong> - samodzielnie wybierasz, które
+              kategorie cookies akceptujesz
+            </li>
+            <li>
+              <strong>Odrzucić opcjonalne</strong> - akceptujesz tylko niezbędne cookies
+            </li>
+          </ul>
+          <p>
+            W każdej chwili możesz zmienić swoje preferencje klikając w link
+            <button
+              onclick="openCookieSettings()"
+              class="text-primary-600 hover:underline cursor-pointer"
+            >
+              "Ustawienia cookies"
+            </button> w stopce strony.
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2>6. Google Consent Mode v2</h2>
+          <p>
+            Nasz serwis wykorzystuje Google Consent Mode v2, który zapewnia
+            zgodność z wymogami GDPR i Digital Markets Act (DMA). Dzięki temu:
+          </p>
+          <ul>
+            <li>
+              Skrypty Google (Analytics, Ads, GTM) respektują Twoje wybory
+              dotyczące cookies
+            </li>
+            <li>
+              Bez Twojej zgody nie są zbierane dane analityczne ani marketingowe
+            </li>
+            <li>
+              Możemy wykorzystywać modelowanie konwersji bez naruszania
+              prywatności
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2>7. Twoje prawa</h2>
+          <p>Zgodnie z RODO przysługują Ci następujące prawa:</p>
+          <ul>
+            <li>
+              <strong>Prawo dostępu</strong> - możesz zażądać informacji o przetwarzanych
+              danych
+            </li>
+            <li>
+              <strong>Prawo do sprostowania</strong> - możesz poprawić nieprawidłowe
+              dane
+            </li>
+            <li>
+              <strong>Prawo do usunięcia</strong> - możesz zażądać usunięcia swoich
+              danych
+            </li>
+            <li>
+              <strong>Prawo do ograniczenia przetwarzania</strong> - możesz ograniczyć
+              zakres przetwarzania
+            </li>
+            <li>
+              <strong>Prawo do przenoszenia danych</strong> - możesz otrzymać swoje
+              dane w formacie elektronicznym
+            </li>
+            <li>
+              <strong>Prawo do sprzeciwu</strong> - możesz sprzeciwić się przetwarzaniu
+              danych
+            </li>
+            <li>
+              <strong>Prawo do wycofania zgody</strong> - możesz w dowolnym momencie
+              wycofać zgodę na przetwarzanie danych
+            </li>
+          </ul>
+          <p>
+            W celu realizacji swoich praw, skontaktuj się z nami przez
+            <a href="/kontakt">formularz kontaktowy</a> lub e-mail:
+            <a href="mailto:kontakt@licencjackie.pl">kontakt@licencjackie.pl</a
+            >.
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2>8. Okres przechowywania danych</h2>
+          <ul>
+            <li>
+              <strong>Dane z formularza kontaktowego</strong> - przechowujemy przez
+              okres niezbędny do obsługi zapytania, maksymalnie 2 lata
+            </li>
+            <li>
+              <strong>Dane analityczne</strong> - przechowywane przez Google Analytics
+              przez 14 miesięcy
+            </li>
+            <li>
+              <strong>Preferencje cookies</strong> - zapisane w Twojej przeglądarce
+              przez 365 dni
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2>9. Odbiorcy danych</h2>
+          <p>Twoje dane mogą być przekazywane następującym podmiotom:</p>
+          <ul>
+            <li>
+              <strong>Google LLC</strong> - w związku z korzystaniem z Google Analytics
+              i Google Tag Manager
+            </li>
+            <li>
+              <strong>Amazon Web Services</strong> - hosting i infrastruktura serwisu
+            </li>
+          </ul>
+          <p>
+            Google LLC ma siedzibę w USA i stosuje odpowiednie zabezpieczenia
+            (Standard Contractual Clauses) zapewniające ochronę danych zgodną z
+            RODO.
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2>10. Bezpieczeństwo danych</h2>
+          <p>Stosujemy następujące środki ochrony danych:</p>
+          <ul>
+            <li>Szyfrowanie SSL/TLS dla wszystkich połączeń</li>
+            <li>Bezpieczne serwery z regularnym monitoringiem</li>
+            <li>Ograniczony dostęp do danych osobowych</li>
+            <li>Regularne aktualizacje zabezpieczeń</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2>11. Linki do stron zewnętrznych</h2>
+          <p>
+            Nasz serwis może zawierać linki do stron zewnętrznych, w tym do
+            <a
+              href="https://smart-edu.ai"
+              target="_blank"
+              rel="noopener noreferrer">Smart-Edu.ai</a
+            >. Nie ponosimy odpowiedzialności za praktyki prywatności tych
+            serwisów. Zachęcamy do zapoznania się z ich politykami prywatności.
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2>12. Zmiany w polityce prywatności</h2>
+          <p>
+            Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce
+            prywatności. O istotnych zmianach poinformujemy poprzez komunikat na
+            stronie. Data ostatniej aktualizacji jest podana na górze tego
+            dokumentu.
+          </p>
+        </section>
+
+        <section class="mb-12">
+          <h2>13. Kontakt</h2>
+          <p>
+            W sprawach związanych z ochroną danych osobowych możesz się z nami
+            skontaktować:
+          </p>
+          <ul>
+            <li>
+              E-mail: <a href="mailto:kontakt@licencjackie.pl"
+                >kontakt@licencjackie.pl</a
+              >
+            </li>
+            <li>Formularz: <a href="/kontakt">strona kontaktowa</a></li>
+          </ul>
+        </section>
+
+        <!-- Cookie Settings Button -->
+        <div class="mt-12 p-6 bg-gray-50 rounded-2xl border border-gray-200">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">
+            Zarządzaj ustawieniami cookies
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Możesz w każdej chwili zmienić swoje preferencje dotyczące plików
+            cookies.
+          </p>
+          <button
+            onclick="openCookieSettings()"
+            class="px-6 py-3 bg-gradient-to-r from-primary-600 to-accent text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
+          >
+            Otwórz ustawienia cookies
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold text-gray-900 mt-10 mb-4 pb-2 border-b border-gray-200;
+  }
+
+  .prose h3 {
+    @apply text-lg font-semibold text-gray-900 mt-6 mb-3;
+  }
+
+  .prose p {
+    @apply text-gray-700 leading-relaxed mb-4;
+  }
+
+  .prose ul {
+    @apply my-4 pl-6 space-y-2;
+  }
+
+  .prose li {
+    @apply text-gray-700 list-disc;
+  }
+
+  .prose a {
+    @apply text-primary-600 hover:text-primary-700 underline;
+  }
+
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+</style>

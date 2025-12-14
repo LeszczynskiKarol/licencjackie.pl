@@ -19,7 +19,7 @@ Te strony mają najwyższy potencjał ruchu organicznego. **Generuj PIERWSZY!**
 | GOTOWE   | 2                                                       | `badania-w-pracy-magisterskiej`                        | Badania w pracy magisterskiej - przewodnik       | Metodologia |
 | GOTOWE 3 | `bibliografia-pracy-licencjackiej`                      | Bibliografia w pracy licencjackiej - jak pisać?        | Poradniki                                        |
 | GOTOWE 4 | `bibliografia-w-pracy-magisterskiej`                    | Bibliografia w pracy magisterskiej - najczęstsze błędy | Poradniki                                        |
-| 5        | `konspekt-pracy-dyplomowej`                             | Konspekt pracy dyplomowej - jak go napisać?            | Struktura pracy                                  |
+| GOTOWE 5 | `konspekt-pracy-dyplomowej`                             | Konspekt pracy dyplomowej - jak go napisać?            | Struktura pracy                                  |
 | 6        | `konspekt-pracy-magisterskiej`                          | Konspekt pracy magisterskiej - wzór i wskazówki        | Struktura pracy                                  |
 | 7        | `materialy-do-pracy-magisterskiej`                      | Materiały do pracy magisterskiej - jak je zbierać?     | Poradniki                                        |
 | 8        | `obrona-pracy-licencjackiej`                            | Obrona pracy licencjackiej - jak się przygotować?      | Obrona pracy                                     |

@@ -22,10 +22,8 @@ const footerLinks = {
     },
   ],
   informacje: [
-    { href: "/o-nas", label: "O nas" },
     { href: "/kontakt", label: "Kontakt" },
     { href: "/polityka-prywatnosci", label: "Polityka prywatności" },
-    { href: "/regulamin", label: "Regulamin" },
   ],
 };
 ---
@@ -133,6 +131,14 @@ const footerLinks = {
               </li>
             ))
           }
+          <li>
+            <button
+              onclick="openCookieSettings()"
+              class="text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
+            >
+              Ustawienia cookies
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -144,14 +150,24 @@ const footerLinks = {
       <p class="text-sm text-gray-500">
         © {currentYear} Licencjackie.pl. Wszelkie prawa zastrzeżone.
       </p>
-      <p class="text-sm text-gray-500">
-        Projekt i realizacja: <a
-          href="https://torweb.pl"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-400 hover:text-white transition-colors">TorWeb.pl</a
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <button
+          onclick="openCookieSettings()"
+          class="hover:text-white transition-colors cursor-pointer"
         >
-      </p>
+          🍪 Cookies
+        </button>
+        <span>|</span>
+        <span>
+          Projekt: <a
+            href="https://torweb.pl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors"
+            >TorWeb.pl</a
+          >
+        </span>
+      </div>
     </div>
   </div>
 </footer>
