@@ -1,9 +1,9 @@
 ---
 title: "Konspekt pracy dyplomowej - czym jest? Jak napisać?"
 description: "Jak stworzyć konspekt do pracy dyplomowej? Kompletny przewodnik po pisaniu konspektu do pracy dyplomowej."
-publishDate: 2025-12-11
+publishDate: 2025-12-09
 author: "Redakcja Licencjackie.pl"
-category: "Metodologia"
+category: "Struktura pracy"
 tags:
   [
     "konspekt",
@@ -12,7 +12,7 @@ tags:
     "praca magisterska",
     "praca licencjacka",
   ]
-image: "/blog/bibliografia-w-pracy-magisterskiej.jpg"
+image: "/blog/konspekt-pracy-dyplomowej.jpg"
 imageAlt: "Konspekt do pracy dyplomowej"
 featured: false
 draft: false

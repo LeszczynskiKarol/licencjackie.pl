@@ -13,29 +13,29 @@
 
 Te strony mają najwyższy potencjał ruchu organicznego. **Generuj PIERWSZY!**
 
-| #        | Slug (nazwa pliku .md)                                  | Tytuł                                                  | Kategoria                                        |
-| -------- | ------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------ | ----------- |
-| GOTOWE   | 1                                                       | `ankieta-w-pracy-magisterskiej`                        | Ankieta w pracy magisterskiej - jak ją stworzyć? | Metodologia |
-| GOTOWE   | 2                                                       | `badania-w-pracy-magisterskiej`                        | Badania w pracy magisterskiej - przewodnik       | Metodologia |
-| GOTOWE 3 | `bibliografia-pracy-licencjackiej`                      | Bibliografia w pracy licencjackiej - jak pisać?        | Poradniki                                        |
-| GOTOWE 4 | `bibliografia-w-pracy-magisterskiej`                    | Bibliografia w pracy magisterskiej - najczęstsze błędy | Poradniki                                        |
-| GOTOWE 5 | `konspekt-pracy-dyplomowej`                             | Konspekt pracy dyplomowej - jak go napisać?            | Struktura pracy                                  |
-| 6        | `konspekt-pracy-magisterskiej`                          | Konspekt pracy magisterskiej - wzór i wskazówki        | Struktura pracy                                  |
-| 7        | `materialy-do-pracy-magisterskiej`                      | Materiały do pracy magisterskiej - jak je zbierać?     | Poradniki                                        |
-| 8        | `obrona-pracy-licencjackiej`                            | Obrona pracy licencjackiej - jak się przygotować?      | Obrona pracy                                     |
-| 9        | `pisanie-pracy-dyplomowej`                              | Pisanie pracy dyplomowej - kompletny poradnik          | Poradniki                                        |
-| 10       | `podsumowanie-pracy-licencjackiej`                      | Podsumowanie pracy licencjackiej - jak napisać?        | Struktura pracy                                  |
-| 11       | `przypisy-w-pracy-magisterskiej`                        | Przypisy w pracy magisterskiej - style i zasady        | Poradniki                                        |
-| 12       | `statystyka-praca-licencjacka`                          | Statystyka w pracy licencjackiej - podstawy            | Metodologia                                      |
-| 13       | `streszczenie-pracy-magisterskiej`                      | Streszczenie pracy magisterskiej - wzór                | Struktura pracy                                  |
-| 14       | `struktura-pracy-licencjackiej`                         | Struktura pracy licencjackiej - kompletny przewodnik   | Struktura pracy                                  |
-| 15       | `temat-pracy-licencjackiej`                             | Jak wybrać temat pracy licencjackiej?                  | Tematy prac licencjackich                        |
-| 16       | `temat-pracy-magisterskiej`                             | Jak wybrać temat pracy magisterskiej?                  | Tematy prac magisterskich                        |
-| 17       | `wstep-pracy-licencjackiej`                             | Wstęp pracy licencjackiej - jak go napisać?            | Struktura pracy                                  |
-| 18       | `wybor-tematu-pracy-dyplomowej`                         | Wybór tematu pracy dyplomowej - porady                 | Poradniki                                        |
-| 19       | `znaczenie-i-rola-bibliografii`                         | Znaczenie bibliografii w pracy naukowej                | Poradniki                                        |
-| 20       | `analiza-i-ocena-zrodel`                                | Analiza i ocena źródeł - jak to robić?                 | Metodologia                                      |
-| 21       | `metody-badawcze-do-pracy-magisterskiej-z-kryminologii` | Metody badawcze w kryminologii                         | Metodologia                                      |
+| #    | Slug                                                    | Tytuł                                                  | Kategoria                 |
+| ---- | ------------------------------------------------------- | ------------------------------------------------------ | ------------------------- |
+| 1 ✅ | `ankieta-w-pracy-magisterskiej`                         | Ankieta w pracy magisterskiej - jak ją stworzyć?       | Metodologia               |
+| 2 ✅ | `badania-w-pracy-magisterskiej`                         | Badania w pracy magisterskiej - przewodnik             | Metodologia               |
+| 3 ✅ | `bibliografia-pracy-licencjackiej`                      | Bibliografia w pracy licencjackiej - jak pisać?        | Poradniki                 |
+| 4 ✅ | `bibliografia-w-pracy-magisterskiej`                    | Bibliografia w pracy magisterskiej - najczęstsze błędy | Poradniki                 |
+| 5 ✅ | `konspekt-pracy-dyplomowej`                             | Konspekt pracy dyplomowej - jak go napisać?            | Struktura pracy           |
+| 6 ✅ | `konspekt-pracy-magisterskiej`                          | Konspekt pracy magisterskiej - wzór i wskazówki        | Struktura pracy           |
+| 7 ✅ | `materialy-do-pracy-magisterskiej`                      | Materiały do pracy magisterskiej - jak je zbierać?     | Poradniki                 |
+| 8    | `obrona-pracy-licencjackiej`                            | Obrona pracy licencjackiej - jak się przygotować?      | Obrona pracy              |
+| 9    | `pisanie-pracy-dyplomowej`                              | Pisanie pracy dyplomowej - kompletny poradnik          | Poradniki                 |
+| 10   | `podsumowanie-pracy-licencjackiej`                      | Podsumowanie pracy licencjackiej - jak napisać?        | Struktura pracy           |
+| 11   | `przypisy-w-pracy-magisterskiej`                        | Przypisy w pracy magisterskiej - style i zasady        | Poradniki                 |
+| 12   | `statystyka-praca-licencjacka`                          | Statystyka w pracy licencjackiej - podstawy            | Metodologia               |
+| 13   | `streszczenie-pracy-magisterskiej`                      | Streszczenie pracy magisterskiej - wzór                | Struktura pracy           |
+| 14   | `struktura-pracy-licencjackiej`                         | Struktura pracy licencjackiej - kompletny przewodnik   | Struktura pracy           |
+| 15   | `temat-pracy-licencjackiej`                             | Jak wybrać temat pracy licencjackiej?                  | Tematy prac licencjackich |
+| 16   | `temat-pracy-magisterskiej`                             | Jak wybrać temat pracy magisterskiej?                  | Tematy prac magisterskich |
+| 17   | `wstep-pracy-licencjackiej`                             | Wstęp pracy licencjackiej - jak go napisać?            | Struktura pracy           |
+| 18   | `wybor-tematu-pracy-dyplomowej`                         | Wybór tematu pracy dyplomowej - porady                 | Poradniki                 |
+| 19   | `znaczenie-i-rola-bibliografii`                         | Znaczenie bibliografii w pracy naukowej                | Poradniki                 |
+| 20   | `analiza-i-ocena-zrodel`                                | Analiza i ocena źródeł - jak to robić?                 | Metodologia               |
+| 21   | `metody-badawcze-do-pracy-magisterskiej-z-kryminologii` | Metody badawcze w kryminologii                         | Metodologia               |
 
 ---
 

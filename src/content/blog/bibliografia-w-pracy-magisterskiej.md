@@ -3,7 +3,7 @@ title: "Bibliografia w pracy magisterskiej - jak napisać?"
 description: "Jak stworzyć bibliografię do pracy magisterskiej? Kompletny przewodnik po pisaniu bibliografii do pracy magisterskiej."
 publishDate: 2025-12-13
 author: "Redakcja Licencjackie.pl"
-category: "Metodologia"
+category: "Poradniki"
 tags: ["bibliografia", "praca magisterska", "źródła", "literatura"]
 image: "/blog/bibliografia-w-pracy-magisterskiej.jpg"
 imageAlt: "Bibliografia w pracy magisterskiej"

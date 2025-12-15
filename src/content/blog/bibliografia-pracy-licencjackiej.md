@@ -3,7 +3,7 @@ title: "Bibliografia w pracy licencjackiej - jak napisać?"
 description: "Jak stworzyć bibliografię do pracy licencjackiej? Kompletny przewodnik po pisaniu bibliografii do pracy licencjackiej."
 publishDate: 2025-12-11
 author: "Redakcja Licencjackie.pl"
-category: "Metodologia"
+category: "Poradniki"
 tags: ["bibliografia", "praca licencjacka", "źródła", "literatura"]
 image: "/blog/bibliografia-pracy-licencjackiej.jpg"
 imageAlt: "Bibliografia w pracy licencjackiej"
