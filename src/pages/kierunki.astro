@@ -1,0 +1,69 @@
+---
+// src/pages/kierunki.astro
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+
+const kierunki = [
+  { name: "Administracja", slug: "pisanie-prac-z-administracji", icon: "🏛️" },
+  { name: "Bezpieczeństwo wewnętrzne", slug: "pisanie-prac-z-bezpieczeństwa-wewnętrznego", icon: "🛡️" },
+  { name: "Dietetyka", slug: "pisanie-prac-z-dietetyki", icon: "🥗" },
+  { name: "Geografia", slug: "pisanie-prac-z-geografii", icon: "🌍" },
+  { name: "Historia", slug: "pisanie-prac-z-historii", icon: "📜" },
+  { name: "Kosmetologia", slug: "pisanie-prac-z-kosmetologii", icon: "💄" },
+  { name: "Kryminologia", slug: "pisanie-prac-z-kryminologii", icon: "🔍" },
+  { name: "Logistyka", slug: "pisanie-prac-z-logistyki", icon: "📦" },
+  { name: "Marketing", slug: "pisanie-prac-z-marketingu", icon: "📈" },
+  { name: "Pedagogika", slug: "pisanie-prac-z-pedagogiki", icon: "👨‍🏫" },
+  { name: "Pielęgniarstwo", slug: "pisanie-prac-z-pielęgniarstwa", icon: "🏥" },
+  { name: "Politologia", slug: "pisanie-prac-z-politologii", icon: "🗳️" },
+  { name: "Prawo", slug: "pisanie-prac-z-prawa", icon: "⚖️" },
+  { name: "Psychologia", slug: "pisanie-prac-z-psychologii", icon: "🧠" },
+  { name: "Ratownictwo medyczne", slug: "pisanie-prac-z-ratownictwa-medycznego", icon: "🚑" },
+  { name: "Socjologia", slug: "pisanie-prac-z-socjologii", icon: "👥" },
+  { name: "Turystyka", slug: "pisanie-prac-z-turystyki", icon: "✈️" },
+  { name: "Zarządzanie", slug: "pisanie-prac-z-zarządzania", icon: "💼" },
+];
+---
+
+<Layout
+  title="Kierunki studiów | Licencjackie.pl"
+  description="Poradniki pisania prac dyplomowych dla 18 kierunków studiów. Znajdź pomoc dla swojego kierunku."
+>
+  <Navbar />
+
+  <main class="pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="text-center mb-16">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          Wybierz swój <span class="text-gradient">kierunek</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+          Poradniki pisania prac dyplomowych dopasowane do Twojego kierunku studiów.
+        </p>
+      </header>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {kierunki.map((kierunek) => (
+          
+           <a href={`/blog/kategoria/${kierunek.slug}`}
+            class="group block bg-white border border-gray-200 rounded-xl p-6 hover:border-primary-500 hover:shadow-lg transition-all"
+          >
+            <div class="text-4xl mb-4">{kierunek.icon}</div>
+            <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-2">
+              {kierunek.name}
+            </h2>
+            <p class="text-sm text-gray-600">
+              Tematy, metodologia i wskazówki dla studentów kierunku {kierunek.name.toLowerCase()}.
+            </p>
+            <div class="mt-4 text-primary-600 font-medium text-sm">
+              Zobacz poradniki →
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

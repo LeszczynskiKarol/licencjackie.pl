@@ -16,6 +16,9 @@ interface Props {
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
 
+
+
+
   // WSZYSTKIE KATEGORIE - musi być WEWNĄTRZ getStaticPaths
   const ALL_CATEGORIES = [
     "Poradniki",
@@ -107,10 +110,18 @@ const categoryDescriptions: Record<string, string> = {
   "Pisanie prac z bezpieczeństwa wewnętrznego":
     "Tematy i poradniki dla studentów bezpieczeństwa wewnętrznego.",
 };
+
+const getPageTitle = (cat: string) => {
+  if (cat.startsWith("Pisanie prac z")) {
+    const kierunek = cat.replace("Pisanie prac z ", "");
+    return `Pisanie prac dyplomowych z ${kierunek}`;
+  }
+  return cat;
+};
 ---
 
 <Layout
-  title={`${categoryName} | Licencjackie.pl`}
+  title={`${getPageTitle(categoryName)} | Licencjackie.pl`}
   description={categoryDescriptions[categoryName] ||
     `Artykuły z kategorii ${categoryName}`}
 >
@@ -135,8 +146,10 @@ const categoryDescriptions: Record<string, string> = {
           Kategoria
         </span>
         <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-          {categoryName}
-        </h1>
+  {categoryName.startsWith("Pisanie prac z") 
+    ? `Pisanie prac dyplomowych z ${categoryName.replace("Pisanie prac z ", "")}`
+    : categoryName}
+</h1>
         <p class="text-lg text-gray-600 max-w-2xl">
           {
             categoryDescriptions[categoryName] ||
@@ -177,7 +190,11 @@ const categoryDescriptions: Record<string, string> = {
             </a>
           </div>
         ) : (
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class={`grid gap-6 ${
+            categoryName.startsWith("Pisanie prac z") 
+              ? "sm:grid-cols-2 max-w-4xl mx-auto" 
+              : "sm:grid-cols-2 lg:grid-cols-3"
+          }`}>
             {posts.map((post) => (
               <a
                 href={`/blog/${post.slug}`}

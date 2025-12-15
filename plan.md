@@ -43,26 +43,26 @@ Te strony mają najwyższy potencjał ruchu organicznego. **Generuj PIERWSZY!**
 
 Te strony targetują frazy typu "pisanie prac z [kierunek]". **Generuj DRUGI!**
 
-| #   | Slug                                                       | Tytuł                                             | Kategoria                                  |
-| --- | ---------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------ |
-| 1   | `pisanie-prac-magisterskich-z-administracji`               | Pisanie prac z administracji - tematy i wskazówki | Pisanie prac z administracji               |
-| 2   | `pisanie-prac-magisterskich-z-bezpieczenstwa-wewnetrznego` | Pisanie prac z bezpieczeństwa wewnętrznego        | Pisanie prac z bezpieczeństwa wewnętrznego |
-| 3   | `pisanie-prac-magisterskich-z-dietetyki`                   | Pisanie prac z dietetyki - tematy i metodologia   | Pisanie prac z dietetyki                   |
-| 4   | `pisanie-prac-magisterskich-z-geografii`                   | Pisanie prac z geografii - poradnik               | Pisanie prac z geografii                   |
-| 5   | `pisanie-prac-magisterskich-z-historii`                    | Pisanie prac z historii - tematy i źródła         | Pisanie prac z historii                    |
-| 6   | `pisanie-prac-magisterskich-z-kosmetologii`                | Pisanie prac z kosmetologii                       | Pisanie prac z kosmetologii                |
-| 7   | `pisanie-prac-magisterskich-z-kryminologii`                | Pisanie prac z kryminologii - metodologia         | Pisanie prac z kryminologii                |
-| 8   | `pisanie-prac-magisterskich-z-logistyki`                   | Pisanie prac z logistyki - tematy                 | Pisanie prac z logistyki                   |
-| 9   | `pisanie-prac-magisterskich-z-marketingu`                  | Pisanie prac z marketingu - case study            | Pisanie prac z marketingu                  |
-| 10  | `pisanie-prac-magisterskich-z-pedagogiki`                  | Pisanie prac z pedagogiki - kompletny poradnik    | Pisanie prac z pedagogiki                  |
-| 11  | `pisanie-prac-magisterskich-z-pielegniarstwa`              | Pisanie prac z pielęgniarstwa - tematy            | Pisanie prac z pielęgniarstwa              |
-| 12  | `pisanie-prac-magisterskich-z-politologii`                 | Pisanie prac z politologii                        | Pisanie prac z politologii                 |
-| 13  | `pisanie-prac-magisterskich-z-prawa`                       | Pisanie prac z prawa - metodologia prawnicza      | Pisanie prac z prawa                       |
-| 14  | `pisanie-prac-magisterskich-z-psychologii`                 | Pisanie prac z psychologii - badania i testy      | Pisanie prac z psychologii                 |
-| 15  | `pisanie-prac-magisterskich-z-ratownictwa-medycznego`      | Pisanie prac z ratownictwa medycznego             | Pisanie prac z ratownictwa medycznego      |
-| 16  | `pisanie-prac-magisterskich-z-socjologii`                  | Pisanie prac z socjologii - metody badań          | Pisanie prac z socjologii                  |
-| 17  | `pisanie-prac-magisterskich-z-turystyki`                   | Pisanie prac z turystyki - tematy                 | Pisanie prac z turystyki                   |
-| 18  | `pisanie-prac-magisterskich-z-zarzadzania`                 | Pisanie prac z zarządzania - case study           | Pisanie prac z zarządzania                 |
+| #     | Slug                                                       | Tytuł                                             | Kategoria                                  |
+| ----- | ---------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------ |
+| 1 ✅  | `pisanie-prac-magisterskich-z-administracji`               | Pisanie prac z administracji - tematy i wskazówki | Pisanie prac z administracji               |
+| 2 ✅  | `pisanie-prac-magisterskich-z-bezpieczenstwa-wewnetrznego` | Pisanie prac z bezpieczeństwa wewnętrznego        | Pisanie prac z bezpieczeństwa wewnętrznego |
+| 3 ✅  | `pisanie-prac-magisterskich-z-dietetyki`                   | Pisanie prac z dietetyki - tematy i metodologia   | Pisanie prac z dietetyki                   |
+| 4 ✅  | `pisanie-prac-magisterskich-z-geografii`                   | Pisanie prac z geografii - poradnik               | Pisanie prac z geografii                   |
+| 5 ✅  | `pisanie-prac-magisterskich-z-historii`                    | Pisanie prac z historii - tematy i źródła         | Pisanie prac z historii                    |
+| 6 ✅  | `pisanie-prac-magisterskich-z-kosmetologii`                | Pisanie prac z kosmetologii                       | Pisanie prac z kosmetologii                |
+| 7 ✅  | `pisanie-prac-magisterskich-z-kryminologii`                | Pisanie prac z kryminologii - metodologia         | Pisanie prac z kryminologii                |
+| 8 ✅  | `pisanie-prac-magisterskich-z-logistyki`                   | Pisanie prac z logistyki - tematy                 | Pisanie prac z logistyki                   |
+| 9 ✅  | `pisanie-prac-magisterskich-z-marketingu`                  | Pisanie prac z marketingu - case study            | Pisanie prac z marketingu                  |
+| 10 ✅ | `pisanie-prac-magisterskich-z-pedagogiki`                  | Pisanie prac z pedagogiki - kompletny poradnik    | Pisanie prac z pedagogiki                  |
+| 11 ✅ | `pisanie-prac-magisterskich-z-pielegniarstwa`              | Pisanie prac z pielęgniarstwa - tematy            | Pisanie prac z pielęgniarstwa              |
+| 12 ✅ | `pisanie-prac-magisterskich-z-politologii`                 | Pisanie prac z politologii                        | Pisanie prac z politologii                 |
+| 13 ✅ | `pisanie-prac-magisterskich-z-prawa`                       | Pisanie prac z prawa - metodologia prawnicza      | Pisanie prac z prawa                       |
+| 14 ✅ | `pisanie-prac-magisterskich-z-psychologii`                 | Pisanie prac z psychologii - badania i testy      | Pisanie prac z psychologii                 |
+| 15 ✅ | `pisanie-prac-magisterskich-z-ratownictwa-medycznego`      | Pisanie prac z ratownictwa medycznego             | Pisanie prac z ratownictwa medycznego      |
+| 16 ✅ | `pisanie-prac-magisterskich-z-socjologii`                  | Pisanie prac z socjologii - metody badań          | Pisanie prac z socjologii                  |
+| 17 ✅ | `pisanie-prac-magisterskich-z-turystyki`                   | Pisanie prac z turystyki - tematy                 | Pisanie prac z turystyki                   |
+| 18 ✅ | `pisanie-prac-magisterskich-z-zarzadzania`                 | Pisanie prac z zarządzania - case study           | Pisanie prac z zarządzania                 |
 
 ---
 

@@ -61,26 +61,32 @@ const getReadingTime = (content: string) => {
         <SmartEduCTA variant="inline" />
       </div>
 
-      <div class="flex flex-wrap justify-center gap-3 mb-12">
-        <a
-          href="/blog"
-          class="px-4 py-2 text-sm font-medium bg-primary-600 text-white rounded-full"
+     <div class="flex flex-wrap justify-center gap-3 mb-12">
+  
+    <a href="/blog"
+    class="px-4 py-2 text-sm font-medium bg-primary-600 text-white rounded-full"
+  >
+    Wszystkie ({posts.length})
+  </a>
+  {
+    Object.entries(categories)
+      .filter(([category]) => !category.startsWith("Pisanie prac z"))
+      .map(([category, count]) => (
+        
+         <a href={`/blog/kategoria/${category.toLowerCase().replace(/\s+/g, "-")}`}
+          class="px-4 py-2 text-sm font-medium bg-gray-100 border border-gray-200 text-gray-700 rounded-full hover:border-primary-500 hover:text-primary-600 transition-colors"
         >
-          Wszystkie ({posts.length})
+          {category} ({count})
         </a>
-        {
-          Object.entries(categories)
-            .slice(0, 10)
-            .map(([category, count]) => (
-              <a
-                href={`/blog/kategoria/${category.toLowerCase().replace(/\s+/g, "-")}`}
-                class="px-4 py-2 text-sm font-medium bg-gray-100 border border-gray-200 text-gray-700 rounded-full hover:border-primary-500 hover:text-primary-600 transition-colors"
-              >
-                {category} ({count})
-              </a>
-            ))
-        }
-      </div>
+      ))
+  }
+  
+    <a href="/kierunki"
+    class="px-4 py-2 text-sm font-medium bg-accent/20 border border-accent text-accent rounded-full hover:bg-accent hover:text-white transition-colors"
+  >
+    Kierunki studiów →
+  </a>
+</div>
 
       <section>
         {
