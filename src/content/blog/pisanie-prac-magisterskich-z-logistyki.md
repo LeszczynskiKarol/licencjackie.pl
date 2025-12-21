@@ -11,7 +11,7 @@ tags:
     "pisanie prac dyplomowych",
     "logistyka",
   ]
-image: "/blog/logistyka.jpg"
+image: "/blog/logistyka-tematy.jpg"
 imageAlt: "Pisanie prac z logistyki"
 featured: false
 draft: false
