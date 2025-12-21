@@ -33,43 +33,26 @@ const schema = {
   url: "https://licencjackie.pl",
 };
 
-const categories = [
-  {
-    name: "Pedagogika",
-    href: "/blog/kategoria/pisanie-prac-z-pedagogiki",
-    icon: "📚",
-  },
-  {
-    name: "Psychologia",
-    href: "/blog/kategoria/pisanie-prac-z-psychologii",
-    icon: "🧠",
-  },
-  { name: "Prawo", href: "/blog/kategoria/pisanie-prac-z-prawa", icon: "⚖️" },
-  {
-    name: "Zarządzanie",
-    href: "/blog/kategoria/pisanie-prac-z-zarzadzania",
-    icon: "📊",
-  },
-  {
-    name: "Historia",
-    href: "/blog/kategoria/pisanie-prac-z-historii",
-    icon: "🏛️",
-  },
-  {
-    name: "Pielęgniarstwo",
-    href: "/blog/kategoria/pisanie-prac-z-pielegniarstwa",
-    icon: "🏥",
-  },
-  {
-    name: "Administracja",
-    href: "/blog/kategoria/pisanie-prac-z-administracji",
-    icon: "🏢",
-  },
-  {
-    name: "Marketing",
-    href: "/blog/kategoria/pisanie-prac-z-marketingu",
-    icon: "📈",
-  },
+// Pełna lista kierunków (identyczna jak na /kierunki)
+const kierunki = [
+  { name: "Administracja", slug: "pisanie-prac-z-administracji", icon: "🏛️" },
+  { name: "Bezpieczeństwo wewnętrzne", slug: "pisanie-prac-z-bezpieczenstwa-wewnetrznego", icon: "🛡️" },
+  { name: "Dietetyka", slug: "pisanie-prac-z-dietetyki", icon: "🥗" },
+  { name: "Geografia", slug: "pisanie-prac-z-geografii", icon: "🌍" },
+  { name: "Historia", slug: "pisanie-prac-z-historii", icon: "📜" },
+  { name: "Kosmetologia", slug: "pisanie-prac-z-kosmetologii", icon: "💄" },
+  { name: "Kryminologia", slug: "pisanie-prac-z-kryminologii", icon: "🔍" },
+  { name: "Logistyka", slug: "pisanie-prac-z-logistyki", icon: "📦" },
+  { name: "Marketing", slug: "pisanie-prac-z-marketingu", icon: "📈" },
+  { name: "Pedagogika", slug: "pisanie-prac-z-pedagogiki", icon: "👨‍🏫" },
+  { name: "Pielęgniarstwo", slug: "pisanie-prac-z-pielegniarstwa", icon: "🏥" },
+  { name: "Politologia", slug: "pisanie-prac-z-politologii", icon: "🗳️" },
+  { name: "Prawo", slug: "pisanie-prac-z-prawa", icon: "⚖️" },
+  { name: "Psychologia", slug: "pisanie-prac-z-psychologii", icon: "🧠" },
+  { name: "Ratownictwo medyczne", slug: "pisanie-prac-z-ratownictwa-medycznego", icon: "🚑" },
+  { name: "Socjologia", slug: "pisanie-prac-z-socjologii", icon: "👥" },
+  { name: "Turystyka", slug: "pisanie-prac-z-turystyki", icon: "✈️" },
+  { name: "Zarządzanie", slug: "pisanie-prac-z-zarzadzania", icon: "💼" },
 ];
 ---
 
@@ -132,31 +115,85 @@ const categories = [
       </div>
     </section>
 
-    <!-- Categories -->
+    <!-- Tematy prac - NOWA SEKCJA -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">
+          Tematy prac dyplomowych
+        </h2>
+        <p class="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+          Gotowe propozycje tematów na prace licencjackie i magisterskie z różnych kierunków
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <a
+            href="/blog/kategoria/tematy-prac-licencjackich"
+            class="group block bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 rounded-2xl p-8 hover:border-primary-500 hover:shadow-xl transition-all"
+          >
+            <div class="text-5xl mb-4">🎓</div>
+            <h3 class="text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-3">
+              Tematy prac licencjackich
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Setki sprawdzonych tematów na prace licencjackie i inżynierskie z 25 kierunków studiów.
+            </p>
+            <span class="text-primary-600 font-semibold">
+              Przeglądaj tematy →
+            </span>
+          </a>
+
+          <a
+            href="/blog/kategoria/tematy-prac-magisterskich"
+            class="group block bg-gradient-to-br from-accent/10 to-white border-2 border-accent/30 rounded-2xl p-8 hover:border-accent hover:shadow-xl transition-all"
+          >
+            <div class="text-5xl mb-4">📚</div>
+            <h3 class="text-2xl font-bold text-gray-900 group-hover:text-accent-dark transition-colors mb-3">
+              Tematy prac magisterskich
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Zaawansowane tematy badawcze na prace magisterskie dla studentów II stopnia.
+            </p>
+            <span class="text-accent-dark font-semibold">
+              Przeglądaj tematy →
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories - Kierunki studiów -->
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">
           Wybierz swój kierunek studiów
         </h2>
         <p class="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-          Znajdź poradniki, tematy prac i materiały dopasowane do Twojego
-          kierunku
+          Znajdź poradniki, tematy prac i materiały dopasowane do Twojego kierunku
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {
-            categories.map((cat) => (
+            kierunki.map((kierunek) => (
               <a
-                href={cat.href}
-                class="p-6 bg-white border border-gray-200 rounded-xl hover:border-primary-500 hover:shadow-lg transition-all text-center group"
+                href={`/blog/kategoria/${kierunek.slug}`}
+                class="p-4 bg-white border border-gray-200 rounded-xl hover:border-primary-500 hover:shadow-lg transition-all text-center group"
               >
-                <span class="text-3xl mb-3 block">{cat.icon}</span>
-                <span class="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
-                  {cat.name}
+                <span class="text-2xl mb-2 block">{kierunek.icon}</span>
+                <span class="font-medium text-sm text-gray-900 group-hover:text-primary-600 transition-colors">
+                  {kierunek.name}
                 </span>
               </a>
             ))
           }
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/kierunki"
+            class="inline-flex items-center gap-2 text-primary-600 font-medium hover:underline"
+          >
+            Zobacz wszystkie kierunki →
+          </a>
         </div>
       </div>
     </section>

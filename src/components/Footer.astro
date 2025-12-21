@@ -9,17 +9,16 @@ const footerLinks = {
     { href: "/blog/kategoria/obrona-pracy", label: "Obrona pracy" },
     { href: "/blog/kategoria/poradniki", label: "Wszystkie poradniki" },
   ],
+  tematy: [
+    { href: "/blog/kategoria/tematy-prac-licencjackich", label: "Tematy prac licencjackich" },
+    { href: "/blog/kategoria/tematy-prac-magisterskich", label: "Tematy prac magisterskich" },
+  ],
   kierunki: [
+    { href: "/kierunki", label: "Wszystkie kierunki" },
     { href: "/blog/kategoria/pisanie-prac-z-pedagogiki", label: "Pedagogika" },
-    {
-      href: "/blog/kategoria/pisanie-prac-z-psychologii",
-      label: "Psychologia",
-    },
+    { href: "/blog/kategoria/pisanie-prac-z-psychologii", label: "Psychologia" },
     { href: "/blog/kategoria/pisanie-prac-z-prawa", label: "Prawo" },
-    {
-      href: "/blog/kategoria/pisanie-prac-z-zarzadzania",
-      label: "Zarządzanie",
-    },
+    { href: "/blog/kategoria/pisanie-prac-z-zarzadzania", label: "Zarządzanie" },
   ],
   informacje: [
     { href: "/kontakt", label: "Kontakt" },
@@ -30,7 +29,7 @@ const footerLinks = {
 
 <footer class="bg-gray-900 text-gray-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
       <!-- Logo & Description -->
       <div class="lg:col-span-2">
         <a href="/" class="flex items-center gap-2 mb-4">
@@ -83,6 +82,25 @@ const footerLinks = {
         <ul class="space-y-2">
           {
             footerLinks.poradniki.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Tematy prac - NOWA SEKCJA -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Tematy prac</h3>
+        <ul class="space-y-2">
+          {
+            footerLinks.tematy.map((link) => (
               <li>
                 <a
                   href={link.href}

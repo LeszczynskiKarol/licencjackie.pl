@@ -13,11 +13,42 @@ interface Props {
   posts: CollectionEntry<"blog">[];
 }
 
+// Funkcja do usuwania polskich znaków i tworzenia slug
+function slugify(text: string): string {
+  const polishChars: Record<string, string> = {
+    'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
+    'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z',
+    'Ą': 'a', 'Ć': 'c', 'Ę': 'e', 'Ł': 'l', 'Ń': 'n',
+    'Ó': 'o', 'Ś': 's', 'Ź': 'z', 'Ż': 'z'
+  };
+  
+  return text
+    .toLowerCase()
+    .split('')
+    .map(char => polishChars[char] || char)
+    .join('')
+    .replace(/\s+/g, '-');
+}
+
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
 
-
-
+  // Funkcja slugify musi być też tutaj (wewnątrz getStaticPaths)
+  function slugify(text: string): string {
+    const polishChars: Record<string, string> = {
+      'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
+      'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z',
+      'Ą': 'a', 'Ć': 'c', 'Ę': 'e', 'Ł': 'l', 'Ń': 'n',
+      'Ó': 'o', 'Ś': 's', 'Ź': 'z', 'Ż': 'z'
+    };
+    
+    return text
+      .toLowerCase()
+      .split('')
+      .map(char => polishChars[char] || char)
+      .join('')
+      .replace(/\s+/g, '-');
+  }
 
   // WSZYSTKIE KATEGORIE - musi być WEWNĄTRZ getStaticPaths
   const ALL_CATEGORIES = [
@@ -48,7 +79,7 @@ export async function getStaticPaths() {
   ];
 
   return ALL_CATEGORIES.map((category) => ({
-    params: { category: category.toLowerCase().replace(/\s+/g, "-") },
+    params: { category: slugify(category) },
     props: {
       categoryName: category,
       posts: posts
@@ -146,10 +177,10 @@ const getPageTitle = (cat: string) => {
           Kategoria
         </span>
         <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-  {categoryName.startsWith("Pisanie prac z") 
-    ? `Pisanie prac dyplomowych z ${categoryName.replace("Pisanie prac z ", "")}`
-    : categoryName}
-</h1>
+          {categoryName.startsWith("Pisanie prac z") 
+            ? `Pisanie prac dyplomowych z ${categoryName.replace("Pisanie prac z ", "")}`
+            : categoryName}
+        </h1>
         <p class="text-lg text-gray-600 max-w-2xl">
           {
             categoryDescriptions[categoryName] ||

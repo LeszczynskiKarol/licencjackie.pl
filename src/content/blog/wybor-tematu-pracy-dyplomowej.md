@@ -5,7 +5,7 @@ publishDate: 2025-11-27
 author: "Redakcja Licencjackie.pl"
 category: "Poradniki"
 tags: ["temat pracy", "praca dyplomowa"]
-image: "/blog/wstep-wybor-tematu-pracy-dyplomowej.jpg"
+image: "/blog/wybor-tematu-pracy-dyplomowej.jpg"
 imageAlt: "Wybór tematu pracy dyplomowej"
 featured: false
 draft: false

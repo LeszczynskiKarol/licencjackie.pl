@@ -4,7 +4,11 @@ const navLinks = [
   { href: "/", label: "Strona główna" },
   { href: "/blog", label: "Poradniki" },  
   { href: "/kierunki", label: "Kierunki" },  
-  { href: "/kontakt", label: "Kontakt" },
+];
+
+const tematyLinks = [
+  { href: "/blog/kategoria/tematy-prac-licencjackich", label: "Tematy prac licencjackich", icon: "🎓" },
+  { href: "/blog/kategoria/tematy-prac-magisterskich", label: "Tematy prac magisterskich", icon: "📚" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -33,7 +37,7 @@ const currentPath = Astro.url.pathname;
       </a>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center gap-8">
+      <div class="hidden md:flex items-center gap-6">
         {
           navLinks.map((link) => (
             <a
@@ -49,6 +53,37 @@ const currentPath = Astro.url.pathname;
             </a>
           ))
         }
+        
+        <!-- Tematy prac - Dropdown -->
+        <div class="relative group">
+          <button 
+            class={`flex items-center gap-1 text-sm font-medium transition-colors ${
+              currentPath.includes('tematy-prac') 
+                ? "text-primary-600" 
+                : "text-gray-600 hover:text-gray-900"
+            }`}
+          >
+            Tematy prac
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <!-- Dropdown menu -->
+          <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0">
+            <div class="p-2">
+              {tematyLinks.map((item) => (
+                <a
+                  href={item.href}
+                  class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary-50 transition-colors"
+                >
+                  <span class="text-xl">{item.icon}</span>
+                  <span class="text-sm font-medium text-gray-700">{item.label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- CTA Button -->
@@ -102,6 +137,27 @@ const currentPath = Astro.url.pathname;
             </a>
           ))
         }
+        
+        <!-- Mobile: Tematy prac -->
+        <div class="px-3 py-2">
+          <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Tematy prac</span>
+        </div>
+        {
+          tematyLinks.map((item) => (
+            <a
+              href={item.href}
+              class={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                currentPath === item.href
+                  ? "bg-primary-50 text-primary-600"
+                  : "text-gray-600 hover:bg-gray-50"
+              }`}
+            >
+              <span>{item.icon}</span>
+              <span>{item.label}</span>
+            </a>
+          ))
+        }
+        
         <a
           href="https://smart-edu.ai"
           target="_blank"
