@@ -2,7 +2,7 @@ import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://licencjackie.pl",
+  site: "https://www.licencjackie.pl",
   integrations: [tailwind()],
   output: "static",
 

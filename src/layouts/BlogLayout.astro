@@ -46,7 +46,7 @@ const articleSchema = {
   "@type": "Article",
   headline: title,
   description: description,
-  image: image ? `https://licencjackie.pl${image}` : undefined,
+  image: image ? `https://www.licencjackie.pl${image}` : undefined,
   author: {
     "@type": "Person",
     name: author,
@@ -56,14 +56,14 @@ const articleSchema = {
     name: "Licencjackie.pl",
     logo: {
       "@type": "ImageObject",
-      url: "https://licencjackie.pl/logo.png",
+      url: "https://www.licencjackie.pl/logo.png",
     },
   },
   datePublished: publishDate.toISOString(),
   dateModified: (updateDate || publishDate).toISOString(),
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `https://licencjackie.pl/blog/${post.slug}`,
+    "@id": `https://www.licencjackie.pl/blog/${post.slug}`,
   },
 };
 
@@ -76,19 +76,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Strona główna",
-      item: "https://licencjackie.pl",
+      item: "https://www.licencjackie.pl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: "https://licencjackie.pl/blog",
+      item: "https://www.licencjackie.pl/blog",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: title,
-      item: `https://licencjackie.pl/blog/${post.slug}`,
+      item: `https://www.licencjackie.pl/blog/${post.slug}`,
     },
   ],
 };
@@ -98,7 +98,7 @@ const breadcrumbSchema = {
   title={`${title} | Licencjackie.pl`}
   description={description}
   image={image}
-  canonical={`https://licencjackie.pl/blog/${post.slug}`}
+  canonical={`https://www.licencjackie.pl/blog/${post.slug}`}
 >
   <script
     type="application/ld+json"
@@ -232,7 +232,7 @@ const breadcrumbSchema = {
           <div class="flex items-center gap-3">
             <span class="text-sm text-gray-500">Udostępnij:</span>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://licencjackie.pl/blog/${post.slug}`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://www.licencjackie.pl/blog/${post.slug}`}
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-600 transition-colors"
@@ -245,7 +245,7 @@ const breadcrumbSchema = {
               >
             </a>
             <a
-              href={`https://twitter.com/intent/tweet?url=https://licencjackie.pl/blog/${post.slug}&text=${encodeURIComponent(title)}`}
+              href={`https://twitter.com/intent/tweet?url=https://www.licencjackie.pl/blog/${post.slug}&text=${encodeURIComponent(title)}`}
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-sky-100 text-gray-600 hover:text-sky-600 transition-colors"
@@ -258,7 +258,7 @@ const breadcrumbSchema = {
               >
             </a>
             <a
-              href={`https://www.linkedin.com/shareArticle?mini=true&url=https://licencjackie.pl/blog/${post.slug}&title=${encodeURIComponent(title)}`}
+              href={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.licencjackie.pl/blog/${post.slug}&title=${encodeURIComponent(title)}`}
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-700 transition-colors"
