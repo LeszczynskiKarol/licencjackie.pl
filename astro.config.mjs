@@ -1,9 +1,17 @@
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://www.licencjackie.pl",
-  integrations: [tailwind()],
+  integrations: [
+    tailwind(),
+    sitemap({
+      filter: (page) =>
+        !page.includes("/category/") &&
+        !page.includes("/pisanie-prac-magisterskich-z-"),
+    }),
+  ],
   output: "static",
 
   redirects: {
