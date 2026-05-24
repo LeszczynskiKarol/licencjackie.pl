@@ -25,13 +25,33 @@ const formatDate = (date: Date) => {
 };
 
 // Schema.org
-const schema = {
+const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://www.licencjackie.pl/#website",
   name: "Licencjackie.pl",
+  alternateName: "Licencjackie",
   description:
     "Wszystko o pisaniu prac dyplomowych. Poradniki, tematy prac, metodologia badań.",
-  url: "https://www.licencjackie.pl",
+  url: "https://www.licencjackie.pl/",
+  inLanguage: "pl-PL",
+  publisher: { "@id": "https://www.licencjackie.pl/#organization" },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.licencjackie.pl/#organization",
+  name: "Licencjackie.pl",
+  url: "https://www.licencjackie.pl/",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.licencjackie.pl/logo.png",
+    width: 512,
+    height: 512,
+  },
+  description:
+    "Portal edukacyjny dla studentów piszących prace licencjackie i magisterskie. Poradniki, tematy prac dyplomowych, metodologia badań naukowych.",
 };
 
 // Pełna lista kierunków (identyczna jak na /kierunki)
@@ -63,7 +83,12 @@ const kierunki = [
 >
   <script
     type="application/ld+json"
-    set:html={JSON.stringify(schema)}
+    set:html={JSON.stringify(websiteSchema)}
+    slot="head"
+  />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(organizationSchema)}
     slot="head"
   />
 
@@ -99,7 +124,7 @@ const kierunki = [
             <a
               href="https://smart-edu.ai"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               class="w-full sm:w-auto px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-primary-500 hover:text-primary-600 transition-colors"
             >
               Napisz pracę z AI →
