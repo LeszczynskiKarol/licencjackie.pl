@@ -10,11 +10,19 @@ FUNCTION_NAME="licencjackie-trailing-slash-301"
 DISTRIBUTION_ID="E35P5HJR5VHDCE"
 COMMENT="301 redirect for trailing slash (replaces S3 website 302)"
 HERE="$(cd "$(dirname "$0")" && pwd)"
-CODE_FILE="${HERE}/trailing-slash-301.js"
-EVENT_FILE="${HERE}/test-event.json"
+# AWS CLI na Windows wymaga ścieżek typu D:/... a nie /d/... (MINGW/Git Bash)
+if command -v cygpath >/dev/null 2>&1; then
+  HERE_FOR_AWS="$(cygpath -m "$HERE")"
+else
+  HERE_FOR_AWS="$HERE"
+fi
+CODE_FILE="${HERE_FOR_AWS}/trailing-slash-301.js"
+EVENT_FILE="${HERE_FOR_AWS}/test-event.json"
+# Plik tworzymy zwykłym path (POSIX OK)
+EVENT_FILE_LOCAL="${HERE}/test-event.json"
 
 # Plik z eventem testowym (CF Functions wymaga fileb://)
-cat > "$EVENT_FILE" <<'JSON'
+cat > "$EVENT_FILE_LOCAL" <<'JSON'
 {
   "version": "1.0",
   "context": {
@@ -68,7 +76,7 @@ set -e
 if [ $TEST_RC -ne 0 ]; then
   echo "❌ test-function CLI error:"
   echo "$TEST_JSON"
-  rm -f "$EVENT_FILE"
+  rm -f "$EVENT_FILE_LOCAL"
   exit 1
 fi
 
@@ -79,7 +87,7 @@ if [ -n "$ERRORS" ]; then
   echo "❌ Function runtime error: $ERRORS"
   echo "   Logs:"
   echo "$TEST_JSON" | jq -r '.TestResult.FunctionExecutionLogs[]?' | sed 's/^/     /'
-  rm -f "$EVENT_FILE"
+  rm -f "$EVENT_FILE_LOCAL"
   exit 1
 fi
 
@@ -88,12 +96,12 @@ echo "   Output: $(echo "$FUNC_OUT" | head -c 200)..."
 if ! echo "$FUNC_OUT" | jq -e '.response.statusCode == 301' >/dev/null 2>&1; then
   echo "❌ Test nie zwrócił 301 dla /blog/test-page. Pełne logi:"
   echo "$TEST_JSON" | jq -r '.TestResult.FunctionExecutionLogs[]?' | sed 's/^/     /'
-  rm -f "$EVENT_FILE"
+  rm -f "$EVENT_FILE_LOCAL"
   exit 1
 fi
 echo "   ✓ Test PASS (301 → $(echo "$FUNC_OUT" | jq -r '.response.headers.location.value'))"
 
-rm -f "$EVENT_FILE"
+rm -f "$EVENT_FILE_LOCAL"
 
 echo "🚀 [3/4] Publikacja LIVE..."
 aws cloudfront publish-function --name "$FUNCTION_NAME" --if-match "$ETAG" >/dev/null
@@ -103,6 +111,11 @@ echo "   ARN: ${FUNCTION_ARN}"
 echo "🔗 [4/4] Asocjacja z dystrybucją ${DISTRIBUTION_ID} (default behavior, viewer-request)..."
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
+if command -v cygpath >/dev/null 2>&1; then
+  TMP_FOR_AWS="$(cygpath -m "$TMP")"
+else
+  TMP_FOR_AWS="$TMP"
+fi
 
 aws cloudfront get-distribution-config --id "$DISTRIBUTION_ID" > "$TMP/full.json"
 ETAG_DIST=$(jq -r '.ETag' "$TMP/full.json")
@@ -116,7 +129,7 @@ jq '.DistributionConfig
 aws cloudfront update-distribution \
   --id "$DISTRIBUTION_ID" \
   --if-match "$ETAG_DIST" \
-  --distribution-config "file://$TMP/config.json" >/dev/null
+  --distribution-config "file://${TMP_FOR_AWS}/config.json" >/dev/null
 
 echo ""
 echo "✅ Gotowe. Dystrybucja: InProgress → Deployed (~3-8 min)."
