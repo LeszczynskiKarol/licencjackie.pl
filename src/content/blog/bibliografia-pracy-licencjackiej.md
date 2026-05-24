@@ -1,6 +1,6 @@
 ---
-title: "Bibliografia w pracy licencjackiej - jak napisać?"
-description: "Jak stworzyć bibliografię do pracy licencjackiej? Kompletny przewodnik po pisaniu bibliografii do pracy licencjackiej."
+title: "Bibliografia w pracy licencjackiej — wzór, przykłady, APA i Harvard"
+description: "Jak zrobić bibliografię w pracy licencjackiej? Gotowe wzory cytowań książek, artykułów i źródeł online + style APA i Harvard."
 publishDate: 2025-12-11
 author: "Redakcja Licencjackie.pl"
 category: "Poradniki"

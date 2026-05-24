@@ -1,6 +1,6 @@
 ---
-title: "Podsumowanie pracy licencjackiej - jak napisać?"
-description: "Na czym polega podsumowanie pracy licencjackiej? Jak je napisać?? Sprawdź krok kroku, jak przebrnąć przez cały proces"
+title: "Podsumowanie pracy licencjackiej — wzór i przykłady"
+description: "Jak napisać podsumowanie pracy licencjackiej? Gotowy wzór, przykłady zakończenia oraz najczęstsze błędy, których lepiej uniknąć."
 publishDate: 2025-12-04
 author: "Redakcja Licencjackie.pl"
 category: "Struktura pracy"

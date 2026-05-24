@@ -1,6 +1,6 @@
 ---
-title: "Przypisy w pracy magisterskiej - style i zasady"
-description: "Na czym polega tworzenie przypisów do pracy magisterskiej? Jak je napisać? Sprawdź krok kroku, jak przebrnąć przez cały proces"
+title: "Przypisy w pracy magisterskiej — wzory APA, Harvard, Chicago"
+description: "Jak poprawnie zrobić przypisy w pracy magisterskiej? Wzory APA, Harvard, Chicago + przykłady cytowań książek, artykułów i źródeł online."
 publishDate: 2025-12-03
 author: "Redakcja Licencjackie.pl"
 category: "Poradniki"

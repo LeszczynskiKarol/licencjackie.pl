@@ -1,6 +1,6 @@
 ---
-title: "Konspekt pracy dyplomowej - czym jest? Jak napisać?"
-description: "Jak stworzyć konspekt do pracy dyplomowej? Kompletny przewodnik po pisaniu konspektu do pracy dyplomowej."
+title: "Konspekt pracy dyplomowej — wzór, przykład i jak napisać"
+description: "Gotowy wzór konspektu pracy dyplomowej (licencjackiej i magisterskiej): co zawrzeć, jak go napisać krok po kroku + przykłady do pobrania."
 publishDate: 2025-12-09
 author: "Redakcja Licencjackie.pl"
 category: "Struktura pracy"
