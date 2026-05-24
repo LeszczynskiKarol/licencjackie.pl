@@ -2,13 +2,13 @@
 // src/components/Navbar.astro
 const navLinks = [
   { href: "/", label: "Strona główna" },
-  { href: "/blog", label: "Poradniki" },  
-  { href: "/kierunki", label: "Kierunki" },  
+  { href: "/blog/", label: "Poradniki" },
+  { href: "/kierunki/", label: "Kierunki" },
 ];
 
 const tematyLinks = [
-  { href: "/blog/kategoria/tematy-prac-licencjackich", label: "Tematy prac licencjackich", icon: "🎓" },
-  { href: "/blog/kategoria/tematy-prac-magisterskich", label: "Tematy prac magisterskich", icon: "📚" },
+  { href: "/blog/kategoria/tematy-prac-licencjackich/", label: "Tematy prac licencjackich", icon: "🎓" },
+  { href: "/blog/kategoria/tematy-prac-magisterskich/", label: "Tematy prac magisterskich", icon: "📚" },
 ];
 
 const currentPath = Astro.url.pathname;

@@ -5,6 +5,7 @@ import Footer from "../../components/Footer.astro";
 import Navbar from "../../components/Navbar.astro";
 import SmartEduCTA from "../../components/SmartEduCTA.astro";
 import Layout from "../../layouts/Layout.astro";
+import { slugify } from "../../utils/slugify";
 
 const allPosts = await getCollection("blog", ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
@@ -73,7 +74,7 @@ const getReadingTime = (content: string) => {
       .filter(([category]) => !category.startsWith("Pisanie prac z"))
       .map(([category, count]) => (
         
-         <a href={`/blog/kategoria/${category.toLowerCase().replace(/\s+/g, "-")}`}
+         <a href={`/blog/kategoria/${slugify(category)}/`}
           class="px-4 py-2 text-sm font-medium bg-gray-100 border border-gray-200 text-gray-700 rounded-full hover:border-primary-500 hover:text-primary-600 transition-colors"
         >
           {category} ({count})
@@ -81,7 +82,7 @@ const getReadingTime = (content: string) => {
       ))
   }
   
-    <a href="/kierunki"
+    <a href="/kierunki/"
     class="px-4 py-2 text-sm font-medium bg-accent/20 border border-accent text-accent rounded-full hover:bg-accent hover:text-white transition-colors"
   >
     Kierunki studiów →
@@ -98,7 +99,7 @@ const getReadingTime = (content: string) => {
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {posts.map((post) => (
                 <a
-                  href={`/blog/${post.slug}`}
+                  href={`/blog/${post.slug}/`}
                   class="group block bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-primary-500 hover:shadow-lg transition-all"
                 >
                   {post.data.image ? (

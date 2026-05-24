@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import SmartEduCTA from "../components/SmartEduCTA.astro";
 import Layout from "../layouts/Layout.astro";
+import { slugify } from "../utils/slugify";
 
 // Pobierz ostatnie posty
 const allPosts = await getCollection("blog", ({ data }) => {
@@ -57,7 +58,7 @@ const kierunki = [
 ---
 
 <Layout
-  title="Pisanie pracy licencjackiej i magisterskiej - jak napisać pracę dyplomową? || Licencjackie.pl"
+  title="Pisanie pracy licencjackiej i magisterskiej - jak napisać pracę dyplomową? | Licencjackie.pl"
   description="Poradniki, tematy prac, metodologia badań. Profesjonalna pomoc w pisaniu prac licencjackich i magisterskich."
 >
   <script
@@ -127,7 +128,7 @@ const kierunki = [
 
         <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <a
-            href="/blog/kategoria/tematy-prac-licencjackich"
+            href="/blog/kategoria/tematy-prac-licencjackich/"
             class="group block bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 rounded-2xl p-8 hover:border-primary-500 hover:shadow-xl transition-all"
           >
             <div class="text-5xl mb-4">🎓</div>
@@ -143,7 +144,7 @@ const kierunki = [
           </a>
 
           <a
-            href="/blog/kategoria/tematy-prac-magisterskich"
+            href="/blog/kategoria/tematy-prac-magisterskich/"
             class="group block bg-gradient-to-br from-accent/10 to-white border-2 border-accent/30 rounded-2xl p-8 hover:border-accent hover:shadow-xl transition-all"
           >
             <div class="text-5xl mb-4">📚</div>
@@ -175,7 +176,7 @@ const kierunki = [
           {
             kierunki.map((kierunek) => (
               <a
-                href={`/blog/kategoria/${kierunek.slug}`}
+                href={`/blog/kategoria/${kierunek.slug}/`}
                 class="p-4 bg-white border border-gray-200 rounded-xl hover:border-primary-500 hover:shadow-lg transition-all text-center group"
               >
                 <span class="text-2xl mb-2 block">{kierunek.icon}</span>
@@ -220,7 +221,7 @@ const kierunki = [
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {recentPosts.map((post) => (
                 <a
-                  href={`/blog/${post.slug}`}
+                  href={`/blog/${post.slug}/`}
                   class="group block bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-primary-500 hover:shadow-lg transition-all"
                 >
                   {post.data.image ? (

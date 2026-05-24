@@ -5,8 +5,18 @@ export default defineConfig({
   site: "https://www.licencjackie.pl",
   integrations: [tailwind()],
   output: "static",
+  trailingSlash: "always",
+  build: { format: "directory" },
 
   redirects: {
+    // === 301 z literówek w slugach (utrwalone w GSC) ===
+    "/blog/finanse-i-rachonkowosc-tematy-mgr/":
+      "/blog/finanse-i-rachunkowosc-tematy-mgr/",
+    "/blog/socjlogia-tematy-mgr/": "/blog/socjologia-tematy-mgr/",
+    "/blog/pisanie-prac-licencjackich-z-zarządzania/":
+      "/blog/pisanie-prac-licencjackich-z-zarzadzania/",
+
+
     // === ARTYKUŁY (66) ===
     "/ankieta-w-pracy-magisterskiej/": "/blog/ankieta-w-pracy-magisterskiej",
     "/badania-w-pracy-magisterskiej/": "/blog/badania-w-pracy-magisterskiej",

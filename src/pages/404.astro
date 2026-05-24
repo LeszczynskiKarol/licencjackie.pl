@@ -1,0 +1,98 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Strona nie istnieje (404) | Licencjackie.pl"
+  description="Strona, której szukasz, nie istnieje lub została przeniesiona. Przeglądaj poradniki o pisaniu prac dyplomowych."
+>
+  <Fragment slot="head">
+    <meta name="robots" content="noindex, follow" />
+  </Fragment>
+
+  <Navbar />
+
+  <main class="pt-32 pb-20 min-h-[70vh] flex items-center">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="mb-8">
+        <span class="text-8xl font-bold text-gradient">404</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        Ta strona nie istnieje
+      </h1>
+
+      <p class="text-lg text-gray-600 mb-10">
+        Strona, której szukasz, mogła zostać przeniesiona lub usunięta.
+        Sprawdź poniższe linki — być może znajdziesz to, czego szukasz.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <a
+          href="/"
+          class="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-primary-600 to-accent text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
+        >
+          ← Strona główna
+        </a>
+        <a
+          href="/blog/"
+          class="w-full sm:w-auto px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-primary-500 hover:text-primary-600 transition-colors"
+        >
+          Przeglądaj poradniki
+        </a>
+      </div>
+
+      <div class="bg-gray-50 rounded-2xl p-6 sm:p-8 text-left">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">
+          Popularne sekcje
+        </h2>
+        <ul class="grid sm:grid-cols-2 gap-3">
+          <li>
+            <a href="/blog/kategoria/poradniki/" class="text-primary-600 hover:underline">
+              → Wszystkie poradniki
+            </a>
+          </li>
+          <li>
+            <a href="/blog/kategoria/struktura-pracy/" class="text-primary-600 hover:underline">
+              → Struktura pracy
+            </a>
+          </li>
+          <li>
+            <a href="/blog/kategoria/metodologia/" class="text-primary-600 hover:underline">
+              → Metodologia badań
+            </a>
+          </li>
+          <li>
+            <a href="/blog/kategoria/obrona-pracy/" class="text-primary-600 hover:underline">
+              → Obrona pracy
+            </a>
+          </li>
+          <li>
+            <a href="/blog/kategoria/tematy-prac-licencjackich/" class="text-primary-600 hover:underline">
+              → Tematy prac licencjackich
+            </a>
+          </li>
+          <li>
+            <a href="/blog/kategoria/tematy-prac-magisterskich/" class="text-primary-600 hover:underline">
+              → Tematy prac magisterskich
+            </a>
+          </li>
+          <li>
+            <a href="/kierunki/" class="text-primary-600 hover:underline">
+              → Wszystkie kierunki
+            </a>
+          </li>
+          <li>
+            <a href="/kontakt/" class="text-primary-600 hover:underline">
+              → Kontakt
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

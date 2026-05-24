@@ -5,6 +5,7 @@ import Footer from "../../../components/Footer.astro";
 import Navbar from "../../../components/Navbar.astro";
 import SmartEduCTA from "../../../components/SmartEduCTA.astro";
 import Layout from "../../../layouts/Layout.astro";
+import { slugify } from "../../../utils/slugify";
 
 type BlogCategory = CollectionEntry<"blog">["data"]["category"];
 
@@ -13,42 +14,8 @@ interface Props {
   posts: CollectionEntry<"blog">[];
 }
 
-// Funkcja do usuwania polskich znaków i tworzenia slug
-function slugify(text: string): string {
-  const polishChars: Record<string, string> = {
-    'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
-    'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z',
-    'Ą': 'a', 'Ć': 'c', 'Ę': 'e', 'Ł': 'l', 'Ń': 'n',
-    'Ó': 'o', 'Ś': 's', 'Ź': 'z', 'Ż': 'z'
-  };
-  
-  return text
-    .toLowerCase()
-    .split('')
-    .map(char => polishChars[char] || char)
-    .join('')
-    .replace(/\s+/g, '-');
-}
-
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-
-  // Funkcja slugify musi być też tutaj (wewnątrz getStaticPaths)
-  function slugify(text: string): string {
-    const polishChars: Record<string, string> = {
-      'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
-      'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z',
-      'Ą': 'a', 'Ć': 'c', 'Ę': 'e', 'Ł': 'l', 'Ń': 'n',
-      'Ó': 'o', 'Ś': 's', 'Ź': 'z', 'Ż': 'z'
-    };
-    
-    return text
-      .toLowerCase()
-      .split('')
-      .map(char => polishChars[char] || char)
-      .join('')
-      .replace(/\s+/g, '-');
-  }
 
   // WSZYSTKIE KATEGORIE - musi być WEWNĄTRZ getStaticPaths
   const ALL_CATEGORIES = [
@@ -164,7 +131,7 @@ const getPageTitle = (cat: string) => {
         <ol class="flex items-center gap-2 text-sm text-gray-500">
           <li><a href="/" class="hover:text-primary-600">Strona główna</a></li>
           <li>/</li>
-          <li><a href="/blog" class="hover:text-primary-600">Blog</a></li>
+          <li><a href="/blog/" class="hover:text-primary-600">Blog</a></li>
           <li>/</li>
           <li class="text-gray-900">{categoryName}</li>
         </ol>
@@ -214,7 +181,7 @@ const getPageTitle = (cat: string) => {
               Wkrótce dodamy treści dotyczące: {categoryName}
             </p>
             <a
-              href="/blog"
+              href="/blog/"
               class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-colors"
             >
               ← Zobacz dostępne artykuły
@@ -228,7 +195,7 @@ const getPageTitle = (cat: string) => {
           }`}>
             {posts.map((post) => (
               <a
-                href={`/blog/${post.slug}`}
+                href={`/blog/${post.slug}/`}
                 class="group block bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-primary-500 hover:shadow-lg transition-all"
               >
                 {post.data.image ? (
@@ -272,7 +239,7 @@ const getPageTitle = (cat: string) => {
 
       <div class="mt-12 text-center">
         <a
-          href="/blog"
+          href="/blog/"
           class="inline-flex items-center gap-2 text-primary-600 hover:underline"
         >
           ← Wszystkie artykuły
