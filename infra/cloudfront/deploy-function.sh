@@ -3,6 +3,8 @@
 #
 # Idempotent: tworzy/aktualizuje funkcję, testuje, publikuje LIVE,
 # asocjuje z viewer-request na default behavior dystrybucji.
+#
+# Wymagania: aws cli, node (jq NIE jest potrzebne).
 
 set -euo pipefail
 
@@ -17,11 +19,30 @@ else
   HERE_FOR_AWS="$HERE"
 fi
 CODE_FILE="${HERE_FOR_AWS}/trailing-slash-301.js"
-EVENT_FILE="${HERE_FOR_AWS}/test-event.json"
-# Plik tworzymy zwykłym path (POSIX OK)
 EVENT_FILE_LOCAL="${HERE}/test-event.json"
+EVENT_FILE="${HERE_FOR_AWS}/test-event.json"
 
-# Plik z eventem testowym (CF Functions wymaga fileb://)
+# Helper: wyciąga pole z JSON-a stdin (bez jq)
+# Użycie: echo "$JSON" | json_get "path.to.field"
+json_get() {
+  node -e "
+    let data = '';
+    process.stdin.on('data', c => data += c);
+    process.stdin.on('end', () => {
+      try {
+        const obj = JSON.parse(data);
+        const path = process.argv[1].split('.');
+        let v = obj;
+        for (const k of path) { v = v?.[k]; }
+        if (v === undefined || v === null) { process.exit(0); }
+        if (typeof v === 'object') console.log(JSON.stringify(v));
+        else console.log(v);
+      } catch(e) { console.error('json_get error:', e.message); process.exit(1); }
+    });
+  " "$1"
+}
+
+# Plik z eventem testowym
 cat > "$EVENT_FILE_LOCAL" <<'JSON'
 {
   "version": "1.0",
@@ -80,26 +101,41 @@ if [ $TEST_RC -ne 0 ]; then
   exit 1
 fi
 
-# Wypisz pełny wynik dla diagnozy
-echo "   Compute usage: $(echo "$TEST_JSON" | jq -r '.TestResult.ComputeUtilization // "n/a"')%"
-ERRORS=$(echo "$TEST_JSON" | jq -r '.TestResult.FunctionErrorMessage // ""')
-if [ -n "$ERRORS" ]; then
+# Wypisz wynik
+COMPUTE=$(echo "$TEST_JSON" | json_get "TestResult.ComputeUtilization")
+echo "   Compute usage: ${COMPUTE:-n/a}%"
+
+ERRORS=$(echo "$TEST_JSON" | json_get "TestResult.FunctionErrorMessage")
+if [ -n "${ERRORS:-}" ]; then
   echo "❌ Function runtime error: $ERRORS"
   echo "   Logs:"
-  echo "$TEST_JSON" | jq -r '.TestResult.FunctionExecutionLogs[]?' | sed 's/^/     /'
+  echo "$TEST_JSON" | node -e "
+    let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>{
+      try { const o = JSON.parse(d); (o.TestResult?.FunctionExecutionLogs||[]).forEach(l=>console.log('     '+l)); } catch(e){}
+    });
+  "
   rm -f "$EVENT_FILE_LOCAL"
   exit 1
 fi
 
-FUNC_OUT=$(echo "$TEST_JSON" | jq -r '.TestResult.FunctionOutput')
+FUNC_OUT=$(echo "$TEST_JSON" | json_get "TestResult.FunctionOutput")
 echo "   Output: $(echo "$FUNC_OUT" | head -c 200)..."
-if ! echo "$FUNC_OUT" | jq -e '.response.statusCode == 301' >/dev/null 2>&1; then
-  echo "❌ Test nie zwrócił 301 dla /blog/test-page. Pełne logi:"
-  echo "$TEST_JSON" | jq -r '.TestResult.FunctionExecutionLogs[]?' | sed 's/^/     /'
+
+# Walidacja: czy zwrócił 301?
+STATUS=$(echo "$FUNC_OUT" | json_get "response.statusCode")
+if [ "${STATUS:-}" != "301" ]; then
+  echo "❌ Test nie zwrócił 301 dla /blog/test-page (zwrócił: ${STATUS:-brak})."
+  echo "$TEST_JSON" | node -e "
+    let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>{
+      try { const o = JSON.parse(d); (o.TestResult?.FunctionExecutionLogs||[]).forEach(l=>console.log('     '+l)); } catch(e){}
+    });
+  "
   rm -f "$EVENT_FILE_LOCAL"
   exit 1
 fi
-echo "   ✓ Test PASS (301 → $(echo "$FUNC_OUT" | jq -r '.response.headers.location.value'))"
+
+LOCATION=$(echo "$FUNC_OUT" | json_get "response.headers.location.value")
+echo "   ✓ Test PASS (301 → ${LOCATION})"
 
 rm -f "$EVENT_FILE_LOCAL"
 
@@ -118,13 +154,19 @@ else
 fi
 
 aws cloudfront get-distribution-config --id "$DISTRIBUTION_ID" > "$TMP/full.json"
-ETAG_DIST=$(jq -r '.ETag' "$TMP/full.json")
+ETAG_DIST=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$TMP_FOR_AWS/full.json','utf8')).ETag)")
 
-jq '.DistributionConfig
-    | .DefaultCacheBehavior.FunctionAssociations = {
-        Quantity: 1,
-        Items: [{ FunctionARN: "'"$FUNCTION_ARN"'", EventType: "viewer-request" }]
-      }' "$TMP/full.json" > "$TMP/config.json"
+# Wstrzykuje FunctionAssociations bez nadpisywania reszty configa
+node -e "
+  const fs = require('fs');
+  const full = JSON.parse(fs.readFileSync('$TMP_FOR_AWS/full.json','utf8'));
+  const cfg = full.DistributionConfig;
+  cfg.DefaultCacheBehavior.FunctionAssociations = {
+    Quantity: 1,
+    Items: [{ FunctionARN: '$FUNCTION_ARN', EventType: 'viewer-request' }]
+  };
+  fs.writeFileSync('$TMP_FOR_AWS/config.json', JSON.stringify(cfg));
+"
 
 aws cloudfront update-distribution \
   --id "$DISTRIBUTION_ID" \
@@ -133,6 +175,6 @@ aws cloudfront update-distribution \
 
 echo ""
 echo "✅ Gotowe. Dystrybucja: InProgress → Deployed (~3-8 min)."
-echo "   Weryfikacja:"
+echo "   Weryfikacja po deploy:"
 echo "   curl -sI https://www.licencjackie.pl/blog/struktura-pracy-licencjackiej | head -3"
 echo "   (oczekiwane: HTTP/1.1 301, location: /blog/struktura-pracy-licencjackiej/)"
