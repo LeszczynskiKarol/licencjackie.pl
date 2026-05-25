@@ -6,6 +6,7 @@ import Navbar from "../../../components/Navbar.astro";
 import SmartEduCTA from "../../../components/SmartEduCTA.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { slugify } from "../../../utils/slugify";
+import { categoryIntros } from "../../../data/category-intros";
 
 type BlogCategory = CollectionEntry<"blog">["data"]["category"];
 
@@ -215,6 +216,15 @@ const collectionSchema = {
           }
         </div>
       </header>
+
+      {
+        categoryIntros[categoryName] && (
+          <section
+            class="prose prose-lg max-w-3xl mx-auto mb-12 text-gray-700"
+            set:html={categoryIntros[categoryName]}
+          />
+        )
+      }
 
       <div class="mb-12">
         <SmartEduCTA variant="inline" />
