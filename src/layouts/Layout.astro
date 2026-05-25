@@ -7,6 +7,7 @@ interface Props {
   description?: string;
   image?: string;
   canonical?: string;
+  robots?: string;
 }
 
 const {
@@ -14,10 +15,12 @@ const {
   description = "Licencjackie.pl - Wszystko o pisaniu prac dyplomowych. Poradniki, tematy prac, metodologia badań i pomoc w pisaniu prac licencjackich i magisterskich.",
   image = "/og-default.jpg",
   canonical,
+  robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
 } = Astro.props;
 
 const siteUrl = "https://www.licencjackie.pl";
 const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}${image}`;
+const canonicalUrl = canonical || `${siteUrl}${Astro.url.pathname}`;
 ---
 
 <!doctype html>
@@ -26,16 +29,13 @@ const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}${image}`;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
+    <meta name="robots" content={robots} />
     <meta name="theme-color" content="#10b981" />
 
     <title>{title}</title>
 
     <!-- Canonical -->
-    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

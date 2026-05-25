@@ -7,11 +7,8 @@ import Layout from "../layouts/Layout.astro";
 <Layout
   title="Strona nie istnieje (404) | Licencjackie.pl"
   description="Strona, której szukasz, nie istnieje lub została przeniesiona. Przeglądaj poradniki o pisaniu prac dyplomowych."
+  robots="noindex, follow"
 >
-  <Fragment slot="head">
-    <meta name="robots" content="noindex, follow" />
-  </Fragment>
-
   <Navbar />
 
   <main class="pt-32 pb-20 min-h-[70vh] flex items-center">

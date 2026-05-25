@@ -489,9 +489,13 @@
     function init() {
       const consent = getConsent();
 
+      // Consent Mode v2: ZAWSZE ładuj GTM od razu — defaults (denied) są już
+      // ustawione powyżej. GTM/GA same respektują storage flags, a brak
+      // skryptu uniemożliwia pomiar denied-pingów i ścieżki "wejście→zgoda".
+      loadGoogleScripts(consent || { analytics: false, marketing: false });
+
       if (consent) {
         updateGoogleConsent(consent);
-        loadGoogleScripts(consent);
       } else {
         showBanner();
       }
