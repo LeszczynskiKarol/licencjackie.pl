@@ -25,6 +25,11 @@ fi
 npm run build
 # Sitemap-index.xml + sitemap-0.xml są generowane przez @astrojs/sitemap (z lastmod, priority, changefreq)
 
-aws s3 sync dist/ s3://${S3_BUCKET} --delete
+# Standardowy sync (większość plików)
+aws s3 sync dist/ s3://${S3_BUCKET} --delete --exclude "*.webp"
+
+# WebP osobno z poprawnym Content-Type (AWS CLI nie zna webp w default MIME map)
+aws s3 sync dist/ s3://${S3_BUCKET} --exclude "*" --include "*.webp" --content-type "image/webp"
+
 aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
 echo "✅ Deployed to https://www.licencjackie.pl"
