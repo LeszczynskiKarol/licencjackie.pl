@@ -29,3 +29,6 @@ pnpm-debug.log*
 
 # CF deploy script temp
 infra/cloudfront/test-event.json
+
+# image optimization backup (oryginalne JPG przed resize 1200x630)
+public/blog/.orig/

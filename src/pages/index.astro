@@ -251,12 +251,18 @@ const kierunki = [
                 >
                   {post.data.image ? (
                     <div class="aspect-video bg-gray-100 overflow-hidden">
-                      <img
-                        src={post.data.image}
-                        alt={post.data.imageAlt || post.data.title}
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                      />
+                      <picture>
+                        <source srcset={post.data.image.replace(/\.jpe?g$/i, ".webp")} type="image/webp" />
+                        <img
+                          src={post.data.image}
+                          alt={post.data.imageAlt || post.data.title}
+                          width="1200"
+                          height="630"
+                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </picture>
                     </div>
                   ) : (
                     <div class="aspect-video bg-gradient-to-br from-primary-100 to-accent/20 flex items-center justify-center">
