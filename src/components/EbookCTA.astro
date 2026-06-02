@@ -1,0 +1,63 @@
+---
+// src/components/EbookCTA.astro
+// Kontekstowy CTA do ebooków na praca-magisterska.pl/sklep (siostrzana domena zarobkowa).
+// Komplementarny do SmartEduCTA:
+//   SmartEduCTA -> smart-edu.ai  (wygeneruj pracę AI)
+//   EbookCTA    -> praca-magisterska.pl/sklep (napisz sam wg poradnika PDF)
+// Dobiera właściwy ebook po typie pracy danego wpisu (mgr 39 zł / lic 29 zł).
+interface Props {
+  workType?: "lic" | "mgr";
+  class?: string;
+}
+
+const { workType = "lic", class: className = "" } = Astro.props;
+
+const ebook =
+  workType === "mgr"
+    ? {
+        href: "https://www.praca-magisterska.pl/sklep/praca-magisterska-ebook/",
+        emoji: "📗",
+        name: "Jak napisać pracę magisterską",
+        price: "39 zł",
+        lead: "Piszesz pracę magisterską?",
+      }
+    : {
+        href: "/ebook/",
+        emoji: "📘",
+        name: "Jak napisać pracę licencjacką",
+        price: "29 zł",
+        lead: "Piszesz pracę licencjacką?",
+      };
+---
+
+<aside
+  class={`not-prose rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-indigo-50/40 p-6 sm:p-7 ${className}`}
+>
+  <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+    <div class="text-5xl flex-shrink-0" aria-hidden="true">{ebook.emoji}</div>
+    <div class="flex-1">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
+        Poradnik PDF
+      </p>
+      <h3 class="text-lg font-bold text-slate-900 mb-1">
+        {ebook.lead} Zrób to samodzielnie, krok po kroku
+      </h3>
+      <p class="text-sm text-slate-600">
+        Kompletny e‑book <a
+          href={ebook.href}
+          class="font-medium text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-600"
+          >„{ebook.name}"</a
+        > — 250 stron konkretów, szablony, checklisty i przykłady. Bez błądzenia po omacku.
+      </p>
+    </div>
+    <a
+      href={ebook.href}
+      class="flex-shrink-0 inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 font-bold text-white whitespace-nowrap transition-colors hover:bg-indigo-700"
+    >
+      Pobierz za {ebook.price}
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </a>
+  </div>
+</aside>

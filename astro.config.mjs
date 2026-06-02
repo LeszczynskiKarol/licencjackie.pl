@@ -10,6 +10,7 @@ export default defineConfig({
       changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date(),
+      filter: (page) => !/\/ebook\/(sukces|anulowano)\/?$/.test(page),
     }),
   ],
   output: "static",

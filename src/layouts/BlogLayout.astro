@@ -4,6 +4,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import SmartEduCTA from "../components/SmartEduCTA.astro";
+import EbookCTA from "../components/EbookCTA.astro";
 import Layout from "./Layout.astro";
 import { slugify } from "../utils/slugify";
 
@@ -49,6 +50,14 @@ const {
   imageAlt,
   showSmartEduCTA,
 } = post.data;
+
+// Dobór ebooka do typu pracy w danym wpisie (mgr -> ebook magisterski, inaczej licencjacki).
+const isMgr =
+  post.data.typ_pracy === "magisterska" ||
+  post.data.typ_pracy === "doktorska" ||
+  /magistersk/i.test(category) ||
+  /magistersk/i.test(title);
+const ebookWorkType = isMgr ? "mgr" : "lic";
 
 const formatDate = (date: Date) => {
   return new Intl.DateTimeFormat("pl-PL", {
@@ -230,6 +239,9 @@ const breadcrumbSchema = {
       <div class="prose prose-lg max-w-none">
         <slot />
       </div>
+
+      {/* Ebook CTA - poradnik PDF (praca-magisterska.pl/sklep) */}
+      <EbookCTA workType={ebookWorkType} class="mt-12" />
 
       {/* Smart-Edu CTA - na dole */}
       {

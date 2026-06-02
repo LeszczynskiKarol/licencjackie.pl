@@ -1,0 +1,261 @@
+---
+// src/pages/ebook/index.astro
+import Footer from "../../components/Footer.astro";
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const API_URL = "https://kiv8tougqc.execute-api.eu-central-1.amazonaws.com/prod";
+
+const PRODUCT_ID = "ebook-pisanie-pracy-licencjackiej";
+
+const ebook = {
+  name: "Jak napisać pracę licencjacką",
+  subtitle: "Kompletny przewodnik od A do Z",
+  price: 29,
+  pages: 250,
+  chapters: 18,
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: ebook.name,
+  description:
+    "Kompletny poradnik PDF pisania pracy licencjackiej: wybór tematu, literatura, metodologia, struktura, cytaty, formatowanie, obrona. Szablony i checklisty.",
+  brand: { "@type": "Brand", name: "Licencjackie.pl" },
+  offers: {
+    "@type": "Offer",
+    price: ebook.price,
+    priceCurrency: "PLN",
+    availability: "https://schema.org/InStock",
+    url: "https://www.licencjackie.pl/ebook/",
+  },
+};
+
+const chapters = [
+  { t: "Wybór i zawężanie tematu", d: "Skąd brać pomysły, technika 5 poziomów zawężania, rozmowa z promotorem." },
+  { t: "Przegląd literatury", d: "15+ baz danych z linkami, metoda śnieżnej kuli, ocena źródeł." },
+  { t: "Plan i harmonogram", d: "Szablon struktury pracy i realny harmonogram od tematu do obrony." },
+  { t: "Wstęp", d: "Co MUSI się znaleźć: cel, pytania badawcze, hipotezy (z checklistą)." },
+  { t: "Rozdziały teoretyczne", d: "Synteza zamiast zlepka cytatów, definiowanie pojęć, głos autora." },
+  { t: "Metodologia i badania", d: "Pytania, hipotezy, zmienne, dobór próby, analiza wyników." },
+  { t: "Cytaty, przypisy, bibliografia", d: "System harwardzki i przypisy dolne z przykładami. Jak uniknąć plagiatu." },
+  { t: "Formatowanie w Word", d: "Marginesy, interlinia, automatyczny spis treści, style nagłówków." },
+  { t: "Obrona pracy", d: "Scenariusz obrony, typowe pytania komisji, radzenie sobie ze stresem." },
+];
+---
+
+<Layout
+  title="Ebook PDF: Jak napisać pracę licencjacką - poradnik 250 stron | Licencjackie.pl"
+  description="Kompletny poradnik pisania pracy licencjackiej w PDF. 250 stron konkretów: wybór tematu, literatura, metodologia, formatowanie, obrona. Szablony i checklisty. 29 zł, dostęp natychmiast."
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(productSchema)}
+    slot="head"
+  />
+
+  <Navbar />
+
+  <main class="min-h-screen">
+    <!-- HERO -->
+    <section class="pt-28 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent/10">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">📘 Ebook PDF</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">250 stron</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">18 rozdziałów</span>
+            </div>
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+              Jak napisać pracę licencjacką
+            </h1>
+            <p class="text-lg text-gray-600 mb-6">
+              Kompletny przewodnik od A do Z. Bez błądzenia po omacku — wybór tematu,
+              literatura, metodologia, formatowanie i obrona w jednym pliku.
+            </p>
+            <div class="flex items-center gap-4 mb-6">
+              <span class="text-4xl font-bold text-gray-900">{ebook.price} zł</span>
+              <span class="text-sm text-gray-500">jednorazowo • PDF • dostęp natychmiast</span>
+            </div>
+            <button
+              data-product-id={PRODUCT_ID}
+              class="buy-button w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-600 to-accent text-white font-bold text-lg rounded-xl hover:opacity-90 transition-opacity"
+            >
+              📥 Kup ebook za {ebook.price} zł
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Płatność: BLIK, karta, Revolut Pay (Stripe). Po opłaceniu link do pobrania od razu na ekranie i mailem.</p>
+          </div>
+          <div class="text-center">
+            <div class="inline-block bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
+              <span class="text-8xl">📘</span>
+              <div class="mt-4 text-sm text-gray-500">Poradnik PDF · 250 stron</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CO W ŚRODKU -->
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-3">Co znajdziesz w środku?</h2>
+        <p class="text-center text-gray-600 mb-12">Cały proces pisania pracy licencjackiej krok po kroku</p>
+        <div class="grid md:grid-cols-2 gap-5">
+          {chapters.map((c, i) => (
+            <div class="flex gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50">
+              <span class="w-8 h-8 flex-shrink-0 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">{i + 1}</span>
+              <div>
+                <h3 class="font-bold text-gray-900">{c.t}</h3>
+                <p class="text-sm text-gray-600">{c.d}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="mt-10 text-center">
+          <div class="inline-block bg-amber-50 border border-amber-200 rounded-xl px-6 py-4">
+            <p class="text-amber-800 text-sm">
+              <strong>+ Dodatki:</strong> szablony (strona tytułowa, spis treści, harmonogram),
+              gotowe zdania do wstępu i zakończenia, checklisty oraz lista 15+ baz danych.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DLA KOGO -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Dla kogo jest ten poradnik?</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+            <div class="text-4xl mb-3">🎓</div>
+            <h3 class="font-bold text-gray-900 mb-2">Zaczynasz od zera</h3>
+            <p class="text-sm text-gray-600">Nie wiesz od czego zacząć? Poradnik przeprowadzi Cię od pustej kartki do gotowej pracy.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+            <div class="text-4xl mb-3">⏰</div>
+            <h3 class="font-bold text-gray-900 mb-2">Goni Cię termin</h3>
+            <p class="text-sm text-gray-600">Gotowe szablony i checklisty pozwalają działać szybko, bez tracenia czasu na szukanie.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+            <div class="text-4xl mb-3">🔄</div>
+            <h3 class="font-bold text-gray-900 mb-2">Ciągle poprawiasz</h3>
+            <p class="text-sm text-gray-600">Dowiesz się, jak pisać dobrze od razu i ograniczyć poprawki od promotora.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Najczęstsze pytania</h2>
+        <div class="space-y-4">
+          <details class="bg-gray-50 rounded-xl p-6 group" open>
+            <summary class="font-semibold text-gray-900 cursor-pointer">W jakim formacie jest ebook?</summary>
+            <p class="mt-3 text-gray-600 text-sm">W formacie <strong>PDF</strong> — otworzysz go na komputerze, tablecie i telefonie, bez specjalnego programu.</p>
+          </details>
+          <details class="bg-gray-50 rounded-xl p-6 group">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Jak szybko dostanę plik?</summary>
+            <p class="mt-3 text-gray-600 text-sm"><strong>Natychmiast</strong> — link do pobrania pojawia się na ekranie zaraz po płatności, a kopia trafia na e‑mail.</p>
+          </details>
+          <details class="bg-gray-50 rounded-xl p-6 group">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Czy działa dla mojego kierunku?</summary>
+            <p class="mt-3 text-gray-600 text-sm"><strong>Tak.</strong> Zasady pisania prac są uniwersalne — przykłady pochodzą z wielu kierunków (pedagogika, psychologia, prawo, zarządzanie i in.).</p>
+          </details>
+          <details class="bg-gray-50 rounded-xl p-6 group">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Piszę pracę magisterską — co wtedy?</summary>
+            <p class="mt-3 text-gray-600 text-sm">Sięgnij po wersję magisterską: <a href="https://www.praca-magisterska.pl/sklep/praca-magisterska-ebook/" class="text-primary-600 underline">ebook „Jak napisać pracę magisterską"</a> (39 zł) — zawiera wszystko z licencjackiej + zaawansowaną metodologię.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-16 bg-gradient-to-r from-primary-600 to-accent text-white">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-white">Przestań odkładać pisanie na później</h2>
+        <p class="text-lg text-white/90 mb-8">Pobierz kompletny poradnik i zacznij pisać już dziś.</p>
+        <button
+          data-product-id={PRODUCT_ID}
+          class="buy-button inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary-700 font-bold text-lg rounded-xl hover:bg-gray-50 transition-colors"
+        >
+          📥 Kup ebook za {ebook.price} zł
+        </button>
+        <p class="text-white/80 text-sm mt-4">Płatność jednorazowa • Dostęp natychmiast • PDF na zawsze</p>
+      </div>
+    </section>
+
+    <!-- SEO TEXT -->
+    <section class="py-12 bg-white border-t border-gray-200">
+      <div class="max-w-3xl mx-auto px-4 prose prose-sm">
+        <h2>Ebook: Jak napisać pracę licencjacką — poradnik PDF</h2>
+        <p>
+          <strong>Pisanie pracy licencjackiej</strong> to dla wielu studentów pierwsze tak duże
+          wyzwanie: wybór tematu, przegląd literatury, metodologia badań, poprawne cytowanie,
+          formatowanie i obrona. Ten <strong>kompletny poradnik w PDF</strong> przeprowadzi Cię
+          przez cały proces krok po kroku — z praktycznymi instrukcjami, przykładami, szablonami
+          i checklistami. 250 stron konkretów zamiast szukania informacji po dziesiątkach stron.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+    <div class="bg-white rounded-2xl p-8 text-center">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
+      <p class="text-gray-700">Przekierowuję do płatności...</p>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+<script define:vars={{ API_URL, PRODUCT_ID }}>
+  // cSpell:ignore gtag
+  document.addEventListener("DOMContentLoaded", function () {
+    var PRODUCTS = {
+      "ebook-pisanie-pracy-licencjackiej": { name: "Jak napisać pracę licencjacką", price: 29.0 },
+    };
+    var buttons = document.querySelectorAll(".buy-button");
+    var loadingOverlay = document.getElementById("loading-overlay");
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", async function () {
+        var productId = button.dataset.productId || PRODUCT_ID;
+        var product = PRODUCTS[productId] || { name: "Ebook", price: 0 };
+
+        if (typeof window.gtag === "function") {
+          var gaItem = { item_id: productId, item_name: product.name, price: product.price, quantity: 1, item_category: "Ebook" };
+          window.gtag("event", "add_to_cart", { value: product.price, currency: "PLN", items: [gaItem] });
+          window.gtag("event", "begin_checkout", { value: product.price, currency: "PLN", items: [gaItem] });
+        }
+
+        loadingOverlay.classList.remove("hidden");
+        button.disabled = true;
+
+        try {
+          var response = await fetch(API_URL + "/create-checkout", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ productId: productId }),
+          });
+          var data = await response.json();
+          if (data.url) {
+            window.location.href = data.url;
+          } else {
+            throw new Error(data.error || "Błąd");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          loadingOverlay.classList.add("hidden");
+          button.disabled = false;
+          alert("Wystąpił błąd. Spróbuj ponownie.");
+        }
+      });
+    });
+  });
+</script>

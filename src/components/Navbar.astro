@@ -13,7 +13,7 @@ const tematyLinks = [
 
 const currentPath = Astro.url.pathname;
 
-const ebookUrl = "https://www.praca-magisterska.pl/sklep/praca-licencjacka-ebook/";
+const ebookUrl = "/ebook/";
 ---
 
 <header
@@ -90,8 +90,6 @@ const ebookUrl = "https://www.praca-magisterska.pl/sklep/praca-licencjacka-ebook
         <!-- Ebook Link -->
         <a
           href={ebookUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           class="flex items-center gap-1.5 text-sm font-medium text-amber-600 hover:text-amber-700 transition-colors group"
         >
           <span>📚</span>
@@ -176,8 +174,6 @@ const ebookUrl = "https://www.praca-magisterska.pl/sklep/praca-licencjacka-ebook
         <div class="mt-2 pt-2 border-t border-gray-100">
           <a
             href={ebookUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             class="flex items-center justify-between px-3 py-3 bg-amber-50 rounded-lg border border-amber-200"
           >
             <div class="flex items-center gap-2">
