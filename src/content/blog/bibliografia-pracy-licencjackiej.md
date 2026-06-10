@@ -2,6 +2,7 @@
 title: "Bibliografia w pracy licencjackiej — wzór, przykłady, APA i Harvard"
 description: "Jak zrobić bibliografię w pracy licencjackiej? Gotowe wzory cytowań książek, artykułów i źródeł online + style APA i Harvard."
 publishDate: 2025-12-11
+updateDate: 2026-06-10
 author: "Redakcja Licencjackie.pl"
 category: "Poradniki"
 tags: ["bibliografia", "praca licencjacka", "źródła", "literatura"]
@@ -12,7 +13,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Bibliografia stanowi fundamentalny element każdej pracy licencjackiej, będący świadectwem rzetelności naukowej autora oraz umożliwiający czytelnikom dotarcie do wykorzystanych źródeł. Prawidłowo sporządzona bibliografia nie tylko podnosi wartość merytoryczną pracy, ale również chroni przed zarzutem plagiatu i świadczy o profesjonalnym podejściu studenta do procesu badawczego. W polskich uczelniach obowiązują szczegółowe normy dotyczące tworzenia bibliografii, których znajomość jest niezbędna dla każdego studenta przygotowującego pracę dyplomową. Niniejszy poradnik przedstawia kompleksowe zasady sporządzania bibliografii zgodnie z obowiązującymi standardami akademickimi, omawia najczęstsze błędy oraz dostarcza praktycznych wskazówek dotyczących opisywania różnorodnych typów źródeł.</p>
+<p>Bibliografia stanowi fundamentalny element każdej pracy licencjackiej, będący świadectwem rzetelności naukowej autora oraz umożliwiający czytelnikom dotarcie do wykorzystanych źródeł. Prawidłowo sporządzona bibliografia nie tylko podnosi wartość merytoryczną pracy, ale również chroni przed zarzutem plagiatu i świadczy o profesjonalnym podejściu studenta do procesu badawczego. W polskich uczelniach obowiązują szczegółowe normy dotyczące tworzenia bibliografii, których znajomość jest niezbędna dla każdego studenta przygotowującego pracę dyplomową. Niniejszy poradnik przedstawia kompleksowe zasady sporządzania bibliografii zgodnie z obowiązującymi standardami akademickimi, omawia najczęstsze błędy oraz dostarcza praktycznych wskazówek dotyczących opisywania różnorodnych typów źródeł. Ten poradnik jest częścią przewodnika <a href="/pisanie-prac-licencjackich/">pisanie prac licencjackich</a>, w którym znajdziesz cały proces od tematu po obronę.</p>
 
 <h2>Podstawowe zasady tworzenia bibliografii według norm polskich</h2>
 
@@ -132,5 +133,19 @@ showSmartEduCTA: true
 <p>Prawidłowo sporządzona bibliografia stanowi dowód rzetelności naukowej i profesjonalnego podejścia do pisania pracy licencjackiej. Kluczem do sukcesu jest systematyczne gromadzenie opisów bibliograficznych już na etapie zbierania materiałów źródłowych, konsekwentne stosowanie wybranego stylu cytowania oraz dokładna weryfikacja wszystkich elementów przed ostatecznym złożeniem pracy.</p>
 
 <p>Warto również skonsultować się z promotorem na wczesnym etapie pracy, aby upewnić się, że wybrana metoda cytowania jest zgodna z oczekiwaniami i standardami obowiązującymi na danej uczelni. Pamiętajmy, że bibliografia to nie tylko formalny wymóg – to również wyraz szacunku dla pracy innych badaczy oraz fundament, na którym budujemy własną argumentację naukową.</p>
+
+<h2>FAQ: najczęstsze pytania o bibliografię w pracy licencjackiej</h2>
+
+<h3>Ile pozycji powinna mieć bibliografia w pracy licencjackiej?</h3>
+<p>Typowe oczekiwanie to 20–30 pozycji, choć wymogi wydziałowe bywają różne (spotyka się minima od 15 do 30). Ważniejsza od samej liczby jest struktura: przewaga książek i artykułów naukowych nad źródłami internetowymi i obecność pozycji z ostatnich lat. Bibliografia złożona w połowie z anonimowych stron WWW razi nawet przy imponującej liczbie pozycji.</p>
+
+<h3>Czy bibliografia musi być ułożona alfabetycznie?</h3>
+<p>Literatura (książki i artykuły) tak, alfabetycznie według nazwisk autorów, bez numerowania lub z numeracją ciągłą, zależnie od wytycznych. Cała bibliografia dzieli się przy tym na sekcje w stałej kolejności: literatura, potem wykaz aktów prawnych (uporządkowany chronologicznie, nie alfabetycznie), na końcu netografia. Zasady porządkowania aktów prawnych opisujemy w poradniku o <a href="/blog/jak-cytowac-akty-prawne">cytowaniu aktów prawnych</a>.</p>
+
+<h3>Jak zapisać pracę zbiorową w bibliografii?</h3>
+<p>Pracę zbiorową zapisuje się od tytułu, z redaktorem po skrócie „red.": <code>Bankowość elektroniczna. Istota i innowacje, red. A. Gospodarowicz, C.H. Beck, Warszawa 2018.</code> Jeżeli korzystasz z jednego rozdziału, opis zaczyna się od jego autora i tytułu, a tom wskazuje się po oznaczeniu „[w:]": <code>Sobocińska M., Badania marketingowe przez Internet, [w:] Badania marketingowe, red. K. Mazurek-Łopacińska, WN PWN, Warszawa 2016.</code></p>
+
+<h3>Jak wygląda bibliografia w pracy licencjackiej?</h3>
+<p>To wypunktowany spis na końcu pracy (po zakończeniu, przed spisami tabel i załącznikami), podzielony na sekcje. W najprostszym wariancie wygląda tak: nagłówek „Bibliografia", pod nim literatura alfabetycznie (np. <code>Kowalski J., Metodologia badań społecznych, WN PWN, Warszawa 2020.</code>), dalej podtytuł „Akty prawne" z wykazem chronologicznym i podtytuł „Netografia" z adresami stron i datami dostępu.</p>
 
 <p>Dobrze przygotowana bibliografia ułatwia czytelnikom odnalezienie wykorzystanych źródeł, umożliwia weryfikację przedstawionych twierdzeń oraz świadczy o głębi przeprowadzonych badań literaturowych. Inwestycja czasu w staranne opracowanie tego elementu pracy z pewnością zaowocuje pozytywną oceną i satysfakcją z profesjonalnie wykonanego zadania.</p>

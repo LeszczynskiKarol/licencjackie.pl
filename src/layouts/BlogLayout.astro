@@ -51,6 +51,17 @@ const {
   showSmartEduCTA,
 } = post.data;
 
+// Pillar hub: artykuły kierunkowe dostają box linkujący do strony-przewodnika.
+// Po publikacji pillara magisterskiego dopisać drugi wpis do tablicy.
+const PILLARS = [
+  {
+    prefix: "pisanie-prac-licencjackich-z-",
+    label: "Pisanie prac licencjackich",
+    href: "/pisanie-prac-licencjackich/",
+  },
+];
+const pillar = PILLARS.find((p) => post.slug.startsWith(p.prefix));
+
 // Dobór ebooka do typu pracy w danym wpisie (mgr -> ebook magisterski, inaczej licencjacki).
 const isMgr =
   post.data.typ_pracy === "magisterska" ||
@@ -168,6 +179,24 @@ const breadcrumbSchema = {
           </li>
         </ol>
       </nav>
+
+      {/* Pillar breadcrumb-box — automatyczny link hubowy dla artykułów kierunkowych */}
+      {
+        pillar && (
+          <div class="mb-8 flex items-center gap-3 bg-primary-50 border border-primary-200 rounded-xl px-5 py-4">
+            <span class="text-xl" aria-hidden="true">📖</span>
+            <p class="text-sm text-gray-700 m-0">
+              Część przewodnika:{" "}
+              <a
+                href={pillar.href}
+                class="font-semibold text-primary-700 hover:text-primary-800 underline"
+              >
+                {pillar.label} →
+              </a>
+            </p>
+          </div>
+        )
+      }
 
       <!-- Header -->
       <header class="mb-10">

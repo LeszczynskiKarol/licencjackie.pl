@@ -1,0 +1,291 @@
+---
+// src/pages/pisanie-prac-licencjackich.astro — pillar page klastra licencjackiego
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import SmartEduCTA from "../components/SmartEduCTA.astro";
+import EbookCTA from "../components/EbookCTA.astro";
+import Layout from "../layouts/Layout.astro";
+
+const siteUrl = "https://www.licencjackie.pl";
+const pageUrl = `${siteUrl}/pisanie-prac-licencjackich/`;
+
+const etapy = [
+  {
+    nr: 1,
+    name: "Wybór tematu",
+    href: "/blog/temat-pracy-licencjackiej",
+    desc: "Temat musi być realny do zbadania w semestr i mieć dostępną literaturę. Dobry temat jest wąski: nie „motywacja pracowników”, tylko „motywacja pozapłacowa w małych firmach handlowych”.",
+  },
+  {
+    nr: 2,
+    name: "Konspekt pracy",
+    href: "/blog/konspekt-pracy-licencjackiej",
+    desc: "Jedna–trzy strony z celem, pytaniami badawczymi, metodą i planem rozdziałów. To test wykonalności tematu, zanim zainwestujesz w niego pół roku.",
+  },
+  {
+    nr: 3,
+    name: "Struktura i plan rozdziałów",
+    href: "/blog/struktura-pracy-licencjackiej",
+    desc: "Standard to wstęp, rozdział teoretyczny, metodologiczny, badawczy i zakończenie. Plan zatwierdza promotor, zanim powstanie pierwszy akapit.",
+  },
+  {
+    nr: 4,
+    name: "Wstęp i część teoretyczna",
+    href: "/blog/wstep-pracy-licencjackiej",
+    desc: "Przegląd literatury z porządnymi przypisami. Wstęp w wersji ostatecznej i tak napiszesz na końcu, gdy będziesz znać całą pracę.",
+  },
+  {
+    nr: 5,
+    name: "Badania własne",
+    href: "/blog/badania-w-pracy-magisterskiej",
+    desc: "Najczęściej ankieta lub wywiady. Narzędzie konsultujesz z promotorem przed zbieraniem danych, bo błędu w kwestionariuszu nie da się naprawić po fakcie.",
+  },
+  {
+    nr: 6,
+    name: "Analiza i interpretacja danych",
+    href: "/blog/analiza-i-interpretacja-danych",
+    desc: "Od macierzy danych w Excelu, przez statystyki opisowe, po dyskusję wyników w odniesieniu do hipotez. Ten etap regularnie zajmuje więcej czasu, niż zakłada harmonogram.",
+  },
+  {
+    nr: 7,
+    name: "Bibliografia i przypisy",
+    href: "/blog/bibliografia-pracy-licencjackiej",
+    desc: "Porządkowane na bieżąco, nie tydzień przed oddaniem. Komplet zasad: bibliografia, przypisy z ibidem i op. cit. oraz cytowanie aktów prawnych.",
+  },
+  {
+    nr: 8,
+    name: "Obrona pracy",
+    href: "/blog/obrona-pracy-licencjackiej",
+    desc: "Prezentacja wyników i pytania komisji. Jeśli pracę napisałeś samodzielnie, obrona jest formalnością: nikt nie zna tej pracy lepiej niż Ty.",
+  },
+];
+
+const kierunki = [
+  { name: "Administracja", slug: "administracji" },
+  { name: "Bezpieczeństwo wewnętrzne", slug: "bezpieczenstwa-wewnetrznego" },
+  { name: "Dietetyka", slug: "dietetyki" },
+  { name: "Geografia", slug: "geografii" },
+  { name: "Historia", slug: "historii" },
+  { name: "Kosmetologia", slug: "kosmetologii" },
+  { name: "Kryminologia", slug: "kryminologii" },
+  { name: "Logistyka", slug: "logistyki" },
+  { name: "Marketing", slug: "marketingu" },
+  { name: "Pedagogika", slug: "pedagogiki" },
+  { name: "Pielęgniarstwo", slug: "pielegniarstwa" },
+  { name: "Politologia", slug: "politologii" },
+  { name: "Prawo", slug: "prawa" },
+  { name: "Psychologia", slug: "psychologii" },
+  { name: "Ratownictwo medyczne", slug: "ratownictwa-medycznego" },
+  { name: "Socjologia", slug: "socjologii" },
+  { name: "Turystyka", slug: "turystyki" },
+  { name: "Zarządzanie", slug: "zarzadzania" },
+];
+
+const faq = [
+  {
+    q: "Czy promotor pozna, że praca była pisana z pomocą AI?",
+    a: "Promotor zna Twój styl z seminariów, e-maili i wcześniejszych fragmentów, więc tekst wklejony w całości z generatora zwykle odstaje. Uczelnie używają też narzędzi do wykrywania tekstu generowanego, choć ich skuteczność jest ograniczona. Bezpieczny model pracy wygląda inaczej: AI pomaga w researchu, konspekcie, planie rozdziału czy redakcji, a tekst i wnioski budujesz samodzielnie. Wtedy nie ma czego wykrywać, bo autorem pracy jesteś Ty.",
+  },
+  {
+    q: "Czy kupno pracy licencjackiej jest karalne?",
+    a: "Samo zamówienie tekstu nie jest wprost zabronione, ale przedłożenie go na uczelni jako własnego już tak. Podpisujesz oświadczenie o samodzielnym napisaniu pracy, więc składając cudzy tekst, wyłudzasz poświadczenie nieprawdy (art. 272 Kodeksu karnego, zagrożone karą do 3 lat pozbawienia wolności). Do tego dochodzi odpowiedzialność dyscyplinarna z wydaleniem z uczelni włącznie, a dyplom uzyskany na podstawie cudzej pracy może zostać unieważniony nawet wiele lat po obronie.",
+  },
+  {
+    q: "Ile stron ma praca licencjacka?",
+    a: "Najczęściej 40–60 stron, przy czym minima wydziałowe zaczynają się zwykle od 30 stron. O objętości decydują wytyczne Twojej uczelni, a w praktyce także charakter pracy: praca badawcza z ankietą i analizą wyników naturalnie wychodzi dłuższa niż praca przeglądowa. Liczy się tekst główny; załączników, bibliografii i aneksów zwykle nie wlicza się do minimum.",
+  },
+  {
+    q: "Od czego zacząć pisanie pracy licencjackiej?",
+    a: "Od dwóch rzeczy naraz: wyboru tematu, który da się zbadać dostępnymi metodami, i konspektu, który ten temat przetestuje. Konspekt (cel, pytania badawcze, metoda, plan rozdziałów) pokaże po tygodniu pracy, czy temat ma sens, literaturę i wykonalne badania. Dopiero po akceptacji konspektu przez promotora siadasz do pisania rozdziałów.",
+  },
+];
+
+// ── Schema.org ──
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Pisanie prac licencjackich – przewodnik + pomoc AI",
+  description:
+    "Kompletny przewodnik po pisaniu pracy licencjackiej: proces krok po kroku, czas pisania, legalność pomocy w pisaniu prac i wykorzystanie AI.",
+  url: pageUrl,
+  inLanguage: "pl-PL",
+  isPartOf: { "@type": "WebSite", name: "Licencjackie.pl", url: siteUrl },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Strona główna", item: `${siteUrl}/` },
+    { "@type": "ListItem", position: 2, name: "Pisanie prac licencjackich", item: pageUrl },
+  ],
+};
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Pisanie prac licencjackich według kierunków studiów",
+  itemListElement: kierunki.map((k, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `Pisanie prac licencjackich z ${k.name.toLowerCase()}`,
+    url: `${siteUrl}/blog/pisanie-prac-licencjackich-z-${k.slug}/`,
+  })),
+};
+---
+
+<Layout
+  title="Pisanie prac licencjackich – przewodnik + pomoc AI | Licencjackie.pl"
+  description="Jak wygląda pisanie pracy licencjackiej krok po kroku, ile trwa i kosztuje oraz z jakiej pomocy można korzystać legalnie? Przewodnik + poradniki dla 18 kierunków."
+  canonical={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} slot="head" />
+
+  <Navbar />
+
+  <main class="pt-24 pb-16">
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumbs -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary-600 transition-colors">Strona główna</a></li>
+          <li class="text-gray-400">/</li>
+          <li class="text-gray-900 font-medium">Pisanie prac licencjackich</li>
+        </ol>
+      </nav>
+
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Pisanie prac licencjackich: jak napisać pracę i z jakiej pomocy korzystać legalnie
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Przewodnik po całym procesie, od tematu po obronę, z uczciwym omówieniem granic: co wolno, co grozi konsekwencjami i jak używać AI bez ryzyka.
+        </p>
+      </header>
+
+      <div class="prose prose-lg max-w-none">
+        <p>Hasło „pisanie prac licencjackich" wpisują do wyszukiwarki dwie grupy studentów. Pierwsza chce napisać pracę samodzielnie i szuka konkretnych instrukcji. Druga utknęła (z czasem, z tematem, z promotorem) i szuka pomocy, czasem każdej, łącznie z ofertami pisania prac na zlecenie. Ten przewodnik powstał dla obu grup. Znajdziesz tu proces pisania krok po kroku z linkami do szczegółowych poradników, realne widełki czasowe i uczciwą odpowiedź na pytanie, które serwisy ghostwriterskie pomijają milczeniem: gdzie kończy się legalna pomoc, a zaczyna problem z prawem. Pokażemy też alternatywę, która łączy jedno z drugim: pisanie własnej pracy ze wsparciem AI.</p>
+
+        <h2>Jak wygląda pisanie pracy licencjackiej: proces krok po kroku</h2>
+
+        <p>Praca licencjacka powstaje w ośmiu etapach, a każdy z nich opisaliśmy w osobnym poradniku. Kolejność nie jest przypadkowa: każdy etap korzysta z poprzedniego, a najwięcej problemów rodzi się z przeskakiwania kroków (najczęściej: pisanie rozdziałów bez konspektu).</p>
+      </div>
+
+      <!-- Oś czasu 8 etapów -->
+      <ol class="mt-8 mb-12 space-y-4">
+        {etapy.map((e) => (
+          <li class="flex gap-4 bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-400 transition-colors">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-100 text-primary-700 font-bold flex items-center justify-center">
+              {e.nr}
+            </div>
+            <div>
+              <a href={e.href} class="text-lg font-bold text-gray-900 hover:text-primary-600 transition-colors">
+                {e.name} →
+              </a>
+              <p class="text-gray-600 mt-1">{e.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Ile czasu zajmuje napisanie pracy licencjackiej</h2>
+
+        <p>Realistyczny horyzont to <strong>5–6 miesięcy</strong> przy pracy w trybie „po godzinach", czyli dokładnie tyle, ile trwa ostatni rok akademicki od października do egzaminu dyplomowego. Poradniki planowania prac dyplomowych rozpisują to na etapy w tygodniach; poniższe widełki zakładają pracę badawczą z ankietą:</p>
+
+        <table>
+          <thead>
+            <tr><th>Etap</th><th>Czas</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wybór tematu i konspekt</td><td>2–3 tygodnie</td></tr>
+            <tr><td>Kwerenda i zebranie literatury</td><td>2–3 tygodnie</td></tr>
+            <tr><td>Rozdział teoretyczny</td><td>4–6 tygodni</td></tr>
+            <tr><td>Rozdział metodologiczny i narzędzie badawcze</td><td>2 tygodnie</td></tr>
+            <tr><td>Zbieranie danych (ankieta, wywiady)</td><td>2–4 tygodnie</td></tr>
+            <tr><td>Analiza danych i rozdział badawczy</td><td>3–4 tygodnie</td></tr>
+            <tr><td>Zakończenie, wstęp ostateczny, streszczenie</td><td>1–2 tygodnie</td></tr>
+            <tr><td>Redakcja, formatowanie, poprawki promotora</td><td>2–3 tygodnie</td></tr>
+          </tbody>
+        </table>
+
+        <p>Dwie rzeczy z praktyki, które psują te harmonogramy. Pierwsza: konsultacje. Promotor odpowiada w dni, nie w godziny, a każda runda poprawek to tydzień; wlicz w plan 4–5 takich rund. Druga: analiza danych, której prawie każdy student poświęca za mało czasu w planie, a która regularnie zajmuje 3–4 tygodnie zamiast zakładanego jednego. Pisanie „na ostatni miesiąc" się zdarza i czasem kończy obroną, ale zwykle kosztuje jakość pracy i zdrowie autora.</p>
+
+        <h2>Pisanie prac licencjackich na zlecenie: czy to legalne?</h2>
+
+        <p>Czas na sekcję, której nie znajdziesz na stronach serwisów oferujących „pomoc w pisaniu prac". Rynek ghostwritingu akademickiego działa w Polsce otwarcie i legalnie wygląda tylko z jednej strony: <strong>samo napisanie i sprzedanie tekstu „wzorcowego" nie jest wprost zakazane</strong>. Dlatego ogłoszenia funkcjonują bez przeszkód, zwykle z dopiskiem drobnym drukiem, że tekst stanowi „materiał poglądowy". Problem zaczyna się po Twojej stronie, w momencie złożenia takiej pracy na uczelni.</p>
+
+        <p>Składając pracę dyplomową, podpisujesz oświadczenie o jej samodzielnym napisaniu. Jeżeli praca wyszła spod cudzej ręki, oświadczenie jest fałszywe, a uzyskanie na jego podstawie dyplomu wypełnia znamiona <strong>art. 272 Kodeksu karnego</strong> (wyłudzenie poświadczenia nieprawdy przez podstępne wprowadzenie w błąd funkcjonariusza publicznego), zagrożonego karą do 3 lat pozbawienia wolności. Niezależnie od prawa karnego działa odpowiedzialność dyscyplinarna z regulaminu studiów, do wydalenia z uczelni włącznie. I rzecz najmniej znana: <strong>dyplom można stracić także po latach</strong>, bo przepisy o szkolnictwie wyższym pozwalają unieważnić dyplom uzyskany na podstawie pracy, która nie była dziełem absolwenta. Takie sprawy wracają np. przy konfliktach zawodowych, gdy ktoś zgłasza podejrzenie.</p>
+
+        <p>A co z wykrywalnością? Każda praca licencjacka przechodzi przed obroną przez Jednolity System Antyplagiatowy (JSA). Praca napisana na zlecenie od zera jest dla JSA „czysta", bo system porównuje tekst z bazami, a nie ustala autorstwa, i na tym opiera się marketing ghostwriterów. Tyle że wykrycie rzadko przychodzi od systemu. Przychodzi od promotora, który zna Twój styl z seminariów i widzi skok jakości między rozdziałami, oraz na obronie, gdy autor „swojej" pracy nie umie odpowiedzieć na pytanie o dobór metody. Komisja nie musi niczego udowadniać systemem; wystarczy, że nabierze uzasadnionych wątpliwości.</p>
+
+        <h2>AI do pisania pracy licencjackiej: legalna alternatywa</h2>
+
+        <p>Między „piszę wszystko sam w samotności" a „kupuję gotową pracę" istnieje trzecia droga, z której korzysta już znacząca część studentów: <strong>praca własna ze wsparciem narzędzi AI</strong>. Różnica prawna jest zasadnicza. Przy ghostwritingu autorem pracy jest ktoś inny, więc Twoje oświadczenie o samodzielności jest fałszywe. Przy pracy z AI używanym jako narzędzie (tak jak edytora tekstu, Statistiki czy menedżera bibliografii) autorem pozostajesz Ty: stawiasz pytania badawcze, prowadzisz badanie, decydujesz o wnioskach i odpowiadasz za każde zdanie, które zostawiasz w tekście.</p>
+
+        <p>Granicę wyznaczają dwa warunki. Po pierwsze, wytyczne Twojej uczelni: coraz więcej wydziałów publikuje zasady korzystania z AI w pracach dyplomowych i one są dla Ciebie wiążące; w razie wątpliwości zapytaj promotora wprost. Po drugie, sposób użycia. Wspierająco znaczy: research i porządkowanie literatury, burza mózgów nad tematem i strukturą, szkic konspektu, poprawa stylu napisanego przez Ciebie tekstu, pomoc w interpretacji wyników. Zastępczo znaczy: generowanie rozdziałów do wklejenia, i to jest ta sama pułapka, co ghostwriting, tylko tańsza.</p>
+
+        <p>Używane z głową, AI skraca najbardziej czasochłonne etapy (kwerendę, pierwsze szkice, redakcję) o tygodnie, nie zdejmując z Ciebie autorstwa. Dokładnie w tym modelu działa Smart-Edu.ai: prowadzi przez strukturę pracy etap po etapie, pomaga w researchu i szkicach, a kontrola nad treścią zostaje po stronie studenta.</p>
+      </div>
+
+      <SmartEduCTA variant="full" class="my-10" />
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Pisanie prac licencjackich z Twojego kierunku</h2>
+
+        <p>Ogólne zasady to połowa wiedzy; druga połowa zależy od kierunku. Praca z pielęgniarstwa wymaga zgody komisji bioetycznej, praca z prawa cytowania ustaw i orzecznictwa, a praca z marketingu innych metod badawczych niż praca z historii. Dla 18 kierunków przygotowaliśmy osobne poradniki:</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 mb-12">
+        {kierunki.map((k) => (
+          <a
+            href={`/blog/pisanie-prac-licencjackich-z-${k.slug}/`}
+            class="block bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:border-primary-500 hover:text-primary-600 transition-colors"
+          >
+            Pisanie prac z {k.name.toLowerCase()} →
+          </a>
+        ))}
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Ile kosztuje pisanie pracy licencjackiej</h2>
+
+        <p>Skoro rynek istnieje, nazwijmy też jego ceny. Ogłoszenia serwisów ghostwriterskich podają stawki za stronę lub rozdział; po zsumowaniu <strong>cała praca licencjacka pisana na zlecenie kosztuje zwykle od 2000 do 5000 zł</strong>, zależnie od kierunku, terminu i tego, czy obejmuje badania własne. Do ceny warto doliczyć ryzyka z sekcji o legalności, których żaden cennik nie wykazuje: konsekwencje karne i dyscyplinarne, dyplom do unieważnienia i obronę przed komisją z pracy, której się nie zna.</p>
+
+        <p>Dla porównania koszty pracy samodzielnej: dostęp do narzędzia AI wspierającego pisanie to abonament rzędu kilkudziesięciu złotych miesięcznie (przez 5–6 miesięcy pisania: ułamek ceny jednego rozdziału u ghostwritera), ewentualne korepetycje ze statystyki to 80–150 zł za godzinę, a profesjonalna korekta językowa gotowej pracy, w pełni legalna usługa, to wydatek rzędu 300–600 zł. Cała legalna ścieżka wsparcia zamyka się w koszcie znacznie niższym niż jeden zlecony rozdział, a dyplom z niej wynikający jest Twój bezwarunkowo.</p>
+
+        <h2>FAQ: najczęstsze pytania o pisanie prac licencjackich</h2>
+      </div>
+
+      <div class="mt-6 space-y-6">
+        {faq.map((f) => (
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">{f.q}</h3>
+            <p class="text-gray-700 leading-relaxed">{f.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="prose prose-lg max-w-none mt-12">
+        <p>Praca licencjacka to projekt na jeden rok akademicki: wykonalny, opisany krok po kroku i obudowany legalnym wsparciem, od poradników z tej strony, przez promotora, po narzędzia AI. Zacznij od <a href="/blog/temat-pracy-licencjackiej">wyboru tematu</a> i <a href="/blog/konspekt-pracy-licencjackiej">konspektu</a>, a resztę procesu przejdziesz z poradnikami z osi czasu powyżej. Piszesz pracę magisterską? Większość zasad jest wspólna, a różnice opisujemy w poradnikach oznaczonych jako magisterskie.</p>
+      </div>
+
+      <EbookCTA workType="lic" class="mt-12" />
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

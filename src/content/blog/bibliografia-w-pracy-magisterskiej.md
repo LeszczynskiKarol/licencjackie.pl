@@ -2,6 +2,7 @@
 title: "Bibliografia w pracy magisterskiej — wzór, przykłady i style"
 description: "Jak zrobić bibliografię w pracy magisterskiej? Gotowe wzory dla książek, artykułów i źródeł online + style APA, Harvard, Chicago. Sprawdź!"
 publishDate: 2025-12-13
+updateDate: 2026-06-10
 author: "Redakcja Licencjackie.pl"
 category: "Poradniki"
 tags: ["bibliografia", "praca magisterska", "źródła", "literatura"]
@@ -120,6 +121,20 @@ showSmartEduCTA: true
 <p>Proces gromadzenia bibliografii powinien rozpocząć się już na wczesnym etapie pracy nad dysertacją magisterską, najlepiej równolegle z wyborem tematu i formułowaniem pytań badawczych. Systematyczne zapisywanie napotkanych źródeł w menedżerze bibliografii oszczędza czas i zapobiega sytuacji, gdy pod koniec pisania pracy trzeba gorączkowo odtwarzać dane bibliograficzne tekstów, które czytało się miesiące wcześniej. Warto od razu zapisywać nie tylko podstawowe dane bibliograficzne, ale również dodawać notatki, wyciągi, cytaty oraz własne komentarze dotyczące przydatności źródła. Większość menedżerów bibliografii pozwala na dołączanie plików PDF publikacji, co tworzy kompleksową bibliotekę cyfrową dostępną z poziomu jednego programu.</p>
 
 <p>Dobrą praktyką jest także kategoryzowanie źródeł według tematów lub rozdziałów pracy, co ułatwia późniejsze odnajdywanie odpowiednich pozycji. Wiele programów oferuje funkcję tagowania i tworzenia folderów tematycznych, dzięki czemu można szybko filtrować bibliografię według potrzeb. Regularne przeglądanie zgromadzonych źródeł pozwala również na identyfikację luk w literaturze i kierunków, w których należy pogłębić poszukiwania.</p>
+
+<h2>FAQ: najczęstsze pytania o bibliografię w pracy magisterskiej</h2>
+
+<h3>Ile pozycji powinna mieć bibliografia w pracy magisterskiej?</h3>
+<p>Wytyczne uczelniane wskazują zwykle minimum 30 pozycji, a w praktyce dobre prace magisterskie mają ich 40–60. Od pracy magisterskiej oczekuje się też tego, czego nie wymaga się od licencjatu: obecności literatury zagranicznej i artykułów z czasopism naukowych, nie tylko podręczników. Liczy się kwerenda, którą bibliografia dokumentuje, a nie samo bicie rekordu pozycji.</p>
+
+<h3>Czy bibliografia musi być ułożona alfabetycznie?</h3>
+<p>Literatura tak, alfabetycznie według nazwisk autorów (prace zbiorowe według pierwszej litery tytułu). Pozostałe sekcje rządzą się własnymi prawami: wykaz aktów prawnych porządkuje się hierarchicznie i chronologicznie, orzecznictwo według rangi sądów, a netografię alfabetycznie lub według kolejności cytowania. Standardowa kolejność sekcji: literatura, akty prawne, orzecznictwo (jeśli jest), netografia. Szczegóły porządkowania źródeł prawnych znajdziesz w poradniku o <a href="/blog/jak-cytowac-akty-prawne">cytowaniu aktów prawnych</a>.</p>
+
+<h3>Jak zapisać pracę zbiorową w bibliografii?</h3>
+<p>Od tytułu, z redaktorem po skrócie „red.": <code>Bankowość elektroniczna. Istota i innowacje, red. A. Gospodarowicz, C.H. Beck, Warszawa 2018.</code> Rozdział z pracy zbiorowej opisuje się od autora i tytułu rozdziału, ze wskazaniem tomu po „[w:]": <code>Sobocińska M., Badania marketingowe przez Internet, [w:] Badania marketingowe. Metody, techniki i obszary aplikacji na współczesnym rynku, red. K. Mazurek-Łopacińska, WN PWN, Warszawa 2016.</code> W bibliografii nazwisko stoi przed inicjałem; odwrotnie niż w przypisach.</p>
+
+<h3>Jak wygląda bibliografia w pracy magisterskiej?</h3>
+<p>To podzielony na sekcje spis wszystkich źródeł, umieszczony po zakończeniu pracy. Szkielet wygląda tak: nagłówek „Bibliografia", sekcja literatury w porządku alfabetycznym (np. <code>Krugman P., Wells R., Makroekonomia, WN PWN, Warszawa 2022.</code>), sekcja „Akty prawne" w porządku chronologicznym (np. <code>Ustawa z dnia 23 kwietnia 1964 r. – Kodeks cywilny, t.j. Dz.U. 2024 poz. 1061 ze zm.</code>), ewentualna sekcja „Orzecznictwo" i na końcu „Netografia" z datami dostępu. Każda pozycja kończy się kropką, a całość używa jednego, konsekwentnego formatu opisu.</p>
 
 <h2>Podsumowanie</h2>
 
