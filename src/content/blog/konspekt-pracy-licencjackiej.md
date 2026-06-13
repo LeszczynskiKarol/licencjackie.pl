@@ -62,7 +62,7 @@ showSmartEduCTA: true
 
 <h2>Wzór konspektu pracy licencjackiej</h2>
 
-<p>Poniższy wzór zbiera wszystkie elementy w formie tabeli do skopiowania. Możesz też pobrać go jako <a href="/pobierz/konspekt-pracy-licencjackiej-wzor.pdf">szablon PDF do wydruku i wypełnienia</a>.</p>
+<p>Poniższy wzór zbiera wszystkie elementy w formie tabeli do skopiowania. Możesz też pobrać go za darmo jako gotowy szablon do wypełnienia: <a href="/pobierz/konspekt-pracy-licencjackiej-wzor.pdf">wzór PDF (do wydruku)</a> lub <a href="/pobierz/konspekt-pracy-licencjackiej-wzor.docx">wzór Word / DOCX (do edycji)</a>.</p>
 
 <table>
 <thead>

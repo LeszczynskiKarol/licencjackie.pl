@@ -1,6 +1,6 @@
 ---
 title: "Przykładowa praca licencjacka z pielęgniarstwa – wzór z omówieniem"
-description: "Przykładowa praca licencjacka z pielęgniarstwa krok po kroku: wzór strony tytułowej, wstępu, części teoretycznej, opisu przypadku, procesu pielęgnowania i wniosków – z fragmentami i komentarzem."
+description: "Przykładowa praca licencjacka z pielęgniarstwa krok po kroku: wzór strony tytułowej, wstępu, części teoretycznej, opisu przypadku i procesu pielęgnowania – z fragmentami, komentarzem i wzorem do pobrania (PDF i Word)."
 publishDate: 2026-06-13
 author: "Redakcja Licencjackie.pl"
 category: "Pisanie prac z pielęgniarstwa"
@@ -13,6 +13,9 @@ tags:
     "studium przypadku",
     "proces pielęgnowania",
     "wzór pracy licencjackiej",
+    "wzór do pobrania",
+    "praca licencjacka pdf",
+    "wzór word",
   ]
 image: "/blog/pielegniarstwo.jpg"
 imageAlt: "Przykładowa praca licencjacka z pielęgniarstwa – wzór z omówieniem"
@@ -24,6 +27,17 @@ showSmartEduCTA: true
 <p>Najszybszy sposób, żeby zrozumieć, jak ma wyglądać praca licencjacka z pielęgniarstwa, to zobaczyć gotowy wzór i prześledzić go fragment po fragmencie. Poniżej rozkładamy na części przykładową pracę – pokazujemy, co znajduje się w każdym rozdziale, wklejamy konkretne wycinki tekstu i tłumaczymy, dlaczego zostały napisane właśnie tak. To nie jest praca do skopiowania (o tym, dlaczego nie warto tego robić, piszemy na końcu), tylko punkt odniesienia, na którym łatwiej napisać własną.</p>
 
 <p>Jako przykład prowadzimy pracę kazuistyczną – studium przypadku <strong>„Proces pielęgnowania pacjenta z cukrzycą typu 2"</strong>. Wybór nie jest przypadkowy: studium przypadku to dziś najczęściej wymagany format pracy licencjackiej na pielęgniarstwie, a cukrzyca typu 2 to jedno z zagadnień, które pojawia się na seminariach co roku. Pod koniec pokazujemy też, czym różni się od tego praca empiryczna (ankietowa), gdyby Twoja uczelnia wymagała właśnie takiej.</p>
+
+<h2>Wzór pracy licencjackiej z pielęgniarstwa do pobrania (PDF i Word)</h2>
+
+<p>Cały szablon studium przypadku – stronę tytułową, układ rozdziałów, sekcję metodologiczną i tabelę diagnoz pielęgniarskich – przygotowaliśmy jako gotowy wzór do pobrania za darmo. Pobierz plik i wypełnij go własną treścią: PDF nadaje się do wydruku, a wersja Word (DOCX) do edycji.</p>
+
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:20px 22px;margin:8px 0 28px">
+<p style="margin:0 0 14px;font-weight:700;font-size:1.05rem">📄 Wzór pracy licencjackiej z pielęgniarstwa (studium przypadku)</p>
+<a href="/pobierz/praca-licencjacka-pielegniarstwo-wzor.pdf" style="display:inline-block;background:#059669;color:#fff;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 10px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/praca-licencjacka-pielegniarstwo-wzor.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 10px 0">⬇ Pobierz wzór Word (DOCX)</a>
+<p style="margin:8px 0 0;font-size:0.9rem;color:#6b7280">Darmowy szablon do samodzielnego wypełnienia. To wzór, nie gotowa praca – nie kopiuj cudzych tekstów (antyplagiat JSA).</p>
+</div>
 
 <h2>Jakie są typy prac licencjackich z pielęgniarstwa</h2>
 
