@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Psychologia to nauka o zachowaniu i procesach psychicznych człowieka. Pisanie pracy licencjackiej z psychologii wymaga znajomości teorii psychologicznych, metodologii badań oraz umiejętności stosowania narzędzi badawczych. Studenci mogą prowadzić badania empiryczne lub przygotować przegląd literatury na wybrany temat.</p>
+<p>Psychologia to nauka o zachowaniu i procesach psychicznych człowieka. Pisanie pracy licencjackiej z psychologii wymaga znajomości teorii psychologicznych, metodologii badań oraz umiejętności stosowania narzędzi badawczych. Studenci mogą prowadzić badania empiryczne lub przygotować przegląd literatury na wybrany temat. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-psychologia/">przykładową pracę licencjacką z psychologii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z psychologii</h2>
 
