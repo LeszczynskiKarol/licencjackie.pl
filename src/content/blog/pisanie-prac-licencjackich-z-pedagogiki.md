@@ -17,7 +17,7 @@ showSmartEduCTA: true
 
 <h2>Specyfika prac licencjackich z pedagogiki</h2>
 
-<p>Prace pedagogiczne często mają charakter empiryczny - opierają się na badaniach prowadzonych w szkołach, przedszkolach, placówkach opiekuńczo-wychowawczych. Wymagają uzyskania zgód (dyrekcji, rodziców) i przestrzegania zasad etyki badań z udziałem dzieci i młodzieży. Jednocześnie dostęp do środowisk edukacyjnych jest relatywnie łatwy dzięki praktykom studenckim.</p>
+<p>Prace pedagogiczne często mają charakter empiryczny - opierają się na badaniach prowadzonych w szkołach, przedszkolach, placówkach opiekuńczo-wychowawczych. Wymagają uzyskania zgód (dyrekcji, rodziców) i przestrzegania zasad etyki badań z udziałem dzieci i młodzieży. Jednocześnie dostęp do środowisk edukacyjnych jest relatywnie łatwy dzięki praktykom studenckim. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-pedagogika/">przykładową pracę licencjacką z pedagogiki</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <p>Pedagogika jest dziedziną interdyscyplinarną - łączy się z psychologią, socjologią, naukami o zdrowiu. Praca może dotyczyć pedagogiki przedszkolnej i wczesnoszkolnej, pedagogiki specjalnej, resocjalizacyjnej, opiekuńczej czy andragogiki. Wybór specjalności powinien odpowiadać zainteresowaniom studenta i planowanej ścieżce zawodowej.</p>
 
