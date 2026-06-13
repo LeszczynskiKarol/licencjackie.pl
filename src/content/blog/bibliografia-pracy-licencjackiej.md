@@ -1,6 +1,6 @@
 ---
 title: "Bibliografia w pracy licencjackiej — wzór, przykłady, APA i Harvard"
-description: "Jak zrobić bibliografię w pracy licencjackiej? Gotowe wzory cytowań książek, artykułów i źródeł online + style APA i Harvard."
+description: "Jak zrobić bibliografię w pracy licencjackiej? Gotowe wzory cytowań książek, artykułów i źródeł online (APA, Harvard) + wzór bibliografii do pobrania (PDF, Word)."
 publishDate: 2025-12-11
 updateDate: 2026-06-10
 author: "Redakcja Licencjackie.pl"
@@ -93,6 +93,12 @@ showSmartEduCTA: true
 </table>
 
 <h2>Jak opisywać różne typy źródeł w bibliografii</h2>
+
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:0 0 24px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzór bibliografii do pobrania – zapis każdego typu źródła</p>
+<a href="/pobierz/bibliografia-pracy-licencjackiej-wzor.pdf" style="display:inline-block;background:#059669;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/bibliografia-pracy-licencjackiej-wzor.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór Word (DOCX)</a>
+</div>
 
 <p>Różnorodność źródeł wykorzystywanych w pracach licencjackich wymaga znajomości specyficznych zasad opisywania poszczególnych typów publikacji. Książki autorskie stanowią najprostszy przypadek, gdzie opis rozpoczyna się od nazwiska autora, po którym następuje inicjał imienia, tytuł dzieła, miejsce wydania, nazwa wydawnictwa i rok publikacji. Istotne jest zachowanie właściwej interpunkcji, gdzie poszczególne elementy oddziela się przecinkami, a tytuł wyróżnia kursywą lub podkreśleniem. W przypadku książek wieloautorskich wymienia się wszystkich autorów, jeśli jest ich do trzech, a gdy jest ich więcej, podaje się pierwszego autora i dodaje skrót "i in." lub "et al.".</p>
 

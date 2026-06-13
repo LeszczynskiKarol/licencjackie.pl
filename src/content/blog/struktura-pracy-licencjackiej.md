@@ -1,6 +1,6 @@
 ---
 title: "Struktura pracy licencjackiej - kompletny przewodnik"
-description: "Na czym polega struktura pracy licencjackiej? Jak się za nią zabrać? Sprawdź krok kroku, jak przebrnąć przez cały proces"
+description: "Z jakich elementów składa się praca licencjacka? Struktura krok po kroku + wzór strony tytułowej i oświadczenia o samodzielności do pobrania (PDF, Word)."
 publishDate: 2025-12-01
 author: "Redakcja Licencjackie.pl"
 category: "Struktura pracy"
@@ -21,6 +21,12 @@ showSmartEduCTA: true
 <p>Elementy wstępne pracy licencjackiej stanowią pierwszą część dokumentu, która prezentuje podstawowe informacje o pracy oraz jej autorze. Ta sekcja, choć często traktowana jako formalna, ma istotne znaczenie dla ogólnego odbioru pracy i musi być wykonana z najwyższą starannością. Elementy wstępne tworzą ramy organizacyjne dla całej pracy i pozwalają czytelnikowi szybko zorientować się w jej zawartości oraz strukturze. Prawidłowe przygotowanie tej części wymaga znajomości szczegółowych wymogów uczelni oraz obowiązujących standardów edytorskich. Sam wstęp, czyli pierwszą merytoryczną część pracy, omawiamy osobno w poradniku <a href="/blog/wstep-pracy-licencjackiej/">jak napisać wstęp do pracy licencjackiej</a>.</p>
 
 <h3>Strona tytułowa i deklaracja autorstwa</h3>
+
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:0 0 24px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzory do pobrania (PDF i Word)</p>
+<p style="margin:0 0 8px"><strong>Strona tytułowa pracy licencjackiej:</strong> <a href="/pobierz/strona-tytulowa-pracy-licencjackiej-wzor.pdf">PDF</a> · <a href="/pobierz/strona-tytulowa-pracy-licencjackiej-wzor.docx">Word (DOCX)</a></p>
+<p style="margin:0"><strong>Oświadczenie o samodzielności pracy:</strong> <a href="/pobierz/oswiadczenie-o-samodzielnosci-pracy-wzor.pdf">PDF</a> · <a href="/pobierz/oswiadczenie-o-samodzielnosci-pracy-wzor.docx">Word (DOCX)</a></p>
+</div>
 
 <p>Strona tytułowa jest pierwszym elementem, z którym styka się czytelnik pracy licencjackiej, dlatego musi być wykonana zgodnie z obowiązującym wzorem uczelni. Zawiera ona szereg kluczowych informacji, które identyfikują pracę oraz jej autora. Na stronie tytułowej obligatoryjnie umieszcza się pełną nazwę uczelni wraz z logo, nazwę wydziału oraz kierunku studiów, co pozwala na precyzyjne określenie kontekstu akademickiego pracy. Centralnym elementem strony tytułowej jest tytuł pracy, który powinien być sformułowany w sposób precyzyjny, zwięzły i oddający istotę podejmowanej problematyki badawczej.</p>
 

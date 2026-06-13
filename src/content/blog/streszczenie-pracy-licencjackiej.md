@@ -1,6 +1,6 @@
 ---
 title: "Streszczenie pracy licencjackiej – jak napisać + przykład"
-description: "Co powinno zawierać streszczenie pracy licencjackiej, ile słów ma liczyć i czym różni się od abstraktu? Instrukcja krok po kroku z gotowym przykładem."
+description: "Co powinno zawierać streszczenie pracy licencjackiej, ile słów ma liczyć i czym różni się od abstraktu? Instrukcja krok po kroku, gotowy przykład i wzór do pobrania (PDF, Word)."
 publishDate: 2026-06-10
 author: "Redakcja Licencjackie.pl"
 category: "Struktura pracy"
@@ -53,6 +53,13 @@ showSmartEduCTA: true
 <p>Celem pracy było ustalenie, które formy rekrutacji pracowników stosowane w małych przedsiębiorstwach branży IT zapewniają najlepszy stosunek jakości pozyskiwanych kandydatów do ponoszonych kosztów. W części teoretycznej omówiono pojęcie i formy rekrutacji oraz specyfikę rynku pracy IT. W części empirycznej przeprowadzono sondaż diagnostyczny z użyciem autorskiego kwestionariusza ankiety wśród 58 osób odpowiedzialnych za rekrutację w firmach zatrudniających do 50 osób, uzupełniony czterema wywiadami pogłębionymi. Wyniki wskazują, że najskuteczniejszym kanałem rekrutacji są polecenia pracownicze: zapewniają 42% zatrudnień przy najniższym koszcie pozyskania kandydata, a ich przewaga rośnie wraz ze stażem firmy na rynku. Najsłabiej wypadły płatne ogłoszenia na portalach ogólnotematycznych. Hipoteza główna została potwierdzona. We wnioskach wskazano, że małe firmy IT powinny formalizować programy poleceń pracowniczych, a budżet ogłoszeniowy przenosić do serwisów branżowych. Zaproponowano kierunki dalszych badań obejmujące większą próbę i firmy spoza branży IT.</p>
 <p>Słowa kluczowe: rekrutacja, zarządzanie zasobami ludzkimi, branża IT, małe przedsiębiorstwa, polecenia pracownicze</p>
 </blockquote>
+
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:8px 0 28px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzór streszczenia do pobrania (PL + EN)</p>
+<p style="margin:0 0 12px;color:#374151">Gotowy szablon z kolejnością zdań i przykładem – w wersji do wydruku i do edycji.</p>
+<a href="/pobierz/streszczenie-pracy-licencjackiej-wzor.pdf" style="display:inline-block;background:#059669;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/streszczenie-pracy-licencjackiej-wzor.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór Word (DOCX)</a>
+</div>
 
 <h2>Streszczenie a abstrakt: czym się różnią</h2>
 
