@@ -13,7 +13,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Praca magisterska z administracji wymaga przeprowadzenia pogłębionej analizy instytucji administracyjnych, procedur lub polityk publicznych. Magistrant powinien wykazać się umiejętnością analizy prawnej, badań empirycznych lub komparatystyki oraz formułowania wniosków de lege ferenda. Poniżej przedstawiamy 100+ tematów spełniających standardy akademickie.</p>
+<p>Praca magisterska z administracji wymaga przeprowadzenia pogłębionej analizy instytucji administracyjnych, procedur lub polityk publicznych. Magistrant powinien wykazać się umiejętnością analizy prawnej, badań empirycznych lub komparatystyki oraz formułowania wniosków de lege ferenda. Poniżej przedstawiamy 100+ tematów spełniających standardy akademickie. Dodatkową pulę propozycji znajdziesz w naszym siostrzanym serwisie: <a href="https://www.praca-magisterska.pl/tematy/administracja/">tematy prac magisterskich z administracji</a>.</p>
 
 <h2>Samorząd terytorialny</h2>
 

@@ -12,7 +12,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Praca magisterska z psychologii wymaga przeprowadzenia samodzielnych badań empirycznych z wykorzystaniem standaryzowanych narzędzi psychologicznych. Magistrant powinien wykazać się znajomością metodologii badań psychologicznych, umiejętnością analizy statystycznej oraz interpretacji wyników w kontekście teorii. Poniżej przedstawiamy 100+ tematów spełniających standardy akademickie.</p>
+<p>Praca magisterska z psychologii wymaga przeprowadzenia samodzielnych badań empirycznych z wykorzystaniem standaryzowanych narzędzi psychologicznych. Magistrant powinien wykazać się znajomością metodologii badań psychologicznych, umiejętnością analizy statystycznej oraz interpretacji wyników w kontekście teorii. Poniżej przedstawiamy 100+ tematów spełniających standardy akademickie. Jeszcze więcej propozycji, w tym tematy z psychologii klinicznej pogrupowane według specjalności, znajdziesz w naszym siostrzanym serwisie: <a href="https://www.praca-magisterska.pl/tematy/psychologia/">tematy prac magisterskich z psychologii</a>.</p>
 
 <h2>Psychologia społeczna</h2>
 

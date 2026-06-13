@@ -1,6 +1,6 @@
 ---
-title: "Wstęp do pracy licencjackiej - jak go napisać?"
-description: "Na czym polega pisanie wstępu do tematy pracy licencjackiej? Jak się za nią zabrać? Sprawdź krok kroku, jak przebrnąć przez cały proces"
+title: "Jak napisać wstęp do pracy licencjackiej? Wzór i przykłady"
+description: "Wstęp do pracy licencjackiej krok po kroku: obowiązkowe elementy, ile stron powinien mieć, gotowy wzór z komentarzem i błędy, które najczęściej wytykają promotorzy."
 publishDate: 2025-11-28
 author: "Redakcja Licencjackie.pl"
 category: "Struktura pracy"

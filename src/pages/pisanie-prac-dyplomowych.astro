@@ -1,0 +1,289 @@
+---
+// src/pages/pisanie-prac-dyplomowych.astro — pillar parasolowy (lic + mgr + inż)
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import SmartEduCTA from "../components/SmartEduCTA.astro";
+import EbookCTA from "../components/EbookCTA.astro";
+import Layout from "../layouts/Layout.astro";
+
+const siteUrl = "https://www.licencjackie.pl";
+const pageUrl = `${siteUrl}/pisanie-prac-dyplomowych/`;
+
+const etapy = [
+  { name: "Wybór tematu", href: "/blog/wybor-tematu-pracy-dyplomowej" },
+  { name: "Konspekt pracy", href: "/blog/konspekt-pracy-dyplomowej" },
+  { name: "Struktura i plan rozdziałów", href: "/blog/struktura-pracy-licencjackiej" },
+  { name: "Wstęp i część teoretyczna", href: "/blog/wstep-pracy-licencjackiej" },
+  { name: "Badania własne", href: "/blog/badania-w-pracy-magisterskiej" },
+  { name: "Analiza i interpretacja danych", href: "/blog/analiza-i-interpretacja-danych" },
+  { name: "Bibliografia i przypisy", href: "/blog/bibliografia-w-pracy-magisterskiej" },
+  { name: "Obrona pracy", href: "/blog/obrona-pracy-licencjackiej" },
+];
+
+const faq = [
+  {
+    q: "Czym różni się praca licencjacka od magisterskiej?",
+    a: "Skalą samodzielności naukowej. W pracy licencjackiej student wykazuje się umiejętnością zastosowania wiedzy: prostsze badanie, analiza oparta na procentach i statystyce opisowej, hipoteza często opcjonalna, objętość zwykle 40–60 stron. Praca magisterska musi mieć charakter badawczy z własnym wkładem autora: pełny zestaw hipotez, testy statystyczne, literatura zagraniczna i objętość najczęściej 60–90 stron. Praca inżynierska idzie w trzecią stronę: zamiast hipotez ma cel projektowy, a jej sercem jest zaprojektowane lub wykonane rozwiązanie techniczne.",
+  },
+  {
+    q: "Ile stron ma praca dyplomowa?",
+    a: "Zależnie od typu: licencjacka zwykle 40–60 stron, inżynierska 50–70, magisterska 60–90 (spotykane maksima sięgają 120). Wiążące są zawsze wytyczne wydziału, które określają też, czego nie wlicza się do minimum (bibliografia, aneksy, spisy). Objętość jest skutkiem dobrze zaplanowanego badania, nie celem samym w sobie; „dopychanie” stron widać w pracy od razu.",
+  },
+  {
+    q: "Czy pracę dyplomową da się napisać w miesiąc?",
+    a: "Teoretycznie tak i co roku ktoś to robi, ale kosztem jakości i przy dużym ryzyku. Miesiąc wystarcza na pracę przeglądową pisaną intensywnie przy gotowym konspekcie i zebranej literaturze. Praca z badaniami własnymi w miesiąc się nie mieści, bo samo zbieranie danych (ankieta, wywiady) trwa 2–4 tygodnie, a konsultacje z promotorem mają swój rytm, którego nie przyspieszysz. Realistyczny plan to 5–6 miesięcy pracy po godzinach.",
+  },
+  {
+    q: "Czy pracę dyplomową pisze się bezosobowo?",
+    a: "Na większości polskich uczelni tak: standardem jest forma bezosobowa („przeprowadzono badanie”, „w pracy przedstawiono”) lub trzecia osoba („autor analizuje”). Pierwsza osoba liczby pojedynczej bywa akceptowana w naukach społecznych i humanistycznych, ale to wyjątek, nie reguła. Rozstrzygają wytyczne wydziału i preferencje promotora; najgorszy wariant to mieszanie form w obrębie jednej pracy.",
+  },
+  {
+    q: "Co grozi za plagiat lub złożenie cudzej pracy dyplomowej?",
+    a: "Trzy rodzaje konsekwencji naraz. Karne: przywłaszczenie autorstwa to przestępstwo z prawa autorskiego, a złożenie cudzej pracy z oświadczeniem o samodzielności wypełnia znamiona wyłudzenia poświadczenia nieprawdy (art. 272 Kodeksu karnego, do 3 lat pozbawienia wolności). Dyscyplinarne: od nagany po wydalenie z uczelni. I administracyjne: dyplom uzyskany na podstawie pracy, która nie była dziełem absolwenta, może zostać unieważniony także wiele lat po obronie.",
+  },
+];
+
+// ── Schema.org ──
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Pisanie prac dyplomowych – przewodnik + pomoc AI",
+  description:
+    "Przewodnik po pisaniu prac dyplomowych: różnice między pracą licencjacką, magisterską i inżynierską, proces pisania, czas, koszty i granice legalnej pomocy.",
+  url: pageUrl,
+  inLanguage: "pl-PL",
+  isPartOf: { "@type": "WebSite", name: "Licencjackie.pl", url: siteUrl },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Strona główna", item: `${siteUrl}/` },
+    { "@type": "ListItem", position: 2, name: "Pisanie prac dyplomowych", item: pageUrl },
+  ],
+};
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Etapy pisania pracy dyplomowej",
+  itemListElement: etapy.map((e, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: e.name,
+    url: `${siteUrl}${e.href}/`,
+  })),
+};
+---
+
+<Layout
+  title="Pisanie prac dyplomowych – przewodnik + pomoc AI | Licencjackie.pl"
+  description="Praca licencjacka, magisterska czy inżynierska? Różnice, proces pisania krok po kroku, realny czas i koszty oraz granice legalnej pomocy w pisaniu prac dyplomowych."
+  canonical={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} slot="head" />
+
+  <Navbar />
+
+  <main class="pt-24 pb-16">
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumbs -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary-600 transition-colors">Strona główna</a></li>
+          <li class="text-gray-400">/</li>
+          <li class="text-gray-900 font-medium">Pisanie prac dyplomowych</li>
+        </ol>
+      </nav>
+
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Pisanie prac dyplomowych: jak napisać pracę i z jakiej pomocy korzystać legalnie
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Licencjat, magisterka czy praca inżynierska: czym się różnią, jak wygląda proces pisania i gdzie przebiega granica między legalnym wsparciem a problemem z prawem.
+        </p>
+      </header>
+
+      <div class="prose prose-lg max-w-none">
+        <p>„Praca dyplomowa" to pojęcie-parasol: kryją się pod nim praca licencjacka, magisterska, inżynierska i podyplomowa, a każda ma własne wymagania. Wspólny jest za to proces (od tematu, przez badania, po obronę), wspólne są zasady warsztatu (przypisy, bibliografia, metodologia) i wspólne są pytania o pomoc: co wolno, czego nie wolno i czym różni się legalne wsparcie od kupowania gotowca. Ten przewodnik porządkuje wszystkie te tematy i prowadzi do szczegółowych poradników dla każdego etapu. Jeśli piszesz konkretnie licencjat, przejdź od razu do dedykowanego przewodnika: <a href="/pisanie-prac-licencjackich/">pisanie prac licencjackich</a>.</p>
+
+        <h2>Rodzaje prac dyplomowych: licencjacka, inżynierska, magisterska</h2>
+
+        <p>Wytyczne uczelniane definiują prace dyplomowe jako prace promocyjne: stanowią podstawę do ubiegania się o tytuł zawodowy i weryfikują umiejętności metodyczne piszącego, od formułowania problemów, przez dobór metod, po interpretację wyników. W praktyce różnice między typami prac sprowadzają się do skali wymagań:</p>
+
+        <table>
+          <thead>
+            <tr><th>Cecha</th><th>Praca licencjacka</th><th>Praca inżynierska</th><th>Praca magisterska</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Charakter</td>
+              <td>zastosowanie wiedzy, prostsze badanie własne lub analiza</td>
+              <td>projektowy: zaprojektowanie lub wykonanie rozwiązania technicznego</td>
+              <td>badawczy, z wyraźnym wkładem własnym autora</td>
+            </tr>
+            <tr>
+              <td>Hipotezy</td>
+              <td>często opcjonalne</td>
+              <td>zamiast hipotez założenia projektowe</td>
+              <td>wymagane: główna i cząstkowe</td>
+            </tr>
+            <tr>
+              <td>Analiza danych</td>
+              <td>procenty, statystyka opisowa</td>
+              <td>testy rozwiązania, pomiary, dokumentacja techniczna</td>
+              <td>testy statystyczne (t-Studenta, chi-kwadrat)</td>
+            </tr>
+            <tr>
+              <td>Literatura</td>
+              <td>ok. 20–30 pozycji</td>
+              <td>20–30 pozycji + dokumentacje i normy</td>
+              <td>min. 30–40 pozycji, w tym zagraniczne</td>
+            </tr>
+            <tr>
+              <td>Objętość</td>
+              <td>40–60 stron</td>
+              <td>50–70 stron</td>
+              <td>60–90 stron</td>
+            </tr>
+            <tr>
+              <td>Czas pisania</td>
+              <td>5–6 miesięcy</td>
+              <td>5–7 miesięcy (z wykonaniem projektu)</td>
+              <td>6–9 miesięcy</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Liczby w tabeli to typowe widełki z wytycznych polskich uczelni; rozstrzygają zawsze wymogi Twojego wydziału. Praktyczny wniosek z tej tabeli jest jeden: nie pisz magisterki metodami licencjatu (za płytko) ani licencjatu metodami magisterki (utopisz się w robocie, której nikt nie wymaga).</p>
+
+        <h2>Jak wygląda pisanie pracy dyplomowej: proces krok po kroku</h2>
+
+        <p>Niezależnie od typu pracy proces składa się z tych samych ośmiu etapów. Każdy z nich opisaliśmy w osobnym poradniku:</p>
+
+        <ol>
+          <li><a href="/blog/wybor-tematu-pracy-dyplomowej">Wybór tematu</a>: wąski, badawczy i z dostępną literaturą. Temat zbyt szeroki to najczęstszy powód przepisywania pracy w połowie semestru.</li>
+          <li><a href="/blog/konspekt-pracy-dyplomowej">Konspekt</a>: cel, pytania badawcze, metoda i plan rozdziałów na 1–3 stronach. Test wykonalności tematu przed inwestycją miesięcy pracy.</li>
+          <li><a href="/blog/struktura-pracy-licencjackiej">Struktura pracy</a>: wstęp, rozdział teoretyczny, metodologiczny, badawczy (lub projektowy), zakończenie. Plan zatwierdza promotor.</li>
+          <li><a href="/blog/wstep-pracy-licencjackiej">Część teoretyczna</a>: przegląd literatury z przypisami, pisany równolegle z gromadzeniem źródeł.</li>
+          <li><a href="/blog/badania-w-pracy-magisterskiej">Badania własne</a>: ankieta, wywiady, eksperyment lub projekt techniczny, z narzędziem skonsultowanym przed startem.</li>
+          <li><a href="/blog/analiza-i-interpretacja-danych">Analiza i interpretacja danych</a>: od surowych danych do dyskusji wyników; etap notorycznie niedoszacowany w harmonogramach.</li>
+          <li><a href="/blog/bibliografia-w-pracy-magisterskiej">Bibliografia i przypisy</a>: prowadzone na bieżąco, z osobnym wykazem <a href="/blog/jak-cytowac-akty-prawne">aktów prawnych</a>, jeśli praca ich dotyka.</li>
+          <li><a href="/blog/obrona-pracy-licencjackiej">Obrona</a>: prezentacja wyników i pytania komisji, formalność przy samodzielnie napisanej pracy.</li>
+        </ol>
+
+        <h2>Ile trwa napisanie pracy dyplomowej</h2>
+
+        <p>Licencjat zamyka się realnie w 5–6 miesiącach, magisterka potrzebuje 6–9, praca inżynierska zależy od skali projektu. O czasie decydują dwa wąskie gardła wspólne dla wszystkich typów. Pierwsze to rytm konsultacji: promotor czyta rozdział w dni lub tygodnie, a rund poprawek jest w semestrze kilka; student, który wysyła pierwszy rozdział w maju, ustawia się w najdłuższej kolejce roku. Drugie to badania i analiza danych, które w planach dostają po tygodniu, a w rzeczywistości zajmują po miesiącu. Szczegółowy harmonogram etapów rozpisaliśmy w <a href="/pisanie-prac-licencjackich/">przewodniku licencjackim</a>; dla magisterki przelicz dłuższe widełki na rozdział badawczy.</p>
+
+        <h2>Wymogi formalne pracy dyplomowej</h2>
+
+        <p>Wymogi edytorskie są na polskich uczelniach zaskakująco zgodne i warto ustawić je w edytorze pierwszego dnia, a nie formatować gotowej pracy. Standardowy zestaw wygląda tak:</p>
+
+        <ul>
+          <li>czcionka Times New Roman 12 pkt w tekście głównym, 10 pkt w przypisach,</li>
+          <li>interlinia 1,5 wiersza (w przypisach pojedyncza), tekst wyjustowany,</li>
+          <li>marginesy 2,5 cm, z dodatkowym marginesem na oprawę po stronie grzbietu,</li>
+          <li>wcięcie akapitowe 1,25 cm, numeracja stron ciągła (zwykle dół strony),</li>
+          <li>tabele i rysunki z numerem, tytułem i źródłem (przy własnych: „Źródło: opracowanie własne”),</li>
+          <li>cytaty w cudzysłowie, kursywa do wyróżnień i tytułów publikacji.</li>
+        </ul>
+
+        <p>Do tego dochodzi formalna ścieżka złożenia pracy, wspólna dla wszystkich typów: wgranie pracy do uczelnianego systemu (najczęściej APD), automatyczne badanie w Jednolitym Systemie Antyplagiatowym, raport JSA akceptowany przez promotora i dopiero potem wyznaczenie terminu obrony. Zaplanuj na tę ścieżkę co najmniej dwa tygodnie przed regulaminowym terminem złożenia, bo każdy z etapów potrafi zatrzymać się na kilka dni, a poprawki po raporcie JSA zdarzają się także uczciwie pisanym pracom (np. przez zbyt długie cytaty).</p>
+
+        <h2>Najczęstsze błędy przy pisaniu pracy dyplomowej</h2>
+
+        <p>Lista poniżej powstała z problemów, które wracają w pracach niezależnie od kierunku i stopnia. Każdy z nich kosztuje rundę poprawek u promotora, a wykryty późno potrafi kosztować semestr:</p>
+
+        <ul>
+          <li><strong>Pisanie bez konspektu.</strong> Rozdziały powstają „na czuja”, a w połowie pracy okazuje się, że temat jest za szeroki albo badania nie odpowiadają na pytania badawcze.</li>
+          <li><strong>Temat-worek.</strong> „Marketing w przedsiębiorstwie” to nie temat, tylko dziedzina. Praca dyplomowa potrzebuje wąskiego problemu z konkretnym obiektem badania.</li>
+          <li><strong>Część teoretyczna bez związku z badawczą.</strong> Teoria referuje podręczniki, a badanie żyje własnym życiem; recenzent pyta wtedy, po co rozdział pierwszy w ogóle powstał.</li>
+          <li><strong>Niedoszacowana analiza danych.</strong> Tydzień w harmonogramie, miesiąc w rzeczywistości; szczegóły w poradniku o <a href="/blog/analiza-i-interpretacja-danych">analizie i interpretacji danych</a>.</li>
+          <li><strong>Bibliografia robiona na końcu.</strong> Odtwarzanie źródeł „z pamięci” tydzień przed terminem to najczęstsze źródło błędów w przypisach i nieścisłości, które wyłapuje JSA.</li>
+          <li><strong>Wstęp pisany na początku i nigdy nieaktualizowany.</strong> Deklaruje cele i strukturę, których gotowa praca już nie ma. Wstęp w wersji ostatecznej pisze się po zakończeniu.</li>
+          <li><strong>Zostawianie promotora na koniec.</strong> Praca konsultowana rozdział po rozdziale przechodzi obronę gładko; praca wysłana w całości w czerwcu wraca z poprawkami, na które nie ma już czasu.</li>
+        </ul>
+
+        <h2>Pisanie prac dyplomowych na zlecenie a prawo</h2>
+
+        <p>Rynek ghostwritingu akademickiego obsługuje wszystkie typy prac i wszędzie działa według tego samego schematu: serwis legalnie sprzedaje „wzór" lub „materiał poglądowy", a całe ryzyko przechodzi na studenta w momencie złożenia pracy na uczelni. Składasz wtedy pisemne oświadczenie o samodzielnym napisaniu pracy; jeśli jest fałszywe, uzyskanie dyplomu na jego podstawie to wyłudzenie poświadczenia nieprawdy z art. 272 Kodeksu karnego (do 3 lat pozbawienia wolności), a do tego dochodzi postępowanie dyscyplinarne i możliwość unieważnienia dyplomu po latach. Jednolity System Antyplagiatowy nie wykrywa pracy pisanej na zamówienie od zera, ale wykrywalność i tak rośnie z innej strony: promotor zna styl studenta z seminariów, a komisja na obronie szybko weryfikuje, czy autor zna „własną" pracę. Pełną analizę z perspektywy studenta licencjatu znajdziesz w <a href="/pisanie-prac-licencjackich/">przewodniku licencjackim</a>; przepisy i konsekwencje są identyczne dla magisterki i pracy inżynierskiej.</p>
+
+        <h2>AI w pisaniu pracy dyplomowej: gdzie przebiega granica</h2>
+
+        <p>Narzędzia AI zmieniły układ sił na tym rynku, bo dały studentom legalną alternatywę dla ghostwritingu: wsparcie w researchu, konspekcie, szkicach i redakcji, przy zachowaniu własnego autorstwa. Granica jest taka sama dla każdego typu pracy. AI użyte jako narzędzie (jak edytor, arkusz kalkulacyjny czy menedżer bibliografii) nie odbiera Ci autorstwa: pytania badawcze, badanie, wnioski i odpowiedzialność za tekst pozostają Twoje. AI użyte zastępczo, do wygenerowania rozdziałów „do wklejenia", stawia Cię w tej samej sytuacji co ghostwriting. Coraz więcej uczelni publikuje własne wytyczne dotyczące AI w pracach dyplomowych; sprawdź je i w razie wątpliwości zapytaj promotora wprost, zanim zaczniesz.</p>
+      </div>
+
+      <SmartEduCTA variant="full" class="my-10" />
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Przewodniki szczegółowe: wybierz swoją ścieżkę</h2>
+
+        <p>Ta strona to mapa; szczegóły znajdziesz w dedykowanych materiałach:</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4 mt-6 mb-12">
+        <a href="/pisanie-prac-licencjackich/" class="block bg-primary-50 border border-primary-200 rounded-xl p-5 hover:border-primary-500 transition-colors">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Pisanie prac licencjackich →</h3>
+          <p class="text-sm text-gray-600 m-0">Pełny przewodnik dla pierwszego stopnia: proces, czas, koszty, legalność i poradniki dla 18 kierunków.</p>
+        </a>
+        <a href="/pisanie-prac-magisterskich/" class="block bg-primary-50 border border-primary-200 rounded-xl p-5 hover:border-primary-500 transition-colors">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Pisanie prac magisterskich →</h3>
+          <p class="text-sm text-gray-600 m-0">Przewodnik dla drugiego stopnia: wymagania badawcze, czas, koszty i poradniki kierunkowe.</p>
+        </a>
+        <a href="/kierunki/" class="block bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-500 transition-colors">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Poradniki według kierunków →</h3>
+          <p class="text-sm text-gray-600 m-0">Specyfika pisania prac dla 18 kierunków: od pedagogiki i prawa po pielęgniarstwo i zarządzanie.</p>
+        </a>
+        <a href="/blog/kategoria/tematy-prac-licencjackich/" class="block bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-500 transition-colors">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Tematy prac licencjackich →</h3>
+          <p class="text-sm text-gray-600 m-0">Listy gotowych tematów z różnych kierunków jako inspiracja do własnego.</p>
+        </a>
+        <a href="/blog/kategoria/tematy-prac-magisterskich/" class="block bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-500 transition-colors">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Tematy prac magisterskich →</h3>
+          <p class="text-sm text-gray-600 m-0">Propozycje tematów dla ponad 20 kierunków studiów drugiego stopnia.</p>
+        </a>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Ile kosztuje pisanie pracy dyplomowej</h2>
+
+        <p>Cenniki ghostwriterów rosną ze stopniem pracy: licencjat pisany na zlecenie to według ogłoszeń zwykle 2000–5000 zł, magisterka 3000–8000 zł, a prace inżynierskie z wykonaniem projektu bywają wyceniane jeszcze wyżej. Żaden z tych cenników nie wykazuje pozycji „ryzyko": odpowiedzialności karnej, dyscyplinarnej i dyplomu, który można stracić po latach. Legalna ścieżka wsparcia kosztuje ułamek tych kwot: narzędzie AI to abonament rzędu kilkudziesięciu złotych miesięcznie, korepetycje ze statystyki 80–150 zł za godzinę, a profesjonalna korekta językowa gotowej pracy 300–800 zł zależnie od objętości. Różnica jest też jakościowa: po legalnej ścieżce zostaje Ci praca, którą znasz i obronisz, oraz umiejętności, które były celem całego ćwiczenia.</p>
+
+        <h2>FAQ: najczęstsze pytania o pisanie prac dyplomowych</h2>
+      </div>
+
+      <div class="mt-6 space-y-6">
+        {faq.map((f) => (
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">{f.q}</h3>
+            <p class="text-gray-700 leading-relaxed">{f.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="prose prose-lg max-w-none mt-12">
+        <p>Praca dyplomowa, niezależnie od stopnia, to projekt do przejścia etapami: temat, konspekt, struktura, teoria, badania, analiza, redakcja, obrona. Wybierz ścieżkę dla swojego typu pracy, korzystaj z legalnego wsparcia i zacznij wcześniej, niż podpowiada kalendarz. Najlepszy moment na pierwszy krok, czyli <a href="/blog/wybor-tematu-pracy-dyplomowej">wybór tematu</a>, jest zawsze ten sam: dziś.</p>
+      </div>
+
+      <EbookCTA workType="lic" class="mt-12" />
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

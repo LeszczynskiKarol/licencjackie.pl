@@ -18,7 +18,7 @@ showSmartEduCTA: true
 
 <h2>Elementy wstępne pracy licencjackiej</h2>
 
-<p>Elementy wstępne pracy licencjackiej stanowią pierwszą część dokumentu, która prezentuje podstawowe informacje o pracy oraz jej autorze. Ta sekcja, choć często traktowana jako formalna, ma istotne znaczenie dla ogólnego odbioru pracy i musi być wykonana z najwyższą starannością. Elementy wstępne tworzą ramy organizacyjne dla całej pracy i pozwalają czytelnikowi szybko zorientować się w jej zawartości oraz strukturze. Prawidłowe przygotowanie tej części wymaga znajomości szczegółowych wymogów uczelni oraz obowiązujących standardów edytorskich.</p>
+<p>Elementy wstępne pracy licencjackiej stanowią pierwszą część dokumentu, która prezentuje podstawowe informacje o pracy oraz jej autorze. Ta sekcja, choć często traktowana jako formalna, ma istotne znaczenie dla ogólnego odbioru pracy i musi być wykonana z najwyższą starannością. Elementy wstępne tworzą ramy organizacyjne dla całej pracy i pozwalają czytelnikowi szybko zorientować się w jej zawartości oraz strukturze. Prawidłowe przygotowanie tej części wymaga znajomości szczegółowych wymogów uczelni oraz obowiązujących standardów edytorskich. Sam wstęp, czyli pierwszą merytoryczną część pracy, omawiamy osobno w poradniku <a href="/blog/wstep-pracy-licencjackiej/">jak napisać wstęp do pracy licencjackiej</a>.</p>
 
 <h3>Strona tytułowa i deklaracja autorstwa</h3>
 
@@ -113,7 +113,7 @@ showSmartEduCTA: true
 <li>wykazanie luk w dotychczasowych badaniach uzasadniających podjęcie tematu</li>
 </ul>
 
-<p>Rozdział metodologiczny stanowi most między teorią a praktyką badawczą i opisuje sposób, w jaki zostały przeprowadzone badania empiryczne. Ta część pracy musi być napisana z najwyższą precyzją, ponieważ pozwala na ocenę rzetelności i trafności uzyskanych wyników. Rozdział metodologiczny rozpoczyna się od jasnego sformułowania celu badań, który odpowiada na pytanie, co dokładnie ma zostać zbadane. Cel powinien być sformułowany w sposób konkretny, mierzalny i osiągalny w ramach możliwości studenta oraz dostępnych zasobów.</p>
+<p>Rozdział metodologiczny stanowi most między teorią a praktyką badawczą i opisuje sposób, w jaki zostały przeprowadzone badania empiryczne. Ta część pracy musi być napisana z najwyższą precyzją, ponieważ pozwala na ocenę rzetelności i trafności uzyskanych wyników. Rozdział metodologiczny rozpoczyna się od jasnego sformułowania celu badań, który odpowiada na pytanie, co dokładnie ma zostać zbadane. Cel powinien być sformułowany w sposób konkretny, mierzalny i osiągalny w ramach możliwości studenta oraz dostępnych zasobów. Cały ten rozdział, wraz ze wzorami sformułowań i typowymi metodami, omawiamy szczegółowo w poradniku o <a href="/blog/metodologia-pracy-licencjackiej/">metodologii w pracy licencjackiej</a>.</p>
 
 <p>Po określeniu celu należy sformułować problemy badawcze, które precyzują obszary wymagające zbadania. Problemy badawcze mogą mieć formę pytań dopełnienia, rozpoczynających się od słów "jaki", "w jakim stopniu", "ile", lub pytań rozstrzygnięcia, rozpoczynających się od słowa "czy". Problemy te powinny być logicznie powiązane z celem pracy i stanowić jego uszczegółowienie. W niektórych pracach formułuje się również hipotezy badawcze, czyli przypuszczenia dotyczące oczekiwanych wyników badań, które następnie są weryfikowane na podstawie zebranych danych.</p>
 

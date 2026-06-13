@@ -1,0 +1,278 @@
+---
+// src/pages/pisanie-prac-magisterskich.astro — pillar magisterski
+// UWAGA strategiczna: ta strona celuje w intencję usługowo-poradnikową
+// („pisanie prac magisterskich”). Metodologia, tematy i przykładowe prace to
+// klaster praca-magisterska.pl — tu tylko skróty + link, nie rozbudowywać.
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import SmartEduCTA from "../components/SmartEduCTA.astro";
+import EbookCTA from "../components/EbookCTA.astro";
+import Layout from "../layouts/Layout.astro";
+
+const siteUrl = "https://www.licencjackie.pl";
+const pageUrl = `${siteUrl}/pisanie-prac-magisterskich/`;
+
+const etapy = [
+  {
+    nr: 1,
+    name: "Wybór tematu",
+    href: "/blog/temat-pracy-magisterskiej",
+    desc: "Temat magisterki musi nieść wkład własny: lukę w badaniach, nowy kontekst albo porównanie, którego nikt nie zrobił. Samo zreferowanie literatury to poziom licencjatu.",
+  },
+  {
+    nr: 2,
+    name: "Konspekt pracy",
+    href: "/blog/konspekt-pracy-magisterskiej",
+    desc: "Pełny zestaw: cel główny i szczegółowe, problemy badawcze, hipoteza główna z cząstkowymi, metody i plan rozdziałów. Promotorzy wymagają go zwykle na zaliczenie pierwszego semestru seminarium.",
+  },
+  {
+    nr: 3,
+    name: "Struktura i plan rozdziałów",
+    href: "/blog/struktura-pracy-licencjackiej",
+    desc: "Układ jak w każdej pracy dyplomowej (teoria, metodologia, badania), ale z głębszą częścią teoretyczną: dwa rozdziały teoretyczne to w magisterce norma.",
+  },
+  {
+    nr: 4,
+    name: "Część teoretyczna",
+    href: "/blog/wstep-pracy-licencjackiej",
+    desc: "Przegląd literatury z pozycjami zagranicznymi, zakończony wskazaniem luki, którą wypełnią Twoje badania. To ta luka uzasadnia istnienie pracy.",
+  },
+  {
+    nr: 5,
+    name: "Badania własne",
+    href: "/blog/badania-w-pracy-magisterskiej",
+    desc: "Obowiązkowe, nie opcjonalne. Ankieta, wywiady, eksperyment lub analiza danych zastanych, z narzędziem skonsultowanym z promotorem przed startem.",
+  },
+  {
+    nr: 6,
+    name: "Analiza i interpretacja danych",
+    href: "/blog/analiza-i-interpretacja-danych",
+    desc: "W magisterce poza statystyką opisową oczekuje się testów (t-Studenta, chi-kwadrat) i dyskusji wyników w konfrontacji z hipotezami oraz innymi badaniami.",
+  },
+  {
+    nr: 7,
+    name: "Bibliografia i przypisy",
+    href: "/blog/bibliografia-w-pracy-magisterskiej",
+    desc: "Minimum 30–40 pozycji z literaturą zagraniczną, osobny wykaz aktów prawnych i orzecznictwa, jeśli praca ich dotyka. Prowadzone od pierwszego dnia.",
+  },
+  {
+    nr: 8,
+    name: "Obrona pracy",
+    href: "/blog/obrona-pracy-licencjackiej",
+    desc: "Egzamin magisterski bywa szerszy niż obrona licencjatu: poza pracą obejmuje pytania z zakresu studiów. Samodzielnie napisana praca to połowa przygotowania.",
+  },
+];
+
+const kierunki = [
+  { name: "Administracja", slug: "administracji" },
+  { name: "Bezpieczeństwo wewnętrzne", slug: "bezpieczenstwa-wewnetrznego" },
+  { name: "Dietetyka", slug: "dietetyki" },
+  { name: "Geografia", slug: "geografii" },
+  { name: "Historia", slug: "historii" },
+  { name: "Kosmetologia", slug: "kosmetologii" },
+  { name: "Kryminologia", slug: "kryminologii" },
+  { name: "Logistyka", slug: "logistyki" },
+  { name: "Marketing", slug: "marketingu" },
+  { name: "Pedagogika", slug: "pedagogiki" },
+  { name: "Pielęgniarstwo", slug: "pielegniarstwa" },
+  { name: "Politologia", slug: "politologii" },
+  { name: "Prawo", slug: "prawa" },
+  { name: "Psychologia", slug: "psychologii" },
+  { name: "Ratownictwo medyczne", slug: "ratownictwa-medycznego" },
+  { name: "Socjologia", slug: "socjologii" },
+  { name: "Turystyka", slug: "turystyki" },
+  { name: "Zarządzanie", slug: "zarzadzania" },
+];
+
+const faq = [
+  {
+    q: "Ile trwa napisanie pracy magisterskiej?",
+    a: "Realistycznie 6–9 miesięcy przy pracy po godzinach: dwa rozdziały teoretyczne i pełne badania własne potrzebują więcej czasu niż licencjat. Najwięcej zjada zbieranie danych (2–6 tygodni zależnie od metody) i ich analiza z testami statystycznymi (3–5 tygodni). Studenci, którzy zaczynają w październiku, bronią się w terminie; zaczynający w marcu zwykle przesuwają obronę na jesień.",
+  },
+  {
+    q: "Czy praca magisterska może być kontynuacją licencjackiej?",
+    a: "Tak, i to częsta, sensowna strategia: znasz literaturę i masz punkt wyjścia. Warunki są dwa. Praca magisterska musi wnosić nowy wkład (szersze badanie, inna grupa, głębsza analiza), a nie powtarzać licencjat w dłuższej wersji. I nie wolno kopiować fragmentów własnego licencjatu bez oznaczenia, bo JSA porównuje też z bazą prac dyplomowych, w której Twój licencjat już jest: to wyjdzie jako autoplagiat.",
+  },
+  {
+    q: "Czy magisterka musi mieć badania własne?",
+    a: "Na zdecydowanej większości kierunków tak: wytyczne uczelni wymagają od pracy magisterskiej charakteru badawczego i wkładu własnego studenta. Forma badań zależy od dziedziny: ankieta, wywiady, eksperyment, analiza danych zastanych, studium przypadku albo analiza porównawcza aktów prawnych czy tekstów. Prace czysto odtwórcze, kompilujące literaturę, są akceptowane wyjątkowo i zwykle oceniane niżej.",
+  },
+  {
+    q: "Ile kosztuje napisanie pracy magisterskiej na zlecenie i czym to grozi?",
+    a: "Ogłoszenia serwisów ghostwriterskich wyceniają magisterkę na 3000–8000 zł. Ryzyko bierzesz w całości na siebie: składając pracę, podpisujesz oświadczenie o samodzielności, a jego sfałszowanie i uzyskanie dyplomu to wyłudzenie poświadczenia nieprawdy (art. 272 Kodeksu karnego, do 3 lat pozbawienia wolności), plus postępowanie dyscyplinarne i możliwość unieważnienia dyplomu po latach. Legalna alternatywa, czyli własna praca ze wsparciem AI, korepetycjami i korektą, kosztuje ułamek tej kwoty.",
+  },
+];
+
+// ── Schema.org ──
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Pisanie prac magisterskich – przewodnik + pomoc AI",
+  description:
+    "Jak wygląda pisanie pracy magisterskiej: proces krok po kroku, wymagania, czas, koszty i granice legalnej pomocy, z poradnikami dla 18 kierunków.",
+  url: pageUrl,
+  inLanguage: "pl-PL",
+  isPartOf: { "@type": "WebSite", name: "Licencjackie.pl", url: siteUrl },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Strona główna", item: `${siteUrl}/` },
+    { "@type": "ListItem", position: 2, name: "Pisanie prac magisterskich", item: pageUrl },
+  ],
+};
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Pisanie prac magisterskich według kierunków studiów",
+  itemListElement: kierunki.map((k, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `Pisanie prac magisterskich z ${k.name.toLowerCase()}`,
+    url: `${siteUrl}/blog/pisanie-prac-magisterskich-z-${k.slug}/`,
+  })),
+};
+---
+
+<Layout
+  title="Pisanie prac magisterskich – przewodnik + pomoc AI | Licencjackie.pl"
+  description="Jak wygląda pisanie pracy magisterskiej krok po kroku, ile trwa i kosztuje oraz z jakiej pomocy można korzystać legalnie? Przewodnik + poradniki dla 18 kierunków."
+  canonical={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} slot="head" />
+
+  <Navbar />
+
+  <main class="pt-24 pb-16">
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumbs -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary-600 transition-colors">Strona główna</a></li>
+          <li class="text-gray-400">/</li>
+          <li class="text-gray-900 font-medium">Pisanie prac magisterskich</li>
+        </ol>
+      </nav>
+
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Pisanie prac magisterskich: jak napisać pracę i z jakiej pomocy korzystać legalnie
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Proces pisania magisterki krok po kroku, realny czas i koszty oraz uczciwa odpowiedź, gdzie kończy się legalne wsparcie, a zaczyna ryzyko utraty dyplomu.
+        </p>
+      </header>
+
+      <div class="prose prose-lg max-w-none">
+        <p>Magisterka różni się od licencjatu nie liczbą stron, tylko poprzeczką: uczelnia oczekuje pracy o charakterze badawczym, z hipotezami, badaniami własnymi i wkładem, którego nie da się wygooglować. Dlatego frazę „pisanie prac magisterskich" wpisują nie tylko studenci szukający instrukcji, ale też ci, którzy przy drugim podejściu do rozdziału badawczego zaczynają rozważać „pomoc" z ogłoszenia. Ten przewodnik obsługuje obie sytuacje: prowadzi przez proces etap po etapie i uczciwie rozlicza opcje wsparcia, od promotora, przez AI, po granicę, za którą zaczyna się art. 272 Kodeksu karnego. Piszesz licencjat? Przejdź do bliźniaczego przewodnika: <a href="/pisanie-prac-licencjackich/">pisanie prac licencjackich</a>.</p>
+
+        <h2>Czym praca magisterska różni się od licencjackiej</h2>
+
+        <p>Krótko, bo pełną tabelę porównawczą wszystkich typów prac znajdziesz w przewodniku o <a href="/pisanie-prac-dyplomowych/">pisaniu prac dyplomowych</a>. Praca magisterska musi mieć charakter badawczy: formułujesz problem, stawiasz hipotezy (główną i cząstkowe) i rozwiązujesz problem metodami naukowymi, wykazując własny wkład. W praktyce oznacza to obowiązkowe badania, testy statystyczne zamiast samych procentów, literaturę z pozycjami zagranicznymi (minimum 30–40 pozycji) i objętość rzędu 60–90 stron. Egzamin magisterski też waży więcej: poza obroną pracy obejmuje zwykle pytania z całego zakresu studiów.</p>
+
+        <h2>Jak wygląda pisanie pracy magisterskiej: proces krok po kroku</h2>
+
+        <p>Te same osiem etapów co w każdej pracy dyplomowej, ale z magisterskimi wymaganiami na każdym z nich:</p>
+      </div>
+
+      <!-- Oś czasu 8 etapów -->
+      <ol class="mt-8 mb-12 space-y-4">
+        {etapy.map((e) => (
+          <li class="flex gap-4 bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-400 transition-colors">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-100 text-primary-700 font-bold flex items-center justify-center">
+              {e.nr}
+            </div>
+            <div>
+              <a href={e.href} class="text-lg font-bold text-gray-900 hover:text-primary-600 transition-colors">
+                {e.name} →
+              </a>
+              <p class="text-gray-600 mt-1">{e.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      <div class="prose prose-lg max-w-none">
+        <p>Osobnym tematem, który w magisterce decyduje o ocenie, jest metodologia badań: dobór metody do problemu, operacjonalizacja zmiennych i poprawne wnioskowanie. Rozpisane przykłady metodologii i wzorcowe rozdziały metodologiczne znajdziesz w serwisie <a href="https://www.praca-magisterska.pl" target="_blank" rel="noopener">praca-magisterska.pl</a>, w całości poświęconym warsztatowi pracy magisterskiej.</p>
+
+        <h2>Ile czasu zajmuje napisanie pracy magisterskiej</h2>
+
+        <p>Realny horyzont to <strong>6–9 miesięcy</strong> pracy po godzinach, czyli pełny ostatni rok studiów z buforem. Różnica względem licencjatu siedzi w trzech miejscach: część teoretyczna jest dłuższa (często dwa rozdziały), badania wymagają większej próby lub dłuższego zbierania danych, a analiza z testami statystycznymi i dyskusją wyników potrafi zająć 3–5 tygodni. Do tego dochodzi rytm konsultacji: przy 4–6 rundach poprawek sam obieg pracy między Tobą a promotorem kosztuje 1,5–2 miesiące. Wniosek praktyczny: konspekt zatwierdzony przed listopadem to obrona w czerwcu; konspekt z marca to obrona jesienią.</p>
+
+        <h2>Pisanie prac magisterskich na zlecenie: ryzyko, które bierzesz na siebie</h2>
+
+        <p>Rynek ghostwritingu wycenia magisterkę na 3000–8000 zł i sprzedaje ją jako „wzór do pracy własnej". Mechanizm prawny jest identyczny jak przy licencjacie, więc tu tylko esencja (pełna analiza: <a href="/pisanie-prac-licencjackich/">przewodnik licencjacki</a>). Napisanie tekstu przez kogoś innego nie jest karalne; karalne staje się Twoje oświadczenie o samodzielnym napisaniu pracy, składane przy jej rejestracji. Fałszywe oświadczenie plus dyplom uzyskany na jego podstawie to wyłudzenie poświadczenia nieprawdy (art. 272 KK, do 3 lat), a niezależnie od tego: postępowanie dyscyplinarne i unieważnialny dyplom, bezterminowo.</p>
+
+        <p>Przy magisterce dochodzi czynnik, którego ogłoszenia nie wspominają: obrona. Egzamin magisterski to rozmowa o metodologii, doborze próby i decyzjach analitycznych, czyli dokładnie o tym, czego autor kupionej pracy nie podejmował. Komisja nie potrzebuje raportu z systemu antyplagiatowego, żeby zobaczyć, że „autor" nie zna własnego badania; wystarczą dwa pytania pogłębiające.</p>
+
+        <h2>AI w pisaniu pracy magisterskiej: wsparcie, nie zastępstwo</h2>
+
+        <p>Praca magisterska to paradoksalnie lepszy teren dla AI niż licencjat, bo etapy, w których AI pomaga najmocniej (kwerenda literatury, też zagranicznej; porządkowanie koncepcji; szkic struktury; redakcja językowa), są w magisterce najbardziej czasochłonne. Zasada się nie zmienia: AI jest narzędziem, autorem jesteś Ty. Hipotezy, badanie, decyzje analityczne i wnioski muszą być Twoje, bo to one stanowią wkład własny, którego wymaga praca magisterska, i to z nich będziesz odpowiadać na obronie. Sprawdź też wytyczne swojej uczelni dotyczące AI; coraz więcej wydziałów publikuje je wprost, a transparentność wobec promotora kosztuje mniej niż jej brak.</p>
+      </div>
+
+      <SmartEduCTA variant="full" class="my-10" />
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Pisanie prac magisterskich z Twojego kierunku</h2>
+
+        <p>Wymagania magisterskie różnią się między kierunkami mocniej niż licencjackie: psychologia wymaga narzędzi psychometrycznych, prawo analizy orzecznictwa, pielęgniarstwo zgody komisji bioetycznej. Dla 18 kierunków mamy osobne poradniki:</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 mb-12">
+        {kierunki.map((k) => (
+          <a
+            href={`/blog/pisanie-prac-magisterskich-z-${k.slug}/`}
+            class="block bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:border-primary-500 hover:text-primary-600 transition-colors"
+          >
+            Pisanie prac z {k.name.toLowerCase()} →
+          </a>
+        ))}
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <h2>Ile kosztuje pisanie pracy magisterskiej</h2>
+
+        <p>Dla porządku: cenniki ogłoszeń ghostwriterskich dla magisterki zaczynają się około 3000 zł i sięgają 8000 zł przy pracach z badaniami i krótkim terminie, a do tego dochodzą „dopłaty" za poprawki po uwagach promotora. Legalna ścieżka wsparcia kosztuje inaczej i mniej: narzędzie AI to abonament rzędu kilkudziesięciu złotych miesięcznie, konsultacje statystyczne przy analizie danych 80–150 zł za godzinę, profesjonalna korekta językowa 400–800 zł za całą pracę. Różnica w cenie jest duża, ale prawdziwa różnica leży gdzie indziej: po pierwszej ścieżce zostaje ryzyko opisane wyżej, po drugiej dyplom, którego nikt Ci nie podważy.</p>
+
+        <h2>Magisterka po licencjacie: kontynuować temat czy zacząć nowy?</h2>
+
+        <p>To pytanie wraca na każdym seminarium magisterskim i ma uczciwą odpowiedź: kontynuacja jest szybsza, nowy temat bywa ciekawszy, a oba warianty są poprawne. Kontynuacja daje przewagę na starcie (znasz literaturę, masz narzędzie badawcze do rozwinięcia, część kwerendy odpada), pod warunkiem że magisterka realnie poszerza badanie: większa lub inna próba, dodatkowe zmienne, głębsza analiza. Dwie pułapki kontynuacji: autoplagiat (Twój licencjat już siedzi w bazie JSA, więc przeklejone fragmenty system oznaczy) i promotor, który poprzedniej pracy nie znał i może chcieć innego ujęcia. Nowy temat z kolei kosztuje pełną kwerendę od zera, ale uwalnia od błędów konstrukcyjnych licencjatu, których przy kontynuacji trzeba by bronić. Decyzję podejmij na etapie konspektu, z promotorem, i nie zmieniaj jej w połowie semestru.</p>
+
+        <h2>FAQ: najczęstsze pytania o pisanie prac magisterskich</h2>
+      </div>
+
+      <div class="mt-6 space-y-6">
+        {faq.map((f) => (
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">{f.q}</h3>
+            <p class="text-gray-700 leading-relaxed">{f.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="prose prose-lg max-w-none mt-12">
+        <p>Magisterka to ostatni i największy projekt studiów, ale wciąż projekt: rozkłada się na osiem etapów, z których każdy ma swój poradnik i swoje pułapki. Zacznij od <a href="/blog/temat-pracy-magisterskiej">tematu</a> i <a href="/blog/konspekt-pracy-magisterskiej">konspektu</a>, konsultuj rozdziałami, korzystaj z legalnego wsparcia. A jeśli dopiero kończysz pierwszy stopień, cały proces w wersji licencjackiej opisuje przewodnik <a href="/pisanie-prac-licencjackich/">pisanie prac licencjackich</a>.</p>
+      </div>
+
+      <EbookCTA workType="mgr" class="mt-12" />
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

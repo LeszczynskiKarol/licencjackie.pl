@@ -12,7 +12,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Masz za sobą badania: 80 wypełnionych ankiet, kilka wywiadów albo plik z danymi z pomiarów. I właśnie w tym momencie utyka większość dyplomantów, bo nikt wcześniej nie pokazał im, co zrobić między „zebrałem dane" a „napisałem rozdział z wynikami". W tym artykule przechodzimy przez cały sposób zbierania, analizy i interpretacji danych w pracy naukowej (licencjackiej czy magisterskiej): od porządkowania surowego materiału, przez wybór metody analizy, po dyskusję wyników, której promotorzy i recenzenci przyglądają się najuważniej.</p>
+<p>Masz za sobą badania: 80 wypełnionych ankiet, kilka wywiadów albo plik z danymi z pomiarów. I właśnie w tym momencie utyka większość dyplomantów, bo nikt wcześniej nie pokazał im, co zrobić między „zebrałem dane" a „napisałem rozdział z wynikami". W tym artykule przechodzimy przez cały sposób zbierania, analizy i interpretacji danych w pracy naukowej (licencjackiej czy magisterskiej): od porządkowania surowego materiału, przez wybór metody analizy, po dyskusję wyników, której promotorzy i recenzenci przyglądają się najuważniej. Ten poradnik jest częścią przewodnika <a href="/pisanie-prac-dyplomowych/">pisanie prac dyplomowych</a>, który prowadzi przez cały proces od tematu po obronę.</p>
 
 <h2>Analiza to nie to samo co interpretacja</h2>
 

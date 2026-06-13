@@ -22,7 +22,7 @@ showSmartEduCTA: true
 
 <h2>Czym jest podsumowanie pracy licencjackiej i dlaczego jest tak ważne</h2>
 
-<p>Podsumowanie pracy licencjackiej to końcowa część pracy dyplomowej, która syntetyzuje wszystkie najważniejsze elementy przeprowadzonych badań. Stanowi ono zamknięcie całego procesu badawczego i prezentuje ostateczne refleksje autora na temat zrealizowanego tematu. W przeciwieństwie do wstępu, który wprowadza czytelnika w problematykę badawczą, podsumowanie odnosi się do konkretnych wyników i wniosków, które zostały osiągnięte w trakcie pracy nad projektem dyplomowym.</p>
+<p>Podsumowanie pracy licencjackiej to końcowa część pracy dyplomowej, która syntetyzuje wszystkie najważniejsze elementy przeprowadzonych badań. Stanowi ono zamknięcie całego procesu badawczego i prezentuje ostateczne refleksje autora na temat zrealizowanego tematu. W przeciwieństwie do <a href="/blog/wstep-pracy-licencjackiej/">wstępu, który wprowadza czytelnika w problematykę badawczą</a>, podsumowanie odnosi się do konkretnych wyników i wniosków, które zostały osiągnięte w trakcie pracy nad projektem dyplomowym.</p>
 
 <p>Znaczenie podsumowania dla oceny całej pracy jest nie do przecenienia. Recenzenci i promotorzy szczególnie uważnie czytają tę część pracy, ponieważ pozwala ona ocenić, czy student rzeczywiście zrozumiał badany problem oraz czy potrafił wyciągnąć logiczne i uzasadnione wnioski. Dobrze napisane podsumowanie świadczy o umiejętności krytycznego myślenia, zdolności do syntezy informacji oraz dojrzałości akademickiej. To właśnie w podsumowaniu student pokazuje, że nie tylko zgromadził wiedzę teoretyczną i przeprowadził badania empiryczne, ale również potrafił to wszystko przemyśleć i przedstawić w sposób uporządkowany.</p>
 
