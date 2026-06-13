@@ -1,6 +1,6 @@
 ---
-title: "Analiza i ocena źródeł - jak to robić?"
-description: "Na czym polega analiza i ocena źródeł do pracy dyplomowej? Jak się za to zabrać? Sprawdź krok kroku, jak przebrnąć przez cały proces"
+title: "Analiza i ocena źródeł w pracy dyplomowej – krok po kroku"
+description: "Jak przeprowadzić analizę i ocenę źródeł do pracy licencjackiej lub magisterskiej? Sprawdź, jak ocenić wiarygodność źródła i uniknąć typowych błędów – krok po kroku."
 publishDate: 2025-11-25
 author: "Redakcja Licencjackie.pl"
 category: "Metodologia"

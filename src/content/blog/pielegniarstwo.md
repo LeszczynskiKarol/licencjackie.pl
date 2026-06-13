@@ -13,7 +13,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Pielęgniarstwo to zawód medyczny zajmujący się opieką nad pacjentem i promocją zdrowia. Praca licencjacka powinna prezentować wiedzę pielęgniarską i umiejętność jej praktycznego zastosowania. Na tym poziomie wystarczy przegląd piśmiennictwa, studium przypadku lub badanie ankietowe wśród pacjentów lub pielęgniarek. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej.</p>
+<p>Pielęgniarstwo to zawód medyczny zajmujący się opieką nad pacjentem i promocją zdrowia. Praca licencjacka powinna prezentować wiedzę pielęgniarską i umiejętność jej praktycznego zastosowania. Na tym poziomie wystarczy przegląd piśmiennictwa, studium przypadku lub badanie ankietowe wśród pacjentów lub pielęgniarek. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej. Jeśli wybrałeś już temat, zobacz <a href="/blog/przykladowa-praca-licencjacka-pielegniarstwo/">przykładową pracę licencjacką z pielęgniarstwa</a> rozłożoną na części – ze wzorem każdego rozdziału i komentarzem.</p>
 
 <h2>Pielęgniarstwo internistyczne</h2>
 
