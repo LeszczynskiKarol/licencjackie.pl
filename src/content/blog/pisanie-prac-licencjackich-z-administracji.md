@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Administracja to kierunek studiów przygotowujący do pracy w instytucjach publicznych, samorządowych oraz w sektorze prywatnym. Pisanie pracy licencjackiej z administracji wymaga znajomości struktur organizacyjnych, procedur prawnych oraz umiejętności analizy funkcjonowania urzędów i instytucji. Studenci często stają przed wyzwaniem połączenia wiedzy teoretycznej z obserwacjami praktycznymi, co stanowi klucz do napisania wartościowej pracy dyplomowej.</p>
+<p>Administracja to kierunek studiów przygotowujący do pracy w instytucjach publicznych, samorządowych oraz w sektorze prywatnym. Pisanie pracy licencjackiej z administracji wymaga znajomości struktur organizacyjnych, procedur prawnych oraz umiejętności analizy funkcjonowania urzędów i instytucji. Studenci często stają przed wyzwaniem połączenia wiedzy teoretycznej z obserwacjami praktycznymi, co stanowi klucz do napisania wartościowej pracy dyplomowej. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-administracja/">przykładową pracę licencjacką z administracji</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z administracji</h2>
 
