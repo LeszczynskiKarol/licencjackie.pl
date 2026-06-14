@@ -16,7 +16,7 @@ showSmartEduCTA: true
 
 <h2>Specyfika prac licencjackich z dietetyki</h2>
 
-<p>Prace z dietetyki mają często charakter empiryczny - opierają się na badaniach ankietowych, analizie jadłospisów lub pomiarach antropometrycznych. Studenci mogą badać sposób żywienia wybranej grupy (dzieci, seniorów, sportowców, osób z określonymi schorzeniami) i oceniać go pod kątem zgodności z zaleceniami żywieniowymi. Popularnym podejściem jest również analiza wiedzy żywieniowej i jej wpływu na zachowania zdrowotne.</p>
+<p>Prace z dietetyki mają często charakter empiryczny - opierają się na badaniach ankietowych, analizie jadłospisów lub pomiarach antropometrycznych. Studenci mogą badać sposób żywienia wybranej grupy (dzieci, seniorów, sportowców, osób z określonymi schorzeniami) i oceniać go pod kątem zgodności z zaleceniami żywieniowymi. Popularnym podejściem jest również analiza wiedzy żywieniowej i jej wpływu na zachowania zdrowotne. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-dietetyka/">przykładową pracę licencjacką z dietetyki</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <p>Istotne jest oparcie pracy na aktualnych zaleceniach żywieniowych (normy IŻŻ, piramida żywienia) oraz wiarygodnych źródłach naukowych. Dietetyka to dziedzina, w której krąży wiele mitów i pseudonaukowych teorii, dlatego krytyczna ocena źródeł jest szczególnie ważna. Praca powinna prezentować podejście evidence-based, oparte na badaniach naukowych.</p>
 

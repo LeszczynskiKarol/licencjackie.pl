@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Kryminologia to nauka o przestępczości, jej przyczynach, sprawcach i ofiarach oraz metodach zapobiegania. Pisanie pracy licencjackiej z kryminologii wymaga znajomości teorii kryminologicznych, prawa karnego oraz umiejętności analizy zjawisk przestępczych. Studenci mogą badać różne formy przestępczości, profilaktykę, wiktymologię czy funkcjonowanie systemu wymiaru sprawiedliwości.</p>
+<p>Kryminologia to nauka o przestępczości, jej przyczynach, sprawcach i ofiarach oraz metodach zapobiegania. Pisanie pracy licencjackiej z kryminologii wymaga znajomości teorii kryminologicznych, prawa karnego oraz umiejętności analizy zjawisk przestępczych. Studenci mogą badać różne formy przestępczości, profilaktykę, wiktymologię czy funkcjonowanie systemu wymiaru sprawiedliwości. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-kryminologia/">przykładową pracę licencjacką z kryminologii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z kryminologii</h2>
 

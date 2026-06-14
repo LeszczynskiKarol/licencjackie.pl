@@ -17,7 +17,7 @@ showSmartEduCTA: true
 
 <h2>Specyfika prac licencjackich z turystyki</h2>
 
-<p>Prace z turystyki łączą perspektywę geograficzną (walory, destynacje), ekonomiczną (rynek, przedsiębiorstwa) i społeczną (zachowania turystów). Mogą mieć charakter analityczny (badanie destynacji, oferty) lub empiryczny (badanie preferencji turystów). Często zawierają elementy praktyczne - inwentaryzacje, propozycje produktów turystycznych.</p>
+<p>Prace z turystyki łączą perspektywę geograficzną (walory, destynacje), ekonomiczną (rynek, przedsiębiorstwa) i społeczną (zachowania turystów). Mogą mieć charakter analityczny (badanie destynacji, oferty) lub empiryczny (badanie preferencji turystów). Często zawierają elementy praktyczne - inwentaryzacje, propozycje produktów turystycznych. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-turystyka/">przykładową pracę licencjacką z turystyki</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <p>Dostęp do materiałów jest relatywnie łatwy - oferty biur podróży, strony destynacji, dane o ruchu turystycznym są publicznie dostępne. Badania ankietowe wśród turystów można przeprowadzić w miejscach turystycznych lub online. Trudniejszy jest dostęp do wewnętrznych danych przedsiębiorstw turystycznych.</p>
 
