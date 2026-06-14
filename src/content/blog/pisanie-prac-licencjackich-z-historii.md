@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Historia to nauka badająca przeszłość na podstawie źródeł. Pisanie pracy licencjackiej z historii wymaga umiejętności krytycznej analizy dokumentów, prasowych i innych świadectw epoki. Student historii musi wykazać się warsztatem badawczym - umiejętnością dotarcia do źródeł, ich interpretacji i osadzenia w kontekście epoki.</p>
+<p>Historia to nauka badająca przeszłość na podstawie źródeł. Pisanie pracy licencjackiej z historii wymaga umiejętności krytycznej analizy dokumentów, prasowych i innych świadectw epoki. Student historii musi wykazać się warsztatem badawczym - umiejętnością dotarcia do źródeł, ich interpretacji i osadzenia w kontekście epoki. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-historia/">przykładową pracę licencjacką z historii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z historii</h2>
 

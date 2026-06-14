@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Politologia to nauka o władzy, państwie i systemach politycznych. Pisanie pracy licencjackiej z politologii wymaga znajomości teorii politycznych, instytucji politycznych oraz umiejętności analizy zjawisk i procesów politycznych. Studenci mogą badać systemy partyjne, zachowania wyborcze, politykę publiczną czy komunikację polityczną.</p>
+<p>Politologia to nauka o władzy, państwie i systemach politycznych. Pisanie pracy licencjackiej z politologii wymaga znajomości teorii politycznych, instytucji politycznych oraz umiejętności analizy zjawisk i procesów politycznych. Studenci mogą badać systemy partyjne, zachowania wyborcze, politykę publiczną czy komunikację polityczną. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-politologia/">przykładową pracę licencjacką z politologii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z politologii</h2>
 

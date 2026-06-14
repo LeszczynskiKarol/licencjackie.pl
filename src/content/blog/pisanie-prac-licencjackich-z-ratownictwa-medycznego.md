@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Ratownictwo medyczne to kierunek przygotowujący do udzielania pomocy w stanach nagłego zagrożenia zdrowia i życia. Pisanie pracy licencjackiej z ratownictwa wymaga znajomości medycyny ratunkowej, procedur i wytycznych oraz umiejętności analizy działań ratowniczych. Studenci mogą badać wiedzę i umiejętności ratowników, analizować interwencje lub oceniać przygotowanie społeczeństwa do udzielania pierwszej pomocy.</p>
+<p>Ratownictwo medyczne to kierunek przygotowujący do udzielania pomocy w stanach nagłego zagrożenia zdrowia i życia. Pisanie pracy licencjackiej z ratownictwa wymaga znajomości medycyny ratunkowej, procedur i wytycznych oraz umiejętności analizy działań ratowniczych. Studenci mogą badać wiedzę i umiejętności ratowników, analizować interwencje lub oceniać przygotowanie społeczeństwa do udzielania pierwszej pomocy. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-ratownictwo-medyczne/">przykładową pracę licencjacką z ratownictwa medycznego</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z ratownictwa</h2>
 
