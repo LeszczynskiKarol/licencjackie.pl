@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Kosmetologia to interdyscyplinarny kierunek łączący wiedzę z dermatologii, chemii kosmetycznej, estetyki i nauk o zdrowiu. Pisanie pracy licencjackiej z kosmetologii wymaga znajomości budowy skóry, mechanizmów działania składników aktywnych oraz umiejętności krytycznej oceny produktów i zabiegów kosmetycznych. Studenci mogą prowadzić badania ankietowe, analizować skład kosmetyków lub oceniać skuteczność zabiegów.</p>
+<p>Kosmetologia to interdyscyplinarny kierunek łączący wiedzę z dermatologii, chemii kosmetycznej, estetyki i nauk o zdrowiu. Pisanie pracy licencjackiej z kosmetologii wymaga znajomości budowy skóry, mechanizmów działania składników aktywnych oraz umiejętności krytycznej oceny produktów i zabiegów kosmetycznych. Studenci mogą prowadzić badania ankietowe, analizować skład kosmetyków lub oceniać skuteczność zabiegów. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-kosmetologia/">przykładową pracę licencjacką z kosmetologii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z kosmetologii</h2>
 

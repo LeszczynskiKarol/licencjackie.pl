@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Bezpieczeństwo wewnętrzne to interdyscyplinarny kierunek łączący wiedzę z zakresu nauk o polityce, prawa, kryminologii i zarządzania kryzysowego. Pisanie pracy licencjackiej z tego obszaru wymaga umiejętności analizy zagrożeń, systemów ochrony oraz działania służb odpowiedzialnych za bezpieczeństwo państwa i obywateli. Studenci mają do dyspozycji szerokie spektrum tematów - od lokalnych aspektów bezpieczeństwa po zagadnienia o charakterze ogólnokrajowym.</p>
+<p>Bezpieczeństwo wewnętrzne to interdyscyplinarny kierunek łączący wiedzę z zakresu nauk o polityce, prawa, kryminologii i zarządzania kryzysowego. Pisanie pracy licencjackiej z tego obszaru wymaga umiejętności analizy zagrożeń, systemów ochrony oraz działania służb odpowiedzialnych za bezpieczeństwo państwa i obywateli. Studenci mają do dyspozycji szerokie spektrum tematów - od lokalnych aspektów bezpieczeństwa po zagadnienia o charakterze ogólnokrajowym. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-bezpieczenstwo-wewnetrzne/">przykładową pracę licencjacką z bezpieczeństwa wewnętrznego</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac z bezpieczeństwa wewnętrznego</h2>
 

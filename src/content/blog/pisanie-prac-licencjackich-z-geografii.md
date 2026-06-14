@@ -17,7 +17,7 @@ showSmartEduCTA: true
 
 <h2>Specyfika prac licencjackich z geografii</h2>
 
-<p>Prace geograficzne charakteryzują się silnym powiązaniem z konkretnym obszarem badań - regionem, miastem, gminą czy formą terenu. Element przestrzenny i kartograficzny stanowi o specyfice dyscypliny. Mapy, schematy i wizualizacje przestrzenne są nie tylko ilustracją, ale integralną częścią analizy. Studenci powinni umieć korzystać z narzędzi GIS i tworzyć mapy tematyczne.</p>
+<p>Prace geograficzne charakteryzują się silnym powiązaniem z konkretnym obszarem badań - regionem, miastem, gminą czy formą terenu. Element przestrzenny i kartograficzny stanowi o specyfice dyscypliny. Mapy, schematy i wizualizacje przestrzenne są nie tylko ilustracją, ale integralną częścią analizy. Studenci powinni umieć korzystać z narzędzi GIS i tworzyć mapy tematyczne. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-geografia/">przykładową pracę licencjacką z geografii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <p>Geografia fizyczna koncentruje się na środowisku przyrodniczym - rzeźbie terenu, klimacie, wodach, glebach, szacie roślinnej. Geografia społeczno-ekonomiczna bada rozmieszczenie ludności, osadnictwo, gospodarkę, turystykę. Coraz większe znaczenie mają tematy łączące oba podejścia - np. wpływ człowieka na środowisko czy adaptacja do zmian klimatu.</p>
 
