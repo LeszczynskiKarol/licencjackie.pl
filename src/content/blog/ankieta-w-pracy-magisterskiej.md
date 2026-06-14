@@ -17,6 +17,12 @@ showSmartEduCTA: true
 
 <h2>Projektowanie ankiety - od koncepcji do gotowego narzędzia</h2>
 
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:0 0 24px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzór ankiety / kwestionariusza do pobrania (PDF i Word)</p>
+<a href="/pobierz/wzor-ankiety-kwestionariusza.pdf" style="display:inline-block;background:#059669;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/wzor-ankiety-kwestionariusza.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór Word (DOCX)</a>
+</div>
+
 <p>Proces tworzenia ankiety do pracy magisterskiej rozpoczyna się od precyzyjnego zdefiniowania celów badawczych. Przed przystąpieniem do formułowania pytań student musi dokładnie wiedzieć, jakie informacje chce uzyskać i w jaki sposób będą one służyły weryfikacji postawionych hipotez. Kluczowe jest powiązanie każdego pytania ankietowego z konkretnymi problemami badawczymi sformułowanymi we wstępie pracy. Dobrą praktyką jest spisanie na kartce wszystkich zmiennych, które planujemy zbadać, a następnie przypisanie do każdej z nich odpowiednich pytań. Należy pamiętać, że ankieta powinna być narzędziem samowyjaśniającym się, które nie wymaga dodatkowych instrukcji czy pomocy osoby trzeciej podczas wypełniania.</p>
 
 <p>Struktura kwestionariusza ankietowego w pracy magisterskiej zazwyczaj składa się z trzech podstawowych części. Pierwsza to sekcja rekrutacyjna, w której weryfikujemy, czy respondent spełnia kryteria włączenia do badania. Druga część stanowi właściwe pytania merytoryczne, uporządkowane logicznie według zasady od ogółu do szczegółu. Trzecia sekcja to metryczka, czyli zestaw pytań demograficznych dotyczących wieku, płci, wykształcenia, miejsca zamieszkania czy statusu zawodowego respondenta. Taka struktura zapewnia płynność wypełniania ankiety i pozwala na późniejsze segmentowanie wyników według różnych kryteriów demograficznych. Warto zadbać o to, aby przejścia między poszczególnymi sekcjami były płynne i logiczne, a respondent nie musiał cofać się do wcześniejszych tematów.</p>

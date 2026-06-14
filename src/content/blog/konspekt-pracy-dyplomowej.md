@@ -29,6 +29,12 @@ showSmartEduCTA: true
 
 <h2>Kluczowe elementy konspektu pracy dyplomowej</h2>
 
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:0 0 24px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzór konspektu do pobrania (PDF i Word)</p>
+<a href="/pobierz/konspekt-pracy-licencjackiej-wzor.pdf" style="display:inline-block;background:#059669;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/konspekt-pracy-licencjackiej-wzor.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór Word (DOCX)</a>
+</div>
+
 <p>Profesjonalny konspekt składa się z kilku niezbędnych komponentów, z których każdy pełni określoną funkcję. Pierwszym elementem jest strona tytułowa, zawierająca nazwę uczelni i wydziału, kierunek studiów, imię i nazwisko studenta, dane promotora oraz roboczy tytuł pracy. Tytuł powinien być konkretny i precyzyjnie odzwierciedlać zakres badań – unikaj sformułowań zbyt ogólnych lub niejasnych.</p>
 
 <p>Uzasadnienie wyboru tematu to fragment, w którym wyjaśniasz, dlaczego wybrany problem badawczy zasługuje na uwagę. Wskaż jego aktualność, znaczenie praktyczne lub teoretyczne, ewentualne luki w dotychczasowych badaniach, które zamierzasz wypełnić. To miejsce na przekonanie promotora, że temat jest wartościowy i wykonalny. Dobra argumentacja powinna odwoływać się do realiów społecznych, gospodarczych lub naukowych i pokazywać, jaką wartość wniesie Twoja analiza.</p>

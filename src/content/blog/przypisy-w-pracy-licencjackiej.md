@@ -49,6 +49,12 @@ showSmartEduCTA: true
 
 <h2>Przykłady przypisów dla każdego typu źródła</h2>
 
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:0 0 24px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzór przypisów do pobrania (PDF i Word)</p>
+<a href="/pobierz/wzor-przypisow.pdf" style="display:inline-block;background:#059669;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/wzor-przypisow.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór Word (DOCX)</a>
+</div>
+
 <p>Schemat ogólny przypisu bibliograficznego w stylu tradycyjnym wygląda tak: inicjał imienia i nazwisko autora, tytuł kursywą, wydawnictwo, miejsce i rok wydania, numer strony. Uwaga na szczegół, który często umyka: w przypisie inicjał imienia stoi przed nazwiskiem (J. Kowalski), a w bibliografii odwrotnie, najpierw nazwisko (Kowalski J.). Poniżej gotowe wzory dla wszystkich typowych źródeł.</p>
 
 <h3>Przypis do książki</h3>

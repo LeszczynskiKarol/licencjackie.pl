@@ -150,6 +150,12 @@ showSmartEduCTA: true
 
 <h2>Cytowanie różnych źródeł w przypisach</h2>
 
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:0 0 24px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzór przypisów do pobrania (PDF i Word)</p>
+<a href="/pobierz/wzor-przypisow.pdf" style="display:inline-block;background:#059669;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/wzor-przypisow.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór Word (DOCX)</a>
+</div>
+
 <p>Cytowanie książek w przypisach wymaga podania kompletnych danych bibliograficznych, które umożliwią czytelnikowi odnalezienie źródła. W systemie oksfordzkim przypis do książki zawiera inicjał imienia autora, nazwisko, tytuł dzieła zapisany kursywą, nazwę wydawnictwa, miejsce i rok wydania oraz numer strony. Przykładowo: A. Nowak, Metodologia badań społecznych, Wydawnictwo Naukowe Scholar, Warszawa 2021, s. 78. Jeśli książka ma więcej niż trzech autorów, podaje się nazwisko pierwszego autora z dodatkiem i in. lub et al. W przypadku książek pod redakcją, po tytule umieszcza się informację o redaktorze w formie: red. J. Kowalski. Cytując rozdział z pracy zbiorowej, należy podać autora rozdziału, tytuł rozdziału, następnie po przecinku i słowie w: tytuł całej publikacji, dane redaktora oraz pozostałe informacje bibliograficzne.</p>
 
 <p>Artykuły z czasopism naukowych cytuje się według nieco innego schematu. W przypisie podaje się autora artykułu, tytuł artykułu zapisany kursywą lub w cudzysłowie (w zależności od przyjętego systemu), nazwę czasopisma w cudzysłowie, rok wydania, numer tomu i zeszytu oraz zakres stron artykułu lub konkretną cytowaną stronę. Przykład: M. Wiśniewski, Trendy w badaniach jakościowych, „Przegląd Socjologiczny" 2022, nr 3(71), s. 145-167. W przypadku artykułów dostępnych online warto dodać numer DOI (Digital Object Identifier), który stanowi trwały identyfikator publikacji elektronicznej. Artykuły z gazet i magazynów popularnonaukowych cytuje się podobnie, podając dodatkowo dokładną datę publikacji, co jest szczególnie istotne w przypadku dzienników.</p>

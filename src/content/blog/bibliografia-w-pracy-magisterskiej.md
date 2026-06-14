@@ -92,6 +92,12 @@ showSmartEduCTA: true
 
 <h2>Style bibliograficzne i ich zastosowanie</h2>
 
+<div style="border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:18px 20px;margin:0 0 24px">
+<p style="margin:0 0 12px;font-weight:700;font-size:1.05rem">📄 Wzór bibliografii do pobrania – zapis każdego typu źródła</p>
+<a href="/pobierz/bibliografia-pracy-licencjackiej-wzor.pdf" style="display:inline-block;background:#059669;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór PDF</a>
+<a href="/pobierz/bibliografia-pracy-licencjackiej-wzor.docx" style="display:inline-block;background:#fff;color:#047857;border:1.5px solid #059669;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 8px 0">⬇ Pobierz wzór Word (DOCX)</a>
+</div>
+
 <p>W praktyce akademickiej funkcjonuje kilka podstawowych stylów bibliograficznych, które różnią się szczegółami zapisu oraz konwencjami cytowania w tekście głównym pracy. Najpopularniejsze style to APA (American Psychological Association), Harvard, Chicago, Vancouver oraz klasyczny styl polski oparty na normie PN-ISO 690. Wybór stylu bibliograficznego nie jest arbitralny i powinien być uzgodniony z promotorem oraz dostosowany do wymogów instytucji i dyscypliny naukowej. Styl APA dominuje w naukach społecznych i psychologii, styl Harvard jest powszechny w naukach ekonomicznych i zarządzaniu, styl Chicago preferowany jest w humanistyce, natomiast styl Vancouver stosuje się głównie w naukach medycznych i przyrodniczych. Klasyczny styl polski z przypisami dolnymi pozostaje standardem w wielu polskich uczelniach, szczególnie na kierunkach humanistycznych.</p>
 
 <p>Styl APA charakteryzuje się systemem autor-data w tekście głównym oraz alfabetycznym układem bibliografii na końcu pracy. Cytowanie w tekście wygląda następująco: (Kowalski, 2020, s. 45), a w bibliografii: Kowalski, J. (2020). Metodologia badań. Warszawa: PWN. Styl ten kładzie nacisk na rok publikacji, który umieszcza się bezpośrednio po nazwisku autora, co ułatwia czytelnikowi ocenę aktualności źródła. Tytuły książek zapisuje się kursywą, natomiast tytuły artykułów zwykłą czcionką. Styl Harvard jest bardzo podobny do APA, różni się głównie drobnymi szczegółami interpunkcji oraz sposobem wyróżniania tytułów. Oba te style są szczególnie wygodne przy pracach z dużą liczbą źródeł, ponieważ eliminują konieczność stosowania przypisów dolnych wyłącznie dla celów bibliograficznych.</p>
