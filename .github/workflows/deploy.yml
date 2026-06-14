@@ -1,0 +1,129 @@
+name: Deploy licencjackie.pl
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # ręczne uruchomienie z zakładki Actions
+
+# Nie pozwól dwóm deployom nadpisywać się nawzajem.
+# cancel-in-progress: false → kolejne pushe czekają w kolejce i kończą się
+# w całości (pełny sync + invalidacja), żeby nigdy nie zostawić S3 w stanie
+# częściowym (nowy HTML wskazujący na jeszcze niewgrane assety z _astro/).
+concurrency:
+  group: deploy-licencjackie
+  cancel-in-progress: false
+
+# Least privilege: workflow potrzebuje tylko odczytu repo.
+# (Dostęp do AWS idzie przez sekrety, nie przez uprawnienia GITHUB_TOKEN.)
+permissions:
+  contents: read
+
+env:
+  S3_BUCKET: www.licencjackie.pl
+  CLOUDFRONT_ID: E35P5HJR5VHDCE
+  AWS_REGION: eu-central-1
+  SITE_URL: https://www.licencjackie.pl
+
+jobs:
+  deploy:
+    name: Build & Deploy (Astro → S3 + CloudFront)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Budujemy bez `prebuild` (scripts/optimize-images.mjs).
+      # Zoptymalizowane .jpg/.webp są już zacommitowane w public/blog/,
+      # a backupy .orig/ są gitignored — w CI optymalizacja byłaby zbędną
+      # rekompresją gotowych plików. `npx astro build` jest szybszy i
+      # deterministyczny (ten sam dist co lokalnie).
+      - name: Build Astro
+        run: npx astro build
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      # --- Deploy do S3 w 4 krokach, z poprawnym Content-Type i Cache-Control ---
+
+      # 1) Zahashowane, niezmienne assety Astro (_astro/) → cache na rok.
+      #    Nazwy plików zawierają hash treści, więc zmiana = nowa nazwa.
+      - name: Upload immutable assets (_astro)
+        run: |
+          aws s3 sync dist/ s3://${S3_BUCKET} \
+            --exclude "*" --include "_astro/*" \
+            --cache-control "public,max-age=31536000,immutable" \
+            --no-progress
+
+      # 2) HTML / XML / TXT / PDF itd. → krótki cache + rewalidacja.
+      #    Ten krok ma --delete: usuwa z S3 pliki skasowane w repo (prune).
+      #    Wykluczamy grupy, które wgrywamy osobno z innym MIME/cache.
+      - name: Upload pages & prune deleted
+        run: |
+          aws s3 sync dist/ s3://${S3_BUCKET} --delete \
+            --exclude "_astro/*" --exclude "*.webp" --exclude "*.docx" \
+            --cache-control "public,max-age=300,must-revalidate" \
+            --no-progress
+
+      # 3) WebP — AWS CLI nie zna tego MIME w domyślnej mapie.
+      - name: Upload WebP images (correct MIME)
+        run: |
+          aws s3 sync dist/ s3://${S3_BUCKET} \
+            --exclude "*" --include "*.webp" \
+            --content-type "image/webp" \
+            --cache-control "public,max-age=2592000" \
+            --no-progress
+
+      # 4) DOCX — wzory do pobrania, poprawny MIME żeby pobierały się jako .docx.
+      - name: Upload DOCX templates (correct MIME)
+        run: |
+          aws s3 sync dist/ s3://${S3_BUCKET} \
+            --exclude "*" --include "*.docx" \
+            --content-type "application/vnd.openxmlformats-officedocument.wordprocessingml.document" \
+            --cache-control "public,max-age=2592000" \
+            --no-progress
+
+      # Inwalidacja CloudFront — natychmiast pokazuje świeży HTML na edge,
+      # mimo 5-min cache w przeglądarce (krok 2).
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${CLOUDFRONT_ID} \
+            --paths "/*"
+
+      # Powiadomienie Google o nowej zawartości (Indexing API przez Lambda).
+      # continue-on-error: deploy nie może się wywalić, jeśli Lambda nie obsługuje
+      # tej domeny lub jest niedostępna.
+      - name: Notify Google Indexing
+        continue-on-error: true
+        run: |
+          aws lambda invoke \
+            --function-name google-indexing-notifier \
+            --payload "{\"siteUrl\":\"${SITE_URL}\"}" \
+            --cli-binary-format raw-in-base64-out \
+            --region ${AWS_REGION} \
+            /tmp/indexing-result.json
+          cat /tmp/indexing-result.json || true
+
+      - name: Deploy summary
+        run: |
+          echo "### ✅ Deploy zakończony" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **URL:** ${SITE_URL}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Bucket:** s3://${S3_BUCKET}" >> $GITHUB_STEP_SUMMARY
+          echo "- **CloudFront:** ${CLOUDFRONT_ID} (invalidation /\*)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit:** ${GITHUB_SHA::7}" >> $GITHUB_STEP_SUMMARY
