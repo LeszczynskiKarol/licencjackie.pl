@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Logistyka to dziedzina zajmująca się przepływem towarów, informacji i zasobów w łańcuchach dostaw. Pisanie pracy licencjackiej z logistyki wymaga znajomości procesów magazynowania, transportu, zarządzania zapasami oraz umiejętności analizy efektywności operacji logistycznych. Studenci mogą badać funkcjonowanie konkretnych przedsiębiorstw lub analizować wybrane aspekty systemów logistycznych.</p>
+<p>Logistyka to dziedzina zajmująca się przepływem towarów, informacji i zasobów w łańcuchach dostaw. Pisanie pracy licencjackiej z logistyki wymaga znajomości procesów magazynowania, transportu, zarządzania zapasami oraz umiejętności analizy efektywności operacji logistycznych. Studenci mogą badać funkcjonowanie konkretnych przedsiębiorstw lub analizować wybrane aspekty systemów logistycznych. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-logistyka/">przykładową pracę licencjacką z logistyki</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z logistyki</h2>
 

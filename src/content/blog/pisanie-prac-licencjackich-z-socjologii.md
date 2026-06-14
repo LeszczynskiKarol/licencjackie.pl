@@ -18,7 +18,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Socjologia to nauka badająca społeczeństwo - jego struktury, instytucje, procesy i problemy. Pisanie pracy licencjackiej z socjologii wymaga znajomości teorii socjologicznych oraz metodologii badań społecznych. Studenci mogą analizować różnorodne zjawiska społeczne, od struktury społecznej po kulturę, od rodziny po media.</p>
+<p>Socjologia to nauka badająca społeczeństwo - jego struktury, instytucje, procesy i problemy. Pisanie pracy licencjackiej z socjologii wymaga znajomości teorii socjologicznych oraz metodologii badań społecznych. Studenci mogą analizować różnorodne zjawiska społeczne, od struktury społecznej po kulturę, od rodziny po media. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-socjologia/">przykładową pracę licencjacką z socjologii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Specyfika prac licencjackich z socjologii</h2>
 

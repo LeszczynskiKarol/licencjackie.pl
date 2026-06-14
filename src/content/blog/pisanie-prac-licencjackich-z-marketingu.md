@@ -17,7 +17,7 @@ showSmartEduCTA: true
 
 <h2>Specyfika prac licencjackich z marketingu</h2>
 
-<p>Marketing jest dziedziną dynamiczną - trendy i narzędzia szybko się zmieniają, szczególnie w obszarze digital marketingu. Praca licencjacka powinna bazować na aktualnych źródłach i przykładach. Jednocześnie należy zachować fundament teoretyczny - klasyczne koncepcje (4P, segmentacja, pozycjonowanie) pozostają aktualne i stanowią ramy dla analiz.</p>
+<p>Marketing jest dziedziną dynamiczną - trendy i narzędzia szybko się zmieniają, szczególnie w obszarze digital marketingu. Praca licencjacka powinna bazować na aktualnych źródłach i przykładach. Jednocześnie należy zachować fundament teoretyczny - klasyczne koncepcje (4P, segmentacja, pozycjonowanie) pozostają aktualne i stanowią ramy dla analiz. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-marketing/">przykładową pracę licencjacką z marketingu</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <p>Duża dostępność materiałów do analizy to atut marketingu jako obszaru badawczego. Kampanie reklamowe, treści w social media, strony internetowe marek są publicznie dostępne. Badania ankietowe wśród konsumentów można przeprowadzić online. Trudniejszy jest dostęp do wewnętrznych danych firm (budżety, wyniki kampanii).</p>
 
