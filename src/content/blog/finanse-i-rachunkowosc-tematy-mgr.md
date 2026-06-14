@@ -13,7 +13,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Praca magisterska z finansów i rachunkowości wymaga przeprowadzenia samodzielnych badań empirycznych z wykorzystaniem danych finansowych przedsiębiorstw lub rynków. Magistrant powinien wykazać się umiejętnością analizy finansowej, interpretacji danych oraz formułowania wniosków praktycznych. Poniżej przedstawiamy 100+ tematów spełniających standardy akademickie.</p>
+<p>Praca magisterska z finansów i rachunkowości wymaga przeprowadzenia samodzielnych badań empirycznych z wykorzystaniem danych finansowych przedsiębiorstw lub rynków. Magistrant powinien wykazać się umiejętnością analizy finansowej, interpretacji danych oraz formułowania wniosków praktycznych. Poniżej przedstawiamy 100+ tematów spełniających standardy akademickie. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-finanse-i-rachunkowosc/">przykładową pracę licencjacką z finansów i rachunkowości</a> (analiza wskaźnikowa) rozłożoną na części – z fragmentami i wzorem do pobrania.</p>
 
 <h2>Rachunkowość finansowa i sprawozdawczość</h2>
 

@@ -16,7 +16,7 @@ showSmartEduCTA: true
 
 <h2>Specyfika prac licencjackich z zarządzania</h2>
 
-<p>Prace z zarządzania mają zazwyczaj charakter praktyczny - opierają się na analizie realnych organizacji. Studium przypadku konkretnej firmy to najpopularniejsza forma pracy licencjackiej. Wymaga to nawiązania współpracy z przedsiębiorstwem lub wykorzystania publicznie dostępnych informacji o firmie.</p>
+<p>Prace z zarządzania mają zazwyczaj charakter praktyczny - opierają się na analizie realnych organizacji. Studium przypadku konkretnej firmy to najpopularniejsza forma pracy licencjackiej. Wymaga to nawiązania współpracy z przedsiębiorstwem lub wykorzystania publicznie dostępnych informacji o firmie. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-zarzadzanie/">przykładową pracę licencjacką z zarządzania</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <p>Zarządzanie jest dziedziną interdyscyplinarną - łączy ekonomię, psychologię, socjologię, prawo. Praca może dotyczyć zarządzania strategicznego, operacyjnego, zasobami ludzkimi, marketingiem, finansami, jakością. Wybór obszaru powinien odpowiadać zainteresowaniom studenta i dostępności danych.</p>
 

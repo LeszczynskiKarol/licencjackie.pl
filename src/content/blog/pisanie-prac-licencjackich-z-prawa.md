@@ -16,7 +16,7 @@ showSmartEduCTA: true
 
 <h2>Specyfika prac licencjackich z prawa</h2>
 
-<p>Praca prawnicza różni się od prac z innych dziedzin - jej przedmiotem są przepisy prawa, ich interpretacja i stosowanie. Dominuje metoda dogmatyczna, polegająca na analizie tekstów prawnych, orzecznictwa sądów i poglądów doktryny (komentarze, artykuły). Nie przeprowadza się badań empirycznych w rozumieniu nauk społecznych.</p>
+<p>Praca prawnicza różni się od prac z innych dziedzin - jej przedmiotem są przepisy prawa, ich interpretacja i stosowanie. Dominuje metoda dogmatyczna, polegająca na analizie tekstów prawnych, orzecznictwa sądów i poglądów doktryny (komentarze, artykuły). Nie przeprowadza się badań empirycznych w rozumieniu nauk społecznych. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-prawo/">przykładową pracę licencjacką z prawa</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <p>Student prawa musi wykazać się znajomością przepisów, umiejętnością ich wykładni oraz zdolnością do formułowania własnych ocen prawnych. Praca powinna zawierać nie tylko opis stanu prawnego, ale analizę problemów interpretacyjnych, sprzeczności, luk i propozycje rozwiązań (wnioski de lege ferenda).</p>
 
