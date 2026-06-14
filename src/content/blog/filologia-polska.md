@@ -13,7 +13,7 @@ showSmartEduCTA: true
 ---
 
   <p>
-    Filologia angielska to kierunek obejmujący język, literaturę i kulturę krajów anglojęzycznych. Praca licencjacka może dotyczyć analizy literackiej, językoznawstwa, przekładu lub glottodydaktyki. Na tym poziomie wystarczy analiza wybranych tekstów lub proste badanie ankietowe. Prace są zazwyczaj pisane w języku angielskim. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej.
+    Filologia polska to kierunek obejmujący język, literaturę i kulturę polską. Praca licencjacka może dotyczyć analizy literackiej, językoznawstwa, kulturoznawstwa lub dydaktyki języka. Na tym poziomie wystarczy analiza wybranych tekstów lub proste badanie. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-filologia-polska/">przykładową pracę licencjacką z filologii polskiej</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.
   </p>
 
   <h2>Literatura brytyjska</h2>

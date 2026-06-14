@@ -13,7 +13,7 @@ showSmartEduCTA: true
 ---
 
 <p>
-    Dziennikarstwo i komunikacja społeczna to kierunek przygotowujący do pracy w mediach, PR i reklamie. Praca licencjacka powinna prezentować umiejętność analizy przekazów medialnych i zrozumienie procesów komunikacji. Na tym poziomie wystarczy analiza wybranych materiałów medialnych lub proste badanie ankietowe odbiorców. Poniżej znajdziesz 100 aktualnych tematów dostosowanych do wymagań pracy licencjackiej.
+    Dziennikarstwo i komunikacja społeczna to kierunek przygotowujący do pracy w mediach, PR i reklamie. Praca licencjacka powinna prezentować umiejętność analizy przekazów medialnych i zrozumienie procesów komunikacji. Na tym poziomie wystarczy analiza wybranych materiałów medialnych lub proste badanie ankietowe odbiorców. Poniżej znajdziesz 100 aktualnych tematów dostosowanych do wymagań pracy licencjackiej. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-dziennikarstwo/">przykładową pracę licencjacką z dziennikarstwa</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.
   </p>
 
   <h2>Media społecznościowe</h2>

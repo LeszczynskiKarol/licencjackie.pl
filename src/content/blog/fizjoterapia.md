@@ -13,7 +13,7 @@ showSmartEduCTA: true
 ---
 
   <p>
-    Fizjoterapia to kierunek medyczny przygotowujący do pracy w rehabilitacji i prewencji zdrowotnej. Praca licencjacka powinna prezentować wiedzę o metodach fizjoterapeutycznych i ich zastosowaniu. Na tym poziomie może to być przegląd piśmiennictwa, analiza przypadku lub proste badanie ankietowe wśród pacjentów lub fizjoterapeutów. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej.
+    Fizjoterapia to kierunek medyczny przygotowujący do pracy w rehabilitacji i prewencji zdrowotnej. Praca licencjacka powinna prezentować wiedzę o metodach fizjoterapeutycznych i ich zastosowaniu. Na tym poziomie może to być przegląd piśmiennictwa, analiza przypadku lub proste badanie ankietowe wśród pacjentów lub fizjoterapeutów. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-fizjoterapia/">przykładową pracę licencjacką z fizjoterapii</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.
   </p>
 
   <h2>Fizjoterapia narządu ruchu</h2>

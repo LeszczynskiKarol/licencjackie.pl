@@ -12,7 +12,7 @@ draft: false
 showSmartEduCTA: true
 ---
 
-<p>Informatyka to kierunek techniczny przygotowujący do tworzenia systemów informatycznych. Praca inżynierska powinna zawierać komponent praktyczny – aplikację, system lub analizę techniczną. Na tym poziomie wystarczy działająca aplikacja o umiarkowanej złożoności wraz z dokumentacją.</p>
+<p>Informatyka to kierunek techniczny przygotowujący do tworzenia systemów informatycznych. Praca inżynierska powinna zawierać komponent praktyczny – aplikację, system lub analizę techniczną. Na tym poziomie wystarczy działająca aplikacja o umiarkowanej złożoności wraz z dokumentacją. Zobacz też <a href="/blog/przykladowa-praca-inzynierska-informatyka/">przykładową pracę inżynierską z informatyki</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.</p>
 
 <h2>Aplikacje webowe</h2>
 

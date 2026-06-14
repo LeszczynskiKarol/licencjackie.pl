@@ -13,7 +13,7 @@ showSmartEduCTA: true
 ---
 
   <p>
-    Ochrona środowiska to interdyscyplinarny kierunek zajmujący się ochroną zasobów naturalnych i przeciwdziałaniem degradacji środowiska. Praca licencjacka powinna prezentować znajomość problemów środowiskowych i metod ich rozwiązywania. Na tym poziomie wystarczy analiza danych środowiskowych, przegląd regulacji lub badanie świadomości ekologicznej. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej.
+    Ochrona środowiska to interdyscyplinarny kierunek zajmujący się ochroną zasobów naturalnych i przeciwdziałaniem degradacji środowiska. Praca licencjacka powinna prezentować znajomość problemów środowiskowych i metod ich rozwiązywania. Na tym poziomie wystarczy analiza danych środowiskowych, przegląd regulacji lub badanie świadomości ekologicznej. Poniżej znajdziesz 100 tematów dostosowanych do wymagań pracy licencjackiej. Zobacz też <a href="/blog/przykladowa-praca-licencjacka-ochrona-srodowiska/">przykładową pracę licencjacką z ochrony środowiska</a> rozłożoną na części – ze wzorem każdego rozdziału, fragmentami i wzorem do pobrania.
   </p>
 
   <h2>Gospodarka odpadami</h2>
