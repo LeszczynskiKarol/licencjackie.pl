@@ -1,0 +1,194 @@
+---
+// src/pages/przykladowe-prace.astro — hub wszystkich przykładowych prac (wzory PDF+DOCX)
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import SmartEduCTA from "../components/SmartEduCTA.astro";
+import Layout from "../layouts/Layout.astro";
+
+const grupy = [
+  {
+    title: "Kierunki społeczne i pedagogiczne",
+    icon: "🎓",
+    prace: [
+      { name: "Psychologia", slug: "przykladowa-praca-licencjacka-psychologia", icon: "🧠", desc: "Badanie empiryczne: hipotezy, zmienne, narzędzia (GSES, Mini-COPE), wyniki." },
+      { name: "Pedagogika", slug: "przykladowa-praca-licencjacka-pedagogika", icon: "👨‍🏫", desc: "Sondaż diagnostyczny: problemy badawcze, ankieta, analiza wyników." },
+      { name: "Socjologia", slug: "przykladowa-praca-licencjacka-socjologia", icon: "👥", desc: "Sondaż na próbie celowej: kwestionariusz, tabele, wnioski." },
+      { name: "Politologia", slug: "przykladowa-praca-licencjacka-politologia", icon: "🗳️", desc: "Badanie sondażowe wokół zachowań wyborczych i opinii politycznych." },
+      { name: "Kryminologia", slug: "przykladowa-praca-licencjacka-kryminologia", icon: "🔍", desc: "Sondaż o poczuciu bezpieczeństwa z odniesieniem do statystyk przestępczości." },
+      { name: "Dziennikarstwo", slug: "przykladowa-praca-licencjacka-dziennikarstwo", icon: "📰", desc: "Analiza zawartości przekazów medialnych: klucz kategoryzacyjny, kodowanie." },
+    ],
+  },
+  {
+    title: "Prawo, administracja i bezpieczeństwo",
+    icon: "⚖️",
+    prace: [
+      { name: "Prawo", slug: "przykladowa-praca-licencjacka-prawo", icon: "⚖️", desc: "Metoda dogmatycznoprawna: teza, analiza przepisów i orzecznictwa, przypisy." },
+      { name: "Administracja", slug: "przykladowa-praca-licencjacka-administracja", icon: "🏛️", desc: "Podstawa prawna, sondaż wśród interesantów, wnioski dla urzędu." },
+      { name: "Bezpieczeństwo wewnętrzne", slug: "przykladowa-praca-licencjacka-bezpieczenstwo-wewnetrzne", icon: "🛡️", desc: "Analiza systemu zarządzania kryzysowego na podstawie dokumentów." },
+    ],
+  },
+  {
+    title: "Ekonomia i biznes",
+    icon: "📈",
+    prace: [
+      { name: "Zarządzanie", slug: "przykladowa-praca-licencjacka-zarzadzanie", icon: "💼", desc: "Case study firmy połączone z ankietą wśród pracowników." },
+      { name: "Finanse i rachunkowość", slug: "przykladowa-praca-licencjacka-finanse-i-rachunkowosc", icon: "💰", desc: "Analiza wskaźnikowa sprawozdań finansowych przedsiębiorstwa." },
+      { name: "Marketing", slug: "przykladowa-praca-licencjacka-marketing", icon: "📈", desc: "Badanie ankietowe zachowań konsumentów i skuteczności działań." },
+      { name: "Logistyka", slug: "przykladowa-praca-licencjacka-logistyka", icon: "📦", desc: "Case study procesu logistycznego: mapowanie, mierniki, usprawnienia." },
+      { name: "Turystyka", slug: "przykladowa-praca-licencjacka-turystyka", icon: "✈️", desc: "Analiza atrakcyjności regionu połączona z ankietą wśród turystów." },
+    ],
+  },
+  {
+    title: "Kierunki medyczne i o zdrowiu",
+    icon: "🏥",
+    prace: [
+      { name: "Pielęgniarstwo", slug: "przykladowa-praca-licencjacka-pielegniarstwo", icon: "🏥", desc: "Studium indywidualnego przypadku: diagnozy i plan opieki pielęgniarskiej." },
+      { name: "Fizjoterapia", slug: "przykladowa-praca-licencjacka-fizjoterapia", icon: "🦴", desc: "Studium przypadku: ocena funkcjonalna, program usprawniania, efekty." },
+      { name: "Ratownictwo medyczne", slug: "przykladowa-praca-licencjacka-ratownictwo-medyczne", icon: "🚑", desc: "Studium przypadku NZK według wytycznych resuscytacji ERC." },
+      { name: "Dietetyka", slug: "przykladowa-praca-licencjacka-dietetyka", icon: "🥗", desc: "Ocena sposobu żywienia: wywiad żywieniowy, BMI, zalecenia." },
+      { name: "Kosmetologia", slug: "przykladowa-praca-licencjacka-kosmetologia", icon: "💄", desc: "Studium przypadku: diagnoza skóry, plan zabiegowy, ocena efektów." },
+    ],
+  },
+  {
+    title: "Kierunki humanistyczne, ścisłe i przyrodnicze",
+    icon: "📚",
+    prace: [
+      { name: "Historia", slug: "przykladowa-praca-licencjacka-historia", icon: "📜", desc: "Metoda źródłowa: krytyka źródeł, przypisy, wykaz źródeł i opracowań." },
+      { name: "Filologia polska", slug: "przykladowa-praca-licencjacka-filologia-polska", icon: "📖", desc: "Analiza literaturoznawcza: teza interpretacyjna, literatura podmiotu i przedmiotu." },
+      { name: "Filologia angielska", slug: "przykladowa-praca-licencjacka-filologia-angielska", icon: "🇬🇧", desc: "Praca po angielsku: analiza z aparatem naukowym i polskimi objaśnieniami." },
+      { name: "Informatyka (inżynierska)", slug: "przykladowa-praca-inzynierska-informatyka", icon: "💻", desc: "Praca projektowa: wymagania, projekt systemu, implementacja, testy." },
+      { name: "Geografia", slug: "przykladowa-praca-licencjacka-geografia", icon: "🌍", desc: "Analiza danych GUS dla wybranego obszaru: tabele, mapy, wnioski." },
+      { name: "Ochrona środowiska", slug: "przykladowa-praca-licencjacka-ochrona-srodowiska", icon: "🌱", desc: "Analiza danych o jakości powietrza: normy, przekroczenia, trendy." },
+    ],
+  },
+];
+
+const total = grupy.reduce((s, g) => s + g.prace.length, 0);
+
+const faq = [
+  {
+    q: "Czy przykładowe prace są darmowe?",
+    a: "Tak. Każdy wzór pobierzesz bezpłatnie jako PDF i edytowalny plik Word (.docx) - bez rejestracji i podawania adresu e-mail.",
+  },
+  {
+    q: "Czy mogę wykorzystać wzór we własnej pracy licencjackiej?",
+    a: "Wzory służą do adaptacji: pokazują poprawną strukturę, styl przypisów i sposób prowadzenia wywodu. Treść musisz napisać samodzielnie - oddanie cudzego tekstu jako własnego to plagiat.",
+  },
+  {
+    q: "Czym różnią się wzory dla poszczególnych kierunków?",
+    a: "Każdy wzór odzwierciedla metodę typową dla danego kierunku: praca z prawa jest dogmatyczna, z pielęgniarstwa oparta na studium przypadku, z zarządzania na case study firmy, a z socjologii na sondażu. Różnią się też stylem cytowania i układem rozdziałów.",
+  },
+  {
+    q: "Co zawiera każdy wzór?",
+    a: "Kompletny szkielet pracy: stronę tytułową, spis treści, wstęp, rozdziały teoretyczne i badawcze, zakończenie i bibliografię - z komentarzami wyjaśniającymi funkcję każdej części.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={`Przykładowa praca licencjacka - ${total} wzorów PDF i Word do pobrania | Licencjackie.pl`}
+  description={`Przykładowe prace licencjackie z ${total} kierunków: psychologia, prawo, pielęgniarstwo, zarządzanie i inne. Kompletne wzory PDF + DOCX z komentarzami, do pobrania za darmo.`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  <Navbar />
+
+  <main class="pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="text-center mb-14">
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          Przykładowa praca licencjacka<br />
+          <span class="text-gradient">{total} wzorów do pobrania</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          Kompletne wzory prac licencjackich dla {total} kierunków studiów - każdy w metodzie
+          typowej dla swojej dziedziny, z komentarzami i formatowaniem zgodnym ze standardem
+          uczelnianym. Do każdego wzoru dołączony jest plik <strong>PDF</strong> i edytowalny
+          <strong>Word (.docx)</strong> - pobierzesz je bezpłatnie na stronie danego kierunku.
+        </p>
+      </header>
+
+      {grupy.map((grupa) => (
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <span class="text-3xl">{grupa.icon}</span>
+            {grupa.title}
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {grupa.prace.map((praca) => (
+              <a
+                href={`/blog/${praca.slug}/`}
+                class="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-500 hover:shadow-lg transition-all"
+              >
+                <div class="flex items-start gap-3">
+                  <span class="text-3xl flex-shrink-0">{praca.icon}</span>
+                  <div class="min-w-0">
+                    <h3 class="font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-1">
+                      {praca.name}
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">{praca.desc}</p>
+                    <span class="mt-2 inline-flex items-center gap-1 text-primary-600 font-medium text-sm">
+                      Zobacz wzór
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      <section class="max-w-3xl mx-auto mt-16 mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">
+          Jak korzystać z przykładowej pracy licencjackiej?
+        </h2>
+        <div class="prose prose-gray max-w-none text-gray-600 space-y-4">
+          <p>
+            Dobry wzór pracy licencjackiej pełni tę samą rolę co mapa: pokazuje drogę, ale
+            przejść musisz ją samodzielnie. Z każdego wzoru możesz przejąć <strong>strukturę</strong>
+            (układ rozdziałów, proporcje między częścią teoretyczną a badawczą),
+            <strong>warsztat</strong> (styl przypisów, sposób referowania literatury, opis metodologii)
+            i <strong>formatowanie</strong> (strona tytułowa, spis treści, interlinia, marginesy).
+            Treść - temat, badanie, wnioski - musi być Twoja.
+          </p>
+          <p>
+            Wzory różnią się między kierunkami, bo różnią się same prace: praca z prawa opiera się
+            na analizie przepisów i orzecznictwa, z pielęgniarstwa na studium indywidualnego
+            przypadku, a z zarządzania na analizie konkretnej firmy. Wybierz wzór swojego kierunku,
+            a zobaczysz dokładnie te elementy, których oczekuje Twój promotor i recenzent.
+            Ogólny proces pisania opisuje krok po kroku nasz przewodnik
+            <a href="/pisanie-prac-licencjackich/" class="text-primary-600 font-medium hover:underline">pisania prac licencjackich</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="max-w-3xl mx-auto mb-16">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Częste pytania</h2>
+        <div class="space-y-5">
+          {faq.map((f) => (
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <h3 class="font-bold text-gray-900 mb-2">{f.q}</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <SmartEduCTA />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
