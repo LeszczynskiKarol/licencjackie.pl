@@ -12,7 +12,7 @@ Podajesz temat, kierunek studiów i wytyczne promotora, a sztuczna inteligencja 
 **[www.smart-edu.ai](https://smart-edu.ai)**
 :::
 
-Wolisz napisać pracę w pełni samodzielnie? Pomoże Ci ebook **„Jak napisać pracę licencjacką"** — 250 stron praktycznych wskazówek, szablonów i checklist za 29 zł: [www.licencjackie.pl/ebook/](https://www.licencjackie.pl/ebook/)
+Wolisz napisać pracę w pełni samodzielnie? Pomoże Ci ebook **„Jak napisać pracę licencjacką"** — 250 stron praktycznych wskazówek, szablonów i checklist za 39 zł: [www.licencjackie.pl/ebook/](https://www.licencjackie.pl/ebook/)
 
 ::: {.center}
 *Darmowe poradniki, wzory i tematy prac licencjackich:* **[www.licencjackie.pl](https://www.licencjackie.pl)**

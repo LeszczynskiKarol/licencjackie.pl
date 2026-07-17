@@ -314,4 +314,4 @@ Kierunek: Pielęgniarstwo</p>
 
 <p>Ten rozbiór pokazuje strukturę i sposób myślenia, ale całą pracę i tak trzeba napisać samodzielnie, w oparciu o własny przypadek i aktualne źródła. Jeśli utknąłeś na którymś etapie – od planu rozdziałów po redakcję fragmentów – możesz wesprzeć się narzędziem <a href="https://smart-edu.ai/" rel="sponsored">Smart-Edu.ai</a>, które pomaga uporządkować strukturę i rozpisać poszczególne części pracy.</p>
 
-<p><strong>Idziesz dalej?</strong> Kompletny przewodnik pisania — od wywiadu i diagnoz po Vancouver i obronę — znajdziesz w ebooku <a href="/ebook-pielegniarstwo/">„Jak napisać pracę licencjacką z pielęgniarstwa"</a> (PDF + EPUB, 29 zł).</p>
+<p><strong>Idziesz dalej?</strong> Kompletny przewodnik pisania — od wywiadu i diagnoz po Vancouver i obronę — znajdziesz w ebooku <a href="/ebook-pielegniarstwo/">„Jak napisać pracę licencjacką z pielęgniarstwa"</a> (PDF + EPUB, 49 zł).</p>

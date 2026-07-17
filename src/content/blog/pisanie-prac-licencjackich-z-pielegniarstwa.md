@@ -69,7 +69,7 @@ showSmartEduCTA: true
 
 <p>Praca licencjacka z pielęgniarstwa to okazja do rozwinięcia umiejętności badawczych i pogłębienia wiedzy klinicznej - kompetencji fundamentalnych dla rozwoju zawodowego pielęgniarki.</p>
 
-<p><strong>Chcesz przejść cały proces z przewodnikiem pod ręką?</strong> Nasz ebook <a href="/ebook-pielegniarstwo/">„Jak napisać pracę licencjacką z pielęgniarstwa"</a> (PDF + EPUB, 29 zł) prowadzi od studium przypadku i skal klinicznych po Vancouver i obronę — z gotowymi diagnozami i checklistami.</p>
+<p><strong>Chcesz przejść cały proces z przewodnikiem pod ręką?</strong> Nasz ebook <a href="/ebook-pielegniarstwo/">„Jak napisać pracę licencjacką z pielęgniarstwa"</a> (PDF + EPUB, 49 zł) prowadzi od studium przypadku i skal klinicznych po Vancouver i obronę — z gotowymi diagnozami i checklistami.</p>
 
 <h2>Przykładowy rozwinięty temat pracy z pielęgniarstwa</h2>
 
