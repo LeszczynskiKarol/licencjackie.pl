@@ -124,6 +124,46 @@ const chapters = [
       </div>
     </section>
 
+    <!-- PRZEWODNIKI KIERUNKOWE -->
+    <section id="kierunkowe" class="py-16 bg-gray-900 text-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <span class="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">✨ Nowa seria 2026</span>
+          <h2 class="text-3xl font-bold text-white mb-3">Przewodniki kierunkowe — 49 zł</h2>
+          <p class="text-gray-300 max-w-2xl mx-auto">
+            Piszesz licencjat z konkretnego kierunku? Te przewodniki mówią językiem
+            Twojej dziedziny: jej metod, źródeł i recenzentów. 16 rozdziałów, format
+            <strong class="text-white">PDF + EPUB</strong>.
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            { icon: "🇬🇧", name: "Filologia angielska", desc: "Teza, analiza tekstu, academic English, MLA/APA, obrona po angielsku.", href: "/ebook-filologia-angielska/" },
+            { icon: "🩺", name: "Pielęgniarstwo", desc: "Studium przypadku, proces pielęgnowania, skale kliniczne, Vancouver.", href: "/ebook-pielegniarstwo/" },
+            { icon: "💰", name: "Finanse i rachunkowość", desc: "Sprawozdania z eKRS, wskaźniki, interpretacja, synteza oceny kondycji.", href: "/ebook-finanse/" },
+            { icon: "🏛️", name: "Administracja", desc: "Prawo administracyjne, orzecznictwo WSA/NSA, rozdział ustrojowy, praktyka urzędów.", href: "/ebook-administracja/" },
+            { icon: "🧑‍🏫", name: "Pedagogika", desc: "Sondaż diagnostyczny, metoda-technika-narzędzie, badania w placówce.", href: "/ebook-pedagogika/" },
+          ].map((k) => (
+            <a href={k.href} class="group flex flex-col bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-primary-400 transition-all hover:scale-[1.02]">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-3xl">{k.icon}</span>
+                <h3 class="font-bold text-white">{k.name}</h3>
+              </div>
+              <p class="text-sm text-gray-400 flex-1">{k.desc}</p>
+              <div class="mt-4 pt-3 border-t border-gray-700 flex items-center justify-between">
+                <span class="text-xl font-bold text-white">49 zł</span>
+                <span class="text-primary-300 text-sm font-medium group-hover:translate-x-1 transition-transform">Zobacz →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+        <p class="text-center text-gray-400 text-sm mt-8">
+          Piszesz pracę magisterską? Przewodniki magisterskie (10 kierunków) znajdziesz na
+          <a href="https://www.praca-magisterska.pl/sklep/#kierunkowe" class="text-primary-300 hover:underline" rel="noopener">praca-magisterska.pl</a>.
+        </p>
+      </div>
+    </section>
+
     <!-- DLA KOGO -->
     <section class="py-16 bg-gray-50">
       <div class="max-w-5xl mx-auto px-4">

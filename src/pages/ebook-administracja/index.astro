@@ -1,0 +1,282 @@
+---
+// src/pages/ebook-administracja/index.astro
+import Footer from "../../components/Footer.astro";
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const API_URL = "https://kiv8tougqc.execute-api.eu-central-1.amazonaws.com/prod";
+
+const PRODUCT_ID = "ebook-licencjacka-administracja";
+
+const PREVIEW_PDF_URL =
+  "https://praca-magisterska-ebooks.s3.eu-central-1.amazonaws.com/jak-napisac-prace-licencjacka-z-administracji-preview.pdf";
+
+const ebook = {
+  name: "Jak napisać pracę licencjacką z administracji",
+  subtitle: "Od problemu do obrony — kompletny przewodnik",
+  price: 49,
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: ebook.name,
+  description:
+    "Przewodnik PDF+EPUB pisania pracy licencjackiej z administracji: prawo administracyjne, orzecznictwo WSA i NSA, rozdział ustrojowy, badanie praktyki urzędów, przypisy i wykazy, obrona.",
+  brand: { "@type": "Brand", name: "Licencjackie.pl" },
+  offers: {
+    "@type": "Offer",
+    price: ebook.price,
+    priceCurrency: "PLN",
+    availability: "https://schema.org/InStock",
+    url: "https://www.licencjackie.pl/ebook-administracja/",
+  },
+};
+
+const highlights = [
+  { t: "Trzy typy prac — i jak je łączyć", d: "Dogmatyczna, ustrojowa i praktyczna: jak wybrać ścieżkę na miarę licencjatu i zbudować mocną hybrydę." },
+  { t: "Kwerenda: ISAP, CBOSA, BIP, NIK", d: "Gdzie szukać aktów, wyroków i dokumentów praktyki — z procedurą krok po kroku i ewidencją źródeł." },
+  { t: "Orzecznictwo WSA i NSA", d: "Linie orzecznicze, uchwały, rozstrzygnięcia nadzorcze — jak z wyroków zrobić argument, nie ozdobnik." },
+  { t: "Rozdział ustrojowy bez streszczania ustawy", d: "Raster pięciu pytań: pozycja, zadania a kompetencje, formy działania, obsada, nadzór i kontrola." },
+  { t: "Badanie praktyki urzędów", d: "BIP, raporty NIK, wniosek o dostęp do informacji publicznej jako metoda badawcza licencjatu." },
+  { t: "Przypisy i cztery wykazy", d: "Wzorce cytowania ustaw, uchwał rad gmin, wyroków i dokumentów — plus stan prawny na dzień." },
+  { t: "Struktura problemowa", d: "Jak nie przepisać porządku ustawy: rozdziały odpowiadają pytaniom, każdy podrozdział ma konkluzję." },
+  { t: "Wnioski, postulaty i obrona", d: "Postulaty z właściwym adresatem (ustawodawca vs praktyka), finisz z przejściami kontrolnymi i kanon pytań komisji." },
+];
+---
+
+<Layout
+  title="Ebook: Jak napisać pracę licencjacką z administracji (PDF + EPUB) | Licencjackie.pl"
+  description="Przewodnik pisania pracy licencjackiej z administracji: prawo administracyjne, orzecznictwo WSA/NSA, rozdział ustrojowy, badanie praktyki urzędów, obrona. PDF + EPUB za 49 zł."
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(productSchema)}
+    slot="head"
+  />
+
+  <Navbar />
+
+  <main class="min-h-screen">
+    <!-- HERO -->
+    <section class="pt-28 pb-16 bg-gradient-to-br from-slate-100 via-white to-primary-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="bg-slate-200 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">🏛️ Administracja</span>
+              <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">PDF + EPUB</span>
+              <span class="bg-gradient-to-r from-slate-500 to-primary-500 text-white px-3 py-1 rounded-full text-sm font-medium">✨ Nowość 2026</span>
+            </div>
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+              Jak napisać pracę licencjacką z administracji
+            </h1>
+            <p class="text-lg text-gray-600 mb-6">
+              {ebook.subtitle}. Zero ogólników o „pracach dyplomowych” — wyłącznie
+              warsztat administracyjny: przepisy, orzecznictwo, ustrój organów
+              i badanie, jak urzędy działają naprawdę.
+            </p>
+            <div class="flex items-center gap-4 mb-6">
+              <span class="text-4xl font-bold text-gray-900">{ebook.price} zł</span>
+              <span class="text-sm text-gray-500">jednorazowo • PDF + EPUB • dostęp natychmiast</span>
+            </div>
+            <button
+              data-product-id={PRODUCT_ID}
+              class="buy-button w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-slate-600 to-primary-600 text-white font-bold text-lg rounded-xl hover:opacity-90 transition-opacity"
+            >
+              📥 Kup przewodnik za {ebook.price} zł
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Płatność: BLIK, karta, Revolut Pay (Stripe). Po opłaceniu paczka ZIP (PDF + EPUB) od razu na ekranie i mailem.</p>
+          </div>
+          <div class="text-center">
+            <div class="inline-block bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
+              <span class="text-8xl">🏛️</span>
+              <div class="mt-4 text-sm text-gray-500">Przewodnik kierunkowy · PDF + EPUB</div>
+              <div class="mt-1 text-xs text-gray-400">czytaj na komputerze, tablecie i czytniku</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CO W ŚRODKU -->
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-3">Co znajdziesz w środku?</h2>
+        <p class="text-center text-gray-600 mb-12">16 rozdziałów warsztatu administracyjnego — z wzorcami przypisów i analiz gotowymi do adaptacji</p>
+        <div class="grid md:grid-cols-2 gap-5">
+          {highlights.map((c, i) => (
+            <div class="flex gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50">
+              <span class="w-8 h-8 flex-shrink-0 bg-slate-600 text-white rounded-full flex items-center justify-center text-sm font-bold">{i + 1}</span>
+              <div>
+                <h3 class="font-bold text-gray-900">{c.t}</h3>
+                <p class="text-sm text-gray-600">{c.d}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="mt-10 text-center">
+          <div class="inline-block bg-slate-100 border border-slate-200 rounded-xl px-6 py-4">
+            <p class="text-slate-800 text-sm">
+              <strong>W każdym rozdziale:</strong> ramki z definicjami i pułapkami,
+              wzorcowe fragmenty analiz oraz checklisty do odhaczenia przed
+              oddaniem rozdziału promotorowi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREVIEW -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900 mb-3">📖 Zajrzyj do środka</h2>
+          <p class="text-gray-600">Okładka, pełny spis treści i cały pierwszy rozdział — za darmo.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+          <div class="bg-slate-700 px-6 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="flex gap-1.5">
+                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+              </div>
+              <span class="text-sm text-slate-200">Fragment przewodnika — spis treści i rozdział 1</span>
+            </div>
+            <a href={PREVIEW_PDF_URL} target="_blank" class="text-sm text-white/90 hover:text-white">Otwórz w nowej karcie ↗</a>
+          </div>
+          <iframe src={PREVIEW_PDF_URL} class="w-full h-[600px] md:h-[700px] border-0" title="Preview przewodnika — administracja"></iframe>
+        </div>
+        <div class="text-center mt-8">
+          <button
+            data-product-id={PRODUCT_ID}
+            class="buy-button inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-slate-600 to-primary-600 text-white font-bold text-lg rounded-xl hover:opacity-90 transition-opacity"
+          >
+            📥 Kup pełny przewodnik za {ebook.price} zł
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DLA KOGO -->
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Ten przewodnik jest dla Ciebie, jeśli:</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-50 rounded-xl p-6 text-center shadow-sm">
+            <div class="text-4xl mb-3">📜</div>
+            <h3 class="font-bold text-gray-900 mb-2">Boisz się „streszczenia ustawy”</h3>
+            <p class="text-sm text-gray-600">Uczysz się struktury problemowej i rastra ustrojowego — praca rozstrzyga pytania, nie przepisuje przepisów.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center shadow-sm">
+            <div class="text-4xl mb-3">⚖️</div>
+            <h3 class="font-bold text-gray-900 mb-2">Nie wiesz, jak szukać wyroków</h3>
+            <p class="text-sm text-gray-600">CBOSA, ISAP, BIP i raporty NIK — procedura kwerendy krok po kroku, z wzorcami przypisów.</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-6 text-center shadow-sm">
+            <div class="text-4xl mb-3">⏰</div>
+            <h3 class="font-bold text-gray-900 mb-2">Goni Cię termin</h3>
+            <p class="text-sm text-gray-600">Harmonogram ostatniego miesiąca, cztery przejścia kontrolne i checklisty domykają pracę bez paniki.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Najczęstsze pytania</h2>
+        <div class="space-y-4">
+          <details class="bg-white rounded-xl p-6 group" open>
+            <summary class="font-semibold text-gray-900 cursor-pointer">Czy przewodnik pasuje do administracji publicznej i e-administracji?</summary>
+            <p class="mt-3 text-gray-600 text-sm">Tak — warsztat jest wspólny dla całego kierunku: analiza regulacji, orzecznictwo sądów administracyjnych, analiza ustrojowa organów i badanie praktyki urzędów. Sprawdzi się przy tematach z samorządu, procedury, e-administracji i zarządzania publicznego.</p>
+          </details>
+          <details class="bg-white rounded-xl p-6 group">
+            <summary class="font-semibold text-gray-900 cursor-pointer">W jakim formacie dostanę ebook?</summary>
+            <p class="mt-3 text-gray-600 text-sm">W paczce ZIP z dwoma plikami: <strong>PDF</strong> (na komputer, tablet, do druku) i <strong>EPUB</strong> (na czytniki i aplikacje mobilne).</p>
+          </details>
+          <details class="bg-white rounded-xl p-6 group">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Jak szybko dostanę pliki?</summary>
+            <p class="mt-3 text-gray-600 text-sm"><strong>Natychmiast</strong> — link do pobrania pojawia się na ekranie zaraz po płatności, a kopia trafia na e‑mail.</p>
+          </details>
+          <details class="bg-white rounded-xl p-6 group">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Piszę pracę magisterską z administracji — co wtedy?</summary>
+            <p class="mt-3 text-gray-600 text-sm">Sięgnij po wersję magisterską na siostrzanym serwisie: <a href="https://www.praca-magisterska.pl/sklep/jak-napisac-prace-magisterska-z-administracji/" class="text-primary-600 underline">praca-magisterska.pl</a> — szerszy zakres dogmatyczny i pogłębiona empiria.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-16 bg-gradient-to-r from-slate-600 to-primary-600 text-white">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-white">Napisz licencjat, którego nie trzeba poprawiać</h2>
+        <p class="text-lg text-white/90 mb-8">Kompletny warsztat pracy z administracji — w PDF i EPUB.</p>
+        <button
+          data-product-id={PRODUCT_ID}
+          class="buy-button inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-slate-700 font-bold text-lg rounded-xl hover:bg-gray-50 transition-colors"
+        >
+          📥 Kup przewodnik za {ebook.price} zł
+        </button>
+        <p class="text-white/80 text-sm mt-4">Płatność jednorazowa • Dostęp natychmiast • PDF + EPUB na zawsze</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+    <div class="bg-white rounded-2xl p-8 text-center">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-600 mx-auto mb-4"></div>
+      <p class="text-gray-700">Przekierowuję do płatności...</p>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+<script define:vars={{ API_URL, PRODUCT_ID }}>
+  // cSpell:ignore gtag
+  document.addEventListener("DOMContentLoaded", function () {
+    var PRODUCTS = {
+      "ebook-licencjacka-administracja": { name: "Jak napisać pracę licencjacką z administracji", price: 49.0 },
+    };
+    var buttons = document.querySelectorAll(".buy-button");
+    var loadingOverlay = document.getElementById("loading-overlay");
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", async function () {
+        var productId = button.dataset.productId || PRODUCT_ID;
+        var product = PRODUCTS[productId] || { name: "Ebook", price: 0 };
+
+        if (typeof window.gtag === "function") {
+          var gaItem = { item_id: productId, item_name: product.name, price: product.price, quantity: 1, item_category: "Ebook" };
+          window.gtag("event", "add_to_cart", { value: product.price, currency: "PLN", items: [gaItem] });
+          window.gtag("event", "begin_checkout", { value: product.price, currency: "PLN", items: [gaItem] });
+        }
+
+        loadingOverlay.classList.remove("hidden");
+        button.disabled = true;
+
+        try {
+          var response = await fetch(API_URL + "/create-checkout", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ productId: productId }),
+          });
+          var data = await response.json();
+          if (data.url) {
+            window.location.href = data.url;
+          } else {
+            throw new Error(data.error || "Błąd");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          loadingOverlay.classList.add("hidden");
+          button.disabled = false;
+          alert("Wystąpił błąd. Spróbuj ponownie.");
+        }
+      });
+    });
+  });
+</script>

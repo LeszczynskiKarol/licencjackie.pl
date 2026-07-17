@@ -1,25 +1,64 @@
 ---
 // src/components/EbookCTA.astro
-// Kontekstowy CTA do ebooków na praca-magisterska.pl/sklep (siostrzana domena zarobkowa).
+// Kontekstowy CTA do ebooków (siostrzane domeny zarobkowe).
 // Komplementarny do SmartEduCTA:
 //   SmartEduCTA -> smart-edu.ai  (wygeneruj pracę AI)
-//   EbookCTA    -> praca-magisterska.pl/sklep (napisz sam wg poradnika PDF)
-// Dobiera właściwy ebook po typie pracy danego wpisu (mgr 39 zł / lic 39 zł).
+//   EbookCTA    -> ebook: kierunkowy przewodnik (49 zł), a gdy brak — ogólny poradnik (39 zł)
+// Dobiera ebook po typie pracy wpisu (lic/mgr) i — jeśli slug wskazuje kierunek — po kierunku.
 interface Props {
   workType?: "lic" | "mgr";
+  slug?: string;
   class?: string;
 }
 
-const { workType = "lic", class: className = "" } = Astro.props;
+const { workType = "lic", slug = "", class: className = "" } = Astro.props;
 
-const ebook =
-  workType === "mgr"
+const MGR_BASE = "https://www.praca-magisterska.pl/sklep/";
+
+// kierunek: [wzorzec slug, emoji, nazwa kierunku (dopełniacz), href lic, href mgr]
+const KIERUNKI: Array<{
+  re: RegExp;
+  emoji: string;
+  kierunek: string;
+  lic?: string;
+  mgr?: string;
+}> = [
+  { re: /pielegniarstw/, emoji: "🩺", kierunek: "pielęgniarstwa", lic: "/ebook-pielegniarstwo/", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-pielegniarstwa/" },
+  { re: /filologi.*angielsk|angielsk.*filologi|filologia-angielska/, emoji: "🇬🇧", kierunek: "filologii angielskiej", lic: "/ebook-filologia-angielska/" },
+  { re: /finans|rachunkowosc/, emoji: "💰", kierunek: "finansów i rachunkowości", lic: "/ebook-finanse/", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-finansow-i-rachunkowosci/" },
+  { re: /administracj/, emoji: "🏛️", kierunek: "administracji", lic: "/ebook-administracja/", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-administracji/" },
+  { re: /pedagogik/, emoji: "🧑‍🏫", kierunek: "pedagogiki", lic: "/ebook-pedagogika/", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-pedagogiki/" },
+  { re: /psychologi/, emoji: "🧠", kierunek: "psychologii", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-psychologii/" },
+  { re: /\bprawo\b|prawa-|-prawo|prawnicz/, emoji: "⚖️", kierunek: "prawa", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-prawa/" },
+  { re: /logistyk/, emoji: "🚚", kierunek: "logistyki", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-logistyki/" },
+  { re: /informatyk/, emoji: "💻", kierunek: "informatyki", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-informatyki/" },
+  { re: /marketing/, emoji: "📣", kierunek: "marketingu", mgr: MGR_BASE + "jak-napisac-prace-magisterska-z-marketingu/" },
+  { re: /zdrowie-publiczne|zdrowia-publicznego/, emoji: "🏥", kierunek: "zdrowia publicznego", mgr: MGR_BASE + "jak-napisac-prace-magisterska-ze-zdrowia-publicznego/" },
+];
+
+const typLabel = workType === "mgr" ? "magisterską" : "licencjacką";
+const match = KIERUNKI.find((k) => k.re.test(slug));
+const kierunkowyHref = match ? (workType === "mgr" ? match.mgr : match.lic) : undefined;
+
+const ebook = kierunkowyHref
+  ? {
+      href: kierunkowyHref,
+      emoji: match!.emoji,
+      name: `Jak napisać pracę ${typLabel} z ${match!.kierunek}`,
+      price: "49 zł",
+      lead: `Piszesz pracę ${typLabel} z ${match!.kierunek}?`,
+      desc: "16 rozdziałów wyłącznie o Twoim kierunku: metody, źródła, wzorce i pułapki — plus checklisty przed oddaniem każdego rozdziału. PDF + EPUB.",
+      badge: "Przewodnik kierunkowy · PDF + EPUB",
+    }
+  : workType === "mgr"
     ? {
-        href: "https://www.praca-magisterska.pl/sklep/praca-magisterska-ebook/",
+        href: MGR_BASE + "praca-magisterska-ebook/",
         emoji: "📗",
         name: "Jak napisać pracę magisterską",
         price: "39 zł",
         lead: "Piszesz pracę magisterską?",
+        desc: "250 stron konkretów, szablony, checklisty i przykłady. Bez błądzenia po omacku.",
+        badge: "Poradnik PDF",
       }
     : {
         href: "/ebook/",
@@ -27,6 +66,8 @@ const ebook =
         name: "Jak napisać pracę licencjacką",
         price: "39 zł",
         lead: "Piszesz pracę licencjacką?",
+        desc: "250 stron konkretów, szablony, checklisty i przykłady. Bez błądzenia po omacku.",
+        badge: "Poradnik PDF",
       };
 ---
 
@@ -37,7 +78,7 @@ const ebook =
     <div class="text-5xl flex-shrink-0" aria-hidden="true">{ebook.emoji}</div>
     <div class="flex-1">
       <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
-        Poradnik PDF
+        {ebook.badge}
       </p>
       <h3 class="text-lg font-bold text-slate-900 mb-1">
         {ebook.lead} Zrób to samodzielnie, krok po kroku
@@ -47,7 +88,7 @@ const ebook =
           href={ebook.href}
           class="font-medium text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-600"
           >„{ebook.name}"</a
-        > — 250 stron konkretów, szablony, checklisty i przykłady. Bez błądzenia po omacku.
+        > — {ebook.desc}
       </p>
     </div>
     <a

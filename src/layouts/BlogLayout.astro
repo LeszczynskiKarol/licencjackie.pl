@@ -274,8 +274,8 @@ const breadcrumbSchema = {
         <slot />
       </div>
 
-      {/* Ebook CTA - poradnik PDF (praca-magisterska.pl/sklep) */}
-      <EbookCTA workType={ebookWorkType} class="mt-12" />
+      {/* Ebook CTA - poradnik PDF (kierunkowy, jeśli istnieje; inaczej ogólny) */}
+      <EbookCTA workType={ebookWorkType} slug={post.slug} class="mt-12" />
 
       {/* Smart-Edu CTA - na dole */}
       {
