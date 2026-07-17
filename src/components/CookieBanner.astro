@@ -491,10 +491,30 @@
     function init() {
       const consent = getConsent();
 
-      // Consent Mode v2: ZAWSZE ładuj GTM od razu — defaults (denied) są już
-      // ustawione powyżej. GTM/GA same respektują storage flags, a brak
-      // skryptu uniemożliwia pomiar denied-pingów i ścieżki "wejście→zgoda".
-      loadGoogleScripts(consent || { analytics: false, marketing: false });
+      // Consent Mode v2: GTM ładowany ZAWSZE (defaults denied są już w
+      // dataLayer), ale z opóźnieniem — 289 KB gtm+gtag na starcie wpadało
+      // w okno LCP symulacji Lighthouse (LCP 4.7s zamiast ~2.4s). Ładujemy
+      // przy pierwszej interakcji albo po load+3.5s, cokolwiek pierwsze;
+      // kolejka dataLayer i tak zbiera zdarzenia sprzed załadowania.
+      let googleLoaded = false;
+      function loadGoogleDeferred() {
+        if (googleLoaded) return;
+        googleLoaded = true;
+        ["scroll", "pointerdown", "keydown", "touchstart"].forEach(function (ev) {
+          window.removeEventListener(ev, loadGoogleDeferred);
+        });
+        loadGoogleScripts(getConsent() || { analytics: false, marketing: false });
+      }
+      ["scroll", "pointerdown", "keydown", "touchstart"].forEach(function (ev) {
+        window.addEventListener(ev, loadGoogleDeferred, { passive: true, once: false });
+      });
+      if (document.readyState === "complete") {
+        setTimeout(loadGoogleDeferred, 3500);
+      } else {
+        window.addEventListener("load", function () {
+          setTimeout(loadGoogleDeferred, 3500);
+        });
+      }
 
       if (consent) {
         updateGoogleConsent(consent);
