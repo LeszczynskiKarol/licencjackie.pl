@@ -1,6 +1,6 @@
 ---
-title: "Obrona pracy licencjackiej - jak się przygotować?"
-description: "Jak się przygotować do obrony pracy licencjackiej? Kompletny przewodnik, dzięki któremu zwiększysz swoje szanse na korzystny rezultat podczas wystąpienia przed komisją"
+title: "Obrona pracy licencjackiej - jak wygląda, przykładowe pytania, przebieg"
+description: "Jak wygląda obrona pracy licencjackiej krok po kroku: przebieg, przykładowe pytania komisji, prezentacja - i co zrobić, gdy odpowiedź nie wyjdzie. Praktyczny przewodnik."
 publishDate: 2025-12-06
 author: "Redakcja Licencjackie.pl"
 category: "Obrona pracy"

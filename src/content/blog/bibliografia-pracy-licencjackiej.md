@@ -1,6 +1,6 @@
 ---
-title: "Bibliografia w pracy licencjackiej — wzór, przykłady, APA i Harvard"
-description: "Jak zrobić bibliografię w pracy licencjackiej? Gotowe wzory cytowań książek, artykułów i źródeł online (APA, Harvard) + wzór bibliografii do pobrania (PDF, Word)."
+title: "Bibliografia w pracy licencjackiej - wzór, ile pozycji, przykłady APA"
+description: "Jak ma wyglądać bibliografia w pracy licencjackiej i ile pozycji powinna mieć? Gotowe wzory cytowań (APA, Harvard) + darmowy wzór bibliografii do pobrania (PDF, Word)."
 publishDate: 2025-12-11
 updateDate: 2026-06-10
 author: "Redakcja Licencjackie.pl"

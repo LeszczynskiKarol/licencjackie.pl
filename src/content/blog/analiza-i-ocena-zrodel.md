@@ -1,6 +1,6 @@
 ---
-title: "Analiza i ocena źródeł w pracy dyplomowej – krok po kroku"
-description: "Jak przeprowadzić analizę i ocenę źródeł do pracy licencjackiej lub magisterskiej? Sprawdź, jak ocenić wiarygodność źródła i uniknąć typowych błędów – krok po kroku."
+title: "Zbieranie, analiza i interpretacja danych oraz ocena źródeł w pracy naukowej"
+description: "Sposoby zbierania, analizy i interpretacji danych w pracy naukowej: jak ocenić wiarygodność źródła, wybrać literaturę do pracy licencjackiej i uniknąć typowych błędów."
 publishDate: 2025-11-25
 author: "Redakcja Licencjackie.pl"
 category: "Metodologia"

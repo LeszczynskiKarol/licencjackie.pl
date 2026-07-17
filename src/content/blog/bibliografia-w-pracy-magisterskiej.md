@@ -1,6 +1,6 @@
 ---
-title: "Bibliografia w pracy magisterskiej — wzór, przykłady i style"
-description: "Jak zrobić bibliografię w pracy magisterskiej? Gotowe wzory dla książek, artykułów i źródeł online + style APA, Harvard, Chicago. Sprawdź!"
+title: "Bibliografia w pracy magisterskiej - wzór, przykłady, akty prawne"
+description: "Jak wygląda bibliografia w pracy magisterskiej? Gotowe wzory: książki, artykuły, źródła internetowe i akty prawne (ustawy, rozporządzenia) w stylach APA, Harvard i Chicago."
 publishDate: 2025-12-13
 updateDate: 2026-06-10
 author: "Redakcja Licencjackie.pl"

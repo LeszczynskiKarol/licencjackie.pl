@@ -1,6 +1,6 @@
 ---
-title: "Streszczenie pracy licencjackiej – jak napisać + przykład"
-description: "Co powinno zawierać streszczenie pracy licencjackiej, ile słów ma liczyć i czym różni się od abstraktu? Instrukcja krok po kroku, gotowy przykład i wzór do pobrania (PDF, Word)."
+title: "Streszczenie pracy licencjackiej - wzór, ile słów, streszczenie a abstrakt"
+description: "Co powinno zawierać streszczenie pracy licencjackiej, ile słów ma liczyć, czy ma akapity i czym różni się od abstraktu? Gotowy przykład + wzór do pobrania (PDF, Word)."
 publishDate: 2026-06-10
 author: "Redakcja Licencjackie.pl"
 category: "Struktura pracy"
