@@ -67,6 +67,17 @@ showSmartEduCTA: true
 <li>Publication Manual APA - standardy pisania</li>
 </ul>
 
+<h2>Przykładowe rozwinięte tematy prac z psychologii</h2>
+
+<p>Poniżej znajdziesz konkretne propozycje tematów prac z psychologii - każdy rozłożony na czynniki: zakres, pytania badawcze, narzędzia, strukturę i typowe błędy.</p>
+
+<ul>
+<li><a href="/blog/wplyw-mediow-spolecznosciowych-na-proces-socjalizacji-mlodziezy/">Wpływ mediów społecznościowych na proces socjalizacji młodzieży</a></li>
+<li><a href="/blog/wplyw-uzaleznienia-od-mediow-spolecznosciowych-na-zdrowie-psychiczne-wsrod-mlodziezy-ciekawy-temat-pracy-magisterskiej-z-psychologii/">Uzależnienie od mediów społecznościowych a zdrowie psychiczne młodzieży</a></li>
+<li><a href="/blog/zwiazek-miedzy-rodzajem-obserwowanego-trollingu-a-zmiana-poziomu-narcyzmu-samooceny-i-satysfakcji-z-zycia-jako-temat-pracy-licencjackiej/">Obserwowany trolling a narcyzm, samoocena i satysfakcja z życia</a></li>
+<li><a href="/blog/profilaktyka-zachowan-suicydalnych-wsrod-dzieci-i-mlodziezy-jako-temat-pracy-licencjackiej/">Profilaktyka zachowań suicydalnych wśród dzieci i młodzieży</a></li>
+</ul>
+
 <p>Praca licencjacka z psychologii to okazja do rozwinięcia warsztatu badawczego - umiejętności planowania badań, stosowania narzędzi i analizy danych, które są fundamentem pracy psychologa.</p>
 
 <p><strong>Szukasz inspiracji?</strong> Sprawdź naszą listę <a href="/blog/psychologia">100 tematów prac licencjackich z psychologii</a> z konkretnymi propozycjami badawczymi.</p>
