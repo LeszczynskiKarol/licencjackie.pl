@@ -61,6 +61,20 @@ showSmartEduCTA: true
 <li>Zotero - zarządzanie bibliografią</li>
 </ul>
 
+<h2>Przykładowe rozwinięte tematy prac z historii</h2>
+
+<p>Poniżej znajdziesz konkretne propozycje tematów prac licencjackich z historii - każdy rozłożony na czynniki: zakres, pytania badawcze, źródła, strukturę i metodologię.</p>
+
+<ul>
+<li><a href="/blog/ewolucja-i-rola-pasow-rycerskich-w-polsce-ciekawy-temat-na-prace-licencjacka-z-historii/">Ewolucja i rola pasów rycerskich w Polsce</a></li>
+<li><a href="/blog/jeniectwo-wojenne-w-sredniowiecznej-europie-propozycja-pracy-licencjackiej-z-historii/">Jeniectwo wojenne w średniowiecznej Europie</a></li>
+<li><a href="/blog/rola-liberum-veto-w-polityce-wewnetrznej-rzeczypospolitej/">Rola liberum veto w polityce wewnętrznej Rzeczypospolitej</a></li>
+<li><a href="/blog/rozwoj-terytorialny-polski-pod-panowaniem-dynastii-piastow/">Rozwój terytorialny Polski pod panowaniem dynastii Piastów</a></li>
+<li><a href="/blog/polityka-panstw-osciennych-wobec-polski-w-okresie-kryzysu-politycznego-1925-1926/">Polityka państw ościennych wobec Polski w okresie kryzysu 1925-1926</a></li>
+<li><a href="/blog/swiadomosc-spoleczenstwa-niemieckiego-dotyczaca-zbrodni-nazistowskich-w-pierwszych-latach-po-zakonczeniu-ii-wojny-swiatowej/">Świadomość Niemców wobec zbrodni nazistowskich po 1945 roku</a></li>
+<li><a href="/blog/wplyw-bitwy-pod-waterloo-na-upadek-napoleona-bonaparte/">Wpływ bitwy pod Waterloo na upadek Napoleona Bonaparte</a></li>
+</ul>
+
 <p>Praca licencjacka z historii to szansa na rozwinięcie warsztatu badawczego i umiejętności krytycznej analizy źródeł - kompetencji przydatnych nie tylko w pracy naukowej, ale w wielu zawodach wymagających pracy z dokumentami.</p>
 
 <p><strong>Szukasz inspiracji?</strong> Sprawdź naszą listę <a href="/blog/historia">100 tematów prac licencjackich z historii</a> z konkretnymi propozycjami badawczymi.</p>
