@@ -191,3 +191,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> odpowiedni dobór stanowisk badawczych, powtarzalność pomiarów, standaryzowane metody (wg norm, wytycznych GIOŚ), analiza statystyczna, odniesienie do wartości dopuszczalnych i standardów jakości.</p>
 
 <p><strong>Źródła danych:</strong> własne pomiary terenowe i laboratoryjne, dane GIOŚ i WIOŚ, bazy Natura 2000, dane przestrzenne GIS, monitoring IMGW, bazy KOBIZE, raporty środowiskowe. Dokumentuj metodykę zgodnie ze standardami.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/ochrona-srodowiska/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z ochrony środowiska</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/ochrona-srodowiska/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z ochrony środowiska do pobrania (PDF, Word)</a>.</p>

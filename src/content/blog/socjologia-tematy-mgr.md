@@ -189,3 +189,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania badawcze, uzasadniony dobór metod, transparentna procedura badawcza, odpowiednia próba (dla badań jakościowych 15-30 wywiadów do nasycenia), interpretacja w kontekście teorii socjologicznych, refleksyjność badacza.</p>
 
 <p><strong>Źródła danych:</strong> badania własne (wywiady, ankiety), dane wtórne (CBOS, GUS, ESS, PGSS), analiza dokumentów, analiza treści mediów, obserwacja. Konieczna jest refleksja etyczna – świadoma zgoda, anonimizacja, poufność.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/socjologia/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z socjologii</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/socjologia/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z socjologii do pobrania (PDF, Word)</a>.</p>

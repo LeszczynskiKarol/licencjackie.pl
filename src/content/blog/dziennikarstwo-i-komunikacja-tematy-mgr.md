@@ -188,3 +188,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania badawcze, uzasadniony dobór materiału (próba reprezentatywna lub celowa), transparentna procedura kodowania (dla analizy treści), triangulacja metod, interpretacja w kontekście teorii komunikacji.</p>
 
 <p><strong>Źródła:</strong> treści medialne (archiwizuj!), dane o oglądalności/zasięgach, raporty branżowe (IAB, Reuters Institute, CBOS), wywiady własne. Pamiętaj o etyce – szczególnie przy badaniach treści wrażliwych i wywiadach.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/dziennikarstwo/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z dziennikarstwa</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/dziennikarstwo/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z dziennikarstwa do pobrania (PDF, Word)</a>.</p>

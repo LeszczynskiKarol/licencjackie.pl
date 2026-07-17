@@ -198,3 +198,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> zgoda komisji bioetycznej, świadoma zgoda uczestników, odpowiednia grupa badana (min. 20-30 osób), grupa kontrolna lub porównawcza, standaryzowane narzędzia oceny, właściwa analiza statystyczna.</p>
 
 <p><strong>Narzędzia badawcze:</strong> skale oceny (VAS, NDI, ODI, DASH), testy funkcjonalne, aparatura pomiarowa (dynamometria, stabilometria, analiza chodu). Raportuj zgodnie z wytycznymi CONSORT lub STROBE.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/fizjoterapia/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z fizjoterapii</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/fizjoterapia/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z fizjoterapii do pobrania (PDF, Word)</a>.</p>

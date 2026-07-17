@@ -198,3 +198,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> formalne modele lub hipotezy, odpowiednie dane (szeregi czasowe, dane panelowe, przekrojowe), właściwe metody ekonometryczne (regresja, VAR, panel data, DID), diagnostyka modeli (stacjonarność, autokorelacja, heteroskedastyczność), interpretacja ekonomiczna wyników.</p>
 
 <p><strong>Źródła danych:</strong> GUS (BDL, BAEL), NBP, Eurostat, OECD, Bank Światowy, bazy firm (EMIS, Orbis), dane giełdowe (Stooq, GPW), ankiety (np. Diagnoza Społeczna).</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/ekonomia/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z ekonomii</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/ekonomia/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z ekonomii do pobrania (PDF, Word)</a>.</p>

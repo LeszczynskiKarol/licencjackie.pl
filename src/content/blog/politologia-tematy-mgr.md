@@ -198,3 +198,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania badawcze/hipotezy, uzasadniony dobór metod i przypadków, transparentna procedura, interpretacja w kontekście teorii politologicznych, wnioski i implikacje.</p>
 
 <p><strong>Źródła:</strong> dokumenty (akty prawne, programy, przemówienia), dane (PKW, Eurostat, CBOS, ParlGov), prasa i media, wywiady, literatura naukowa (CEJSH, JSTOR, Google Scholar).</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/politologia/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z politologii</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/politologia/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z politologii do pobrania (PDF, Word)</a>.</p>

@@ -205,3 +205,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania badawcze, dostęp do danych przedsiębiorstwa, odpowiednie metody analityczne (analiza kosztów, modelowanie, symulacja), praktyczne rekomendacje, oszczędności lub usprawnienia.</p>
 
 <p><strong>Narzędzia:</strong> Excel (analiza danych, modele), oprogramowanie do symulacji (np. FlexSim, Arena), narzędzia GIS, systemy ERP/WMS/TMS, metody optymalizacyjne (solver, programowanie liniowe).</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/logistyka/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z logistyki</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/logistyka/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z logistyki do pobrania (PDF, Word)</a>.</p>

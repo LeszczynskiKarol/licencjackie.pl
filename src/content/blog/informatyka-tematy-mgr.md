@@ -198,3 +198,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania:</strong> działający kod źródłowy (GitHub), dokumentacja techniczna, testy jednostkowe i integracyjne, analiza wydajności lub porównanie z istniejącymi rozwiązaniami, opis użytych technologii i uzasadnienie wyboru.</p>
 
 <p><strong>Narzędzia:</strong> Git (wersjonowanie), Docker (konteneryzacja), CI/CD (automatyzacja), cloud platforms (AWS/GCP/Azure), frameworki ML (PyTorch, TensorFlow), bazy danych (PostgreSQL, MongoDB, Redis).</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/informatyka/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z informatyki</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/informatyka/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z informatyki do pobrania (PDF, Word)</a>.</p>

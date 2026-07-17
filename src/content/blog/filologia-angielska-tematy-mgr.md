@@ -194,3 +194,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania/hipotezy badawcze, odpowiedni materiał badawczy (korpus tekstów, utwory literackie, dane z badań), właściwe metody analizy (analiza dyskursu, analiza korpusowa, close reading, badania ankietowe), poprawna terminologia anglojęzyczna.</p>
 
 <p><strong>Źródła:</strong> korpusy językowe (BNC, COCA, LOCNESS), dzieła literackie, bazy bibliograficzne (JSTOR, MLA, LLBA), czasopisma anglojęzyczne. Praca musi być napisana poprawną angielszczyzną akademicką.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/filologia-angielska/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z filologii angielskiej</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/filologia-angielska/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z filologii angielskiej do pobrania (PDF, Word)</a>.</p>

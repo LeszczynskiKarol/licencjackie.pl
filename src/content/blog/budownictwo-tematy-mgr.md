@@ -198,3 +198,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania:</strong> obliczenia zgodne z Eurokodami i normami polskimi, wykorzystanie oprogramowania (Autodesk Robot, RFEM, Tekla, Revit), poprawne rysunki techniczne, analiza ekonomiczna lub porównawcza.</p>
 
 <p><strong>Narzędzia:</strong> programy MES (Robot, RFEM, SCIA), CAD (AutoCAD, Revit), BIM, oprogramowanie do fizyki budowli, arkusze obliczeniowe.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/budownictwo/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z budownictwa</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/budownictwo/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z budownictwa do pobrania (PDF, Word)</a>.</p>

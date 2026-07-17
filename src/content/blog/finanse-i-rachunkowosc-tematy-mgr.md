@@ -192,3 +192,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne hipotezy badawcze, odpowiednia próba (min. 30-50 spółek dla badań przekrojowych), właściwe metody statystyczne (regresja, korelacje, testy), poprawna interpretacja wyników finansowych.</p>
 
 <p><strong>Źródła danych:</strong> sprawozdania finansowe (EMIS, Notoria, GPW), bazy danych (Bloomberg, Reuters), raporty NBP, GUS, raporty branżowe, wywiady z praktykami.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/finanse-i-rachunkowosc/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z finansów i rachunkowości</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/finanse-i-rachunkowosc/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z finansów i rachunkowości do pobrania (PDF, Word)</a>.</p>

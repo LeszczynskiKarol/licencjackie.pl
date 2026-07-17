@@ -184,3 +184,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne sformułowanie problemu badawczego i pytań/hipotez, uzasadniony dobór metod, odpowiednia próba badawcza (dla ankiet min. 100-150 respondentów), rzetelna analiza danych (statystyczna lub jakościowa), praktyczne wnioski i rekomendacje dla menedżerów.</p>
 
 <p><strong>Dostęp do organizacji:</strong> wykorzystaj kontakty z praktyk, stażów lub pracy zawodowej. Wiele firm chętnie współpracuje, jeśli praca oferuje wartość praktyczną. Alternatywą są badania na podstawie danych publicznych (raporty giełdowe, informacje prasowe) lub badania ankietowe online wśród pracowników różnych firm.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/zarzadzanie/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z zarządzania</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/zarzadzanie/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z zarządzania do pobrania (PDF, Word)</a>.</p>

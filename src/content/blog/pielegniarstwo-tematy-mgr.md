@@ -191,3 +191,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> zgoda komisji bioetycznej, świadoma zgoda uczestników, odpowiednia grupa badana, standaryzowane narzędzia (SF-36, WHOQOL, skale oceny), właściwa analiza statystyczna, implikacje dla praktyki pielęgniarskiej.</p>
 
 <p><strong>Narzędzia badawcze:</strong> kwestionariusze jakości życia, skale oceny funkcjonalnej, narzędzia do oceny bólu, ankiety własne (po walidacji). Raportuj zgodnie z wytycznymi STROBE lub CONSORT.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/pielegniarstwo/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z pielęgniarstwa</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/pielegniarstwo/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z pielęgniarstwa do pobrania (PDF, Word)</a>.</p>

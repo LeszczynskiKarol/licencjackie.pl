@@ -189,3 +189,5 @@ showSmartEduCTA: true
 <p><strong>Metody badawcze:</strong> analiza dogmatyczna (wykładnia przepisów), metoda komparatystyczna (porównanie systemów prawnych), analiza orzecznictwa (linia orzecznicza SN, NSA, TK), metoda historyczna, badania empiryczne (np. ankiety wśród prawników).</p>
 
 <p><strong>Źródła:</strong> akty prawne (ISAP, EUR-Lex), orzecznictwo (LEX, Legalis, HUDOC, CURIA), komentarze i monografie, czasopisma (PiP, ZNUJ, GSP), dokumenty legislacyjne. Pamiętaj o aktualności stanu prawnego i śledzeniu nowelizacji.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/prawo/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z prawa</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/prawo/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z prawa do pobrania (PDF, Word)</a>.</p>

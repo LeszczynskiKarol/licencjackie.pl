@@ -191,3 +191,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania badawcze i hipotezy, odpowiednia próba (min. 150-200 respondentów dla badań ankietowych), sprawdzone skale pomiarowe (np. z literatury marketingowej), właściwe analizy statystyczne (korelacje, regresje, ANOVA), praktyczne implikacje menedżerskie.</p>
 
 <p><strong>Źródła danych:</strong> ankiety online (Google Forms, Surveyio), dane z narzędzi analitycznych (Google Analytics, Meta Business Suite), raporty branżowe (IAB, PwC, Gemius), case studies firm, wywiady z praktykami marketingu.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/marketing/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z marketingu</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/marketing/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z marketingu do pobrania (PDF, Word)</a>.</p>

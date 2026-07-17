@@ -212,3 +212,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania badawcze, odpowiedni materiał (teksty literackie, korpus językowy), właściwa metoda analizy (close reading, analiza dyskursu, analiza korpusowa), odwołania do teorii i literatury przedmiotu, poprawny język naukowy.</p>
 
 <p><strong>Źródła:</strong> wydania krytyczne utworów, korpusy (NKJP, PELCRA), bazy bibliograficzne (IBL PAN, CEJSH), czasopisma („Teksty Drugie", „Pamiętnik Literacki", „Język Polski"), słowniki i encyklopedie.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/filologia-polska/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z filologii polskiej</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/filologia-polska/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z filologii polskiej do pobrania (PDF, Word)</a>.</p>

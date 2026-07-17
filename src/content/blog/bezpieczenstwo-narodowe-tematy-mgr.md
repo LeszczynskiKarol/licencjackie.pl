@@ -199,3 +199,5 @@ showSmartEduCTA: true
 <p><strong>Wymagania metodologiczne:</strong> jasne pytania badawcze, właściwy dobór metod (analiza zagrożeń, SWOT, scenariusze), wykorzystanie źródeł pierwotnych, wnioski i rekomendacje.</p>
 
 <p><strong>Źródła:</strong> dokumenty strategiczne (SBN, strategie sektorowe), raporty (BBN, MON, MSWiA), think tanki (PISM, OSW, PISM), prasa branżowa, wywiady z ekspertami.</p>
+
+<p><strong>Szukasz więcej propozycji?</strong> Na siostrzanym serwisie znajdziesz <a href="https://www.praca-magisterska.pl/tematy/bezpieczenstwo-narodowe/" target="_blank" rel="noopener">ponad 100 operacjonalizowanych tematów prac magisterskich z bezpieczeństwa narodowego</a> (z pytaniami badawczymi i metodami), a przy nich <a href="https://www.praca-magisterska.pl/tematy/bezpieczenstwo-narodowe/przykladowa-praca/" target="_blank" rel="noopener">kompletny wzór pracy magisterskiej z bezpieczeństwa narodowego do pobrania (PDF, Word)</a>.</p>
