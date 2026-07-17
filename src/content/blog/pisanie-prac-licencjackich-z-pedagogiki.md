@@ -62,6 +62,19 @@ showSmartEduCTA: true
 <li>Ustawa Prawo oświatowe i rozporządzenia</li>
 </ul>
 
+<h2>Przykładowe rozwinięte tematy prac z pedagogiki</h2>
+
+<p>Poniżej znajdziesz konkretne propozycje tematów prac licencjackich z pedagogiki - każdy rozłożony na czynniki: zakres, pytania badawcze, metody, strukturę i typowe błędy.</p>
+
+<ul>
+<li><a href="/blog/efektywnosc-nowoczesnych-metod-nauczania-w-szkole-podstawowej/">Efektywność nowoczesnych metod nauczania w szkole podstawowej</a></li>
+<li><a href="/blog/problem-agresji-w-klasach-i-iii-szkoly-podstawowej-jako-temat-pracy-licencjackiej/">Problem agresji w klasach I-III szkoły podstawowej</a></li>
+<li><a href="/blog/rola-nauczyciela-jako-mentora-w-rozwoju-osobistym-ucznia/">Rola nauczyciela jako mentora w rozwoju osobistym ucznia</a></li>
+<li><a href="/blog/tematy-prac-z-pedagogiki-dziecko-z-dysleksja-w-klasie-szkolnej/">Dziecko z dysleksją w klasie szkolnej</a></li>
+<li><a href="/blog/uczen-z-niepelnosprawnoscia-wzrokowa-i-sluchowa-w-szkole-ogolnodostepnej/">Uczeń z niepełnosprawnością wzrokową i słuchową w szkole ogólnodostępnej</a></li>
+<li><a href="/blog/wychowanie-dziecka-w-rodzinie-niepelnej-jako-temat-pracy-licencjackiej/">Wychowanie dziecka w rodzinie niepełnej</a></li>
+</ul>
+
 <p>Praca licencjacka z pedagogiki to okazja do rozwinięcia umiejętności badawczych i pogłębienia wiedzy o procesach edukacyjnych i wychowawczych - kompetencji fundamentalnych dla przyszłego nauczyciela czy pedagoga.</p>
 
 <p><strong>Szukasz inspiracji?</strong> Sprawdź naszą listę <a href="/blog/pedagogika">100 tematów prac licencjackich z pedagogiki</a> z konkretnymi propozycjami badawczymi.</p>
