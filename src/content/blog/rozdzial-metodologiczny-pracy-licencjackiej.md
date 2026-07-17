@@ -51,6 +51,9 @@ showSmartEduCTA: true
 <li><a href="/blog/problemy-i-hipotezy-badawcze-w-pracy-licencjackiej/">Problemy i hipotezy badawcze</a> - jak je poprawnie sformułować</li>
 <li><a href="/blog/ankieta-w-pracy-licencjackiej/">Ankieta w pracy licencjackiej</a> - najpopularniejsze narzędzie w praktyce</li>
 <li><a href="/blog/statystyka-praca-licencjacka/">Statystyka w pracy licencjackiej</a> - co zrobić z zebranymi danymi</li>
+<li><a href="/blog/dobor-proby-w-pracy-licencjackiej/">Dobór próby</a> - ile osób i jak ich dobrać</li>
+<li><a href="/blog/badania-ilosciowe-i-jakosciowe-w-pracy-licencjackiej/">Badania ilościowe a jakościowe</a> - którą logikę wybrać</li>
+<li><a href="/blog/etyka-badan-w-pracy-licencjackiej/">Etyka badań</a> - zgody, anonimowość, dane wrażliwe</li>
 </ul>
 
 <p>Piszesz pracę magisterską? Rozbudowany poradnik z tabelą struktury rozdziału 2.1-2.8 i wzorem PDF/DOCX znajdziesz na siostrzanym serwisie: <a href="https://www.praca-magisterska.pl/poradniki/metodologia/rozdzial-metodologiczny/" target="_blank" rel="noopener">rozdział metodologiczny pracy magisterskiej</a>.</p>

@@ -30,8 +30,8 @@ showSmartEduCTA: true
 <li><strong>Sondaż diagnostyczny</strong> - koń roboczy prac społecznych i pedagogicznych: ankieta na kilkudziesięcioosobowej próbie, opis rozkładów odpowiedzi, proste porównania grup. Zobacz osobny poradnik o <a href="/blog/ankieta-w-pracy-licencjackiej/">ankiecie w pracy licencjackiej</a>.</li>
 <li><strong>Studium indywidualnego przypadku</strong> - standard pielęgniarstwa, fizjoterapii i pedagogiki specjalnej: pogłębiony opis jednej osoby lub instytucji z wielu źródeł danych. Szczegóły w poradniku o <a href="/blog/studium-przypadku-w-pracy-licencjackiej/">studium przypadku</a>.</li>
 <li><strong>Wywiad</strong> - metoda jakościowa: kilka-kilkanaście rozmów pogłębionych analizowanych kategoriami, nie procentami. Omówienie w poradniku o <a href="/blog/wywiad-w-pracy-licencjackiej/">wywiadzie w pracy licencjackiej</a>.</li>
-<li><strong>Analiza dokumentów</strong> - praca na materiałach zastanych: dokumentach urzędowych, prasie, danych sprawozdawczych; wymaga jawnych kryteriów analizy.</li>
-<li><strong>Obserwacja</strong> - rejestrowanie zachowań według przygotowanego arkusza; w licencjatach najczęściej jako technika uzupełniająca.</li>
+<li><strong>Analiza dokumentów</strong> - praca na materiałach zastanych: dokumentach urzędowych, prasie, danych sprawozdawczych; wymaga jawnych kryteriów analizy. Szczegóły w poradniku o <a href="/blog/analiza-dokumentow-w-pracy-licencjackiej/">analizie dokumentów</a>.</li>
+<li><strong>Obserwacja</strong> - rejestrowanie zachowań według przygotowanego arkusza; w licencjatach najczęściej jako technika uzupełniająca. Zobacz poradnik o <a href="/blog/obserwacja-w-pracy-licencjackiej/">obserwacji</a>.</li>
 <li><strong>Analiza danych zastanych</strong> - statystyki publiczne (GUS, dane branżowe) analizowane pod własnym pytaniem badawczym; mocna opcja dla ekonomii, geografii i ochrony środowiska.</li>
 </ul>
 
