@@ -63,4 +63,15 @@ showSmartEduCTA: true
 
 <p>Pisanie pracy licencjackiej z administracji to okazja do pogłębienia wiedzy o funkcjonowaniu sektora publicznego i rozwinięcia umiejętności analitycznych przydatnych w przyszłej karierze zawodowej. Systematyczna praca i dobra współpraca z promotorem to klucz do sukcesu.</p>
 
+<h2>Przykładowe rozwinięte tematy prac z administracji</h2>
+
+<p>Poniżej znajdziesz konkretne propozycje tematów prac licencjackich z administracji - każdy rozłożony na czynniki: zakres, pytania badawcze, źródła, strukturę i typowe błędy.</p>
+
+<ul>
+<li><a href="/blog/analiza-systemu-zarzadzania-kryzysowego-w-polsce-w-kontekscie-pandemii-covid-19/">System zarządzania kryzysowego w Polsce w kontekście pandemii COVID-19</a></li>
+<li><a href="/blog/digitalizacja-w-administracji-publicznej-ocena-skutecznosci-wdrazania-e-uslug-w-sektorze-publicznym/">Digitalizacja w administracji publicznej - ocena wdrażania e-usług</a></li>
+<li><a href="/blog/publiczno-prywatne-partnerstwo-jako-narzedzie-realizacji-zadan-publicznych-ocena-efektywnosci-i-ryzyka/">Partnerstwo publiczno-prywatne - efektywność i ryzyka</a></li>
+<li><a href="/blog/rola-administracji-publicznej-w-promowaniu-zrownowazonego-rozwoju-na-poziomie-lokalnym/">Administracja publiczna a zrównoważony rozwój na poziomie lokalnym</a></li>
+</ul>
+
 <p><strong>Szukasz inspiracji?</strong> Sprawdź naszą listę <a href="/blog/administracja">100 tematów prac licencjackich z administracji</a> z konkretnymi propozycjami badawczymi.</p>
