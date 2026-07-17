@@ -68,6 +68,10 @@ Te strony targetują frazy typu "pisanie prac z [kierunek]". **Generuj DRUGI!**
 
 ## 🎯 PRIORYTET 3: Konkretne tematy prac (27 artykułów)
 
+> ✅ **UKOŃCZONE 2026-07-17** — wszystkie 23 tematy z tabel poniżej opublikowane i podlinkowane z hubów kierunków (uwaga: nagłówek mówi „27", ale tabele sumują się do 23 — historia 7 ✅ [2026-07-16], pedagogika 6 ✅, psychologia 4 ✅, administracja 4 ✅, pielęgniarstwo 1 ✅, prawo 1 ✅). Fakty przypisywalne weryfikowane web searchem przed pisaniem (Hattie, Olweus, SRD Bogdanowicz, Wygotski, BSMAS, SES/NPI/SWLS, u.z.k. 2007, PPP 2008, ACR/EULAR 2013, art. 8 O.p.). CAŁY PLAN 62/62 ZREALIZOWANY.
+>
+> Bonusy z tej samej sesji: fix `window.gtag` w CookieBanner (martwy tracking ebooka), strona promo Smart-Edu+ebook doklejona do wszystkich PDF-ów w /pobierz/ (poza oświadczeniem; źródła w `.wzory-promo/`).
+
 ### Historia (7 artykułów)
 
 | #   | Slug                                                                                                                          | Temat                                             |

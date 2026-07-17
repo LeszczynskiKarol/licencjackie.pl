@@ -1,0 +1,31 @@
+% Nagłówek XeLaTeX strony promo doklejanej do wzorów licencjackie.pl
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{polyglossia}
+\setdefaultlanguage{polish}
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\usepackage[table]{xcolor}
+\definecolor{brand}{HTML}{0284C7}
+\definecolor{annoGray}{HTML}{555555}
+\definecolor{promoBg}{HTML}{F0F9FF}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[L]{\footnotesize\textcolor{brand}{\textbf{licencjackie.pl}}}
+\fancyhead[R]{\footnotesize\textcolor{annoGray}{Wzór do adaptacji — 2026}}
+\fancyfoot[L]{\footnotesize\textcolor{annoGray}{Poradniki: licencjackie.pl \,·\, Generator prac AI: }\footnotesize\textcolor{brand}{\textbf{smart-edu.ai}}}
+\fancyfoot[R]{\footnotesize\textcolor{annoGray}{licencjackie.pl}}
+
+\usepackage{tcolorbox}
+\newtcolorbox{promobox}{%
+  colback=promoBg, colframe=brand, boxrule=1.2pt, arc=3mm,
+  left=12pt, right=12pt, top=12pt, bottom=12pt,
+  before skip=14pt, after skip=14pt}
