@@ -69,4 +69,12 @@ showSmartEduCTA: true
 
 <p>Praca licencjacka z pielęgniarstwa to okazja do rozwinięcia umiejętności badawczych i pogłębienia wiedzy klinicznej - kompetencji fundamentalnych dla rozwoju zawodowego pielęgniarki.</p>
 
+<h2>Przykładowy rozwinięty temat pracy z pielęgniarstwa</h2>
+
+<p>Zobacz konkretną propozycję tematu rozłożoną na czynniki - zakres, pytania badawcze, metodę studium przypadku i typowe błędy:</p>
+
+<ul>
+<li><a href="/blog/jakosc-zycia-pacjentki-z-rozpoznana-twardzina-ukladowa-jako-temat-pracy-licencjackiej/">Jakość życia pacjentki z rozpoznaną twardziną układową</a></li>
+</ul>
+
 <p><strong>Szukasz inspiracji?</strong> Sprawdź naszą listę <a href="/blog/pielegniarstwo">100 tematów prac licencjackich z pielęgniarstwa</a> z konkretnymi propozycjami badawczymi.</p>

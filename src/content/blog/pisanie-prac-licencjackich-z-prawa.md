@@ -57,4 +57,12 @@ showSmartEduCTA: true
 
 <p>Praca licencjacka z prawa to okazja do rozwinięcia warsztatu prawniczego - umiejętności wykładni przepisów, analizy orzecznictwa i formułowania argumentacji prawnej, które są fundamentem każdego zawodu prawniczego.</p>
 
+<h2>Przykładowy rozwinięty temat pracy z prawa</h2>
+
+<p>Zobacz konkretną propozycję tematu rozłożoną na czynniki - zakres, tezę, źródła, strukturę i typowe błędy:</p>
+
+<ul>
+<li><a href="/blog/temat-pracy-licencjackiej-instytucja-platnika-podatku-w-polskim-prawie-podatkowym/">Instytucja płatnika podatku w polskim prawie podatkowym</a></li>
+</ul>
+
 <p><strong>Szukasz inspiracji?</strong> Sprawdź naszą listę <a href="/blog/prawo">100 tematów prac licencjackich z prawa</a> z konkretnymi propozycjami badawczymi.</p>
